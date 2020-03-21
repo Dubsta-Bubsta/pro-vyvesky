@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/general.css">
+	<link rel="stylesheet" href="../css/popup.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<div class="popup">
+		<h1 class="popup__header section-header ">Оставить заявку</h1>
+		<form action="#" class="popup__form form">
+			<div class="form__inputs inputs">
+				<input type="text" placeholder="Ваше имя">
+				<input type="text" placeholder="Телефон">
+				<input type="text" placeholder="E-mail">
+			</div>
+			<textarea class="form__textarea" placeholder="Информация о заказе"></textarea>
+			<div class="form__buttons buttons">
+				<button class="buttons__attach-btn">Прикрепить файл</button>
+				<div class="buttons__file-checkbox">
+					<input type="checkbox" id="ch1" class="checkbox">
+					<label for="ch1">Согласен на обработку персональных данных</label>
+				</div>
+				<button class="btn order-btn">Заказать<img src="../img/telegram-icon.png"
+						alt="telegram-icon"></button>
+			</div>
+		</form>
+		<div class="popup__close">
+			<img src="../img/close-popup.PNG" alt="">
+		</div>
+	</div>
+	<div class="popup-bg"></div>
+
+</body>
+
+</html>

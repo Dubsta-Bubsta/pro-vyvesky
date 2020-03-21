@@ -1,0 +1,70 @@
+.portfolio {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 35px;
+}
+
+.portfolio__list .list__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E0E3E3;
+}
+
+.portfolio__list .list__element:nth-child(3n+2) .element__details-btn {
+  background: #42D1CF;
+}
+
+.portfolio__list .list__element .element__img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio__list .list__element .element__title {
+  margin: 10px 0 10px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.portfolio__list .list__element .element__details-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 5px 0;
+  background: #FFB800;
+  padding: 5px 10px;
+}
+
+.portfolio__list .list__element .element__details-btn img {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=portfolio.css.map */

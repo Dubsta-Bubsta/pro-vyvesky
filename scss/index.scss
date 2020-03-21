@@ -1,194 +1,7 @@
-@mixin highlight_font() {
-	font-weight: 500;
-	font-size: 20px;
-}
-
-$icons-color: #E6AE2A;
-
-.header {
-	background: #000;
-	padding: 20px 100px;
-	display: grid;
-	grid-template-columns: 1fr 2fr 2fr 3fr;
-	color: #fff;
-	font-weight: 100;
-
-	&__element {
-		&.logo img {
-			width: 114.81px;
-			height: 129.48px;
-			display: block;
-		}
-
-		&.location,
-		&.contacts,
-		&.search {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-		}
-
-
-		& .location {
-			&__city {
-				@include highlight_font();
-			}
-		}
-
-
-		&.location i {
-			color: $icons-color;
-			margin-right: 10px;
-
-		}
-
-		& .contacts {
-			&__phone span {
-				@include highlight_font();
-			}
-		}
-
-		&.contacts i {
-			color: $icons-color;
-			margin-right: 10px;
-			transform: rotate(-45deg);
-		}
-
-		&.search {
-			&>div {
-				display: flex;
-				width: 80%;
-				justify-content: space-between;
-				align-items: center;
-				border-radius: 20px;
-				background: #fff;
-				padding: 1px 10px;
-				height: 22px;
-			}
-
-			& .fa {
-				color: #6D6C9F;
-				transform: rotateY(180deg);
-				font-size: 18px !important;
-				margin-right: 3px;
-				left: -5px;
-			}
-		}
-
-		& .search {
-			&__input {
-				width: 100%;
-				border: none;
-			}
-		}
-	}
-}
-
-
-.nav {
-	font-weight: 100;
-
-	&__list {
-		padding: 15px 100px;
-		display: flex;
-		background: #000;
-
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-start;
-
-		& .burger .fa {
-			font-size: 50px !important;
-			color: #fff;
-		}
-
-		& .list {
-			&__element {
-				text-align: center;
-
-				& a {
-					color: #fff;
-					margin: 0 7px;
-					text-transform: uppercase;
-					word-wrap: break-word;
-					font-size: 22px;
-				}
-			}
-		}
-	}
-
-	&__detailed-block {
-		display: none;
-		padding: 15px 100px;
-
-		&_active {
-			display: grid;
-			grid-template-columns: 1fr 4fr;
-		}
-
-		& .details {
-			&__headers .headers-list {
-				&__element {
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					align-items: center;
-					text-transform: uppercase;
-					font-weight: 300;
-					font-size: 14px;
-					padding: 5px 0 5px 10px;
-					text-align: left;
-
-					& .fa {
-						margin-right: 15px;
-					}
-
-					&:hover {
-						background: #BFF6F6;
-						font-weight: 500;
-					}
-				}
-			}
-
-
-			&__variants.variants-list {
-				margin-top: 5px;
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-			}
-
-			&__variants .variants-list {
-				&__element {
-					display: flex;
-					justify-content: center;
-					text-transform: lowercase;
-					margin: 6px 0;
-
-					&::before {
-						content: "\25CF";
-						width: 5px;
-						height: 5px;
-						padding-right: 7px;
-
-
-					}
-
-					&:hover {
-						color: #D5960F;
-					}
-				}
-			}
-		}
-	}
-
-}
-
 .product-list-block {
 	width: 70%;
 	margin: 0 auto;
 	text-transform: uppercase;
-	font-weight: 100;
 	font-size: 20px;
 
 	&__header {
@@ -218,7 +31,8 @@ $icons-color: #E6AE2A;
 
 .advantages-block {
 	&__header {
-		width: 280px;
+		display: flex;
+		align-items: center;
 	}
 
 	&__list {
@@ -242,7 +56,6 @@ $icons-color: #E6AE2A;
 			&__element .element {
 				&__img {
 					width: 89.5px;
-					height: 89.5px;
 				}
 
 				&__text {
@@ -264,7 +77,8 @@ $icons-color: #E6AE2A;
 	margin: 0 auto;
 
 	&__header {
-		width: 230px;
+		display: flex;
+		align-items: center;
 	}
 
 	&__list {
@@ -334,7 +148,8 @@ $icons-color: #E6AE2A;
 
 .work-examples-block {
 	&__header {
-		width: 300px;
+		display: flex;
+		align-items: center;
 	}
 
 	&__img-list {
@@ -382,13 +197,13 @@ $icons-color: #E6AE2A;
 	}
 }
 
-
 .order-of-actions-block {
 	width: 65%;
 	margin: 20px auto;
 
 	&__header {
-		width: 260px;
+		display: flex;
+		align-items: center;
 	}
 
 	&__list {
@@ -399,7 +214,7 @@ $icons-color: #E6AE2A;
 
 		& .arrow {
 			margin: 0 30px;
-			margin-top: 12.5%;
+			margin-top: 5%;
 			color: #D1D3D4;
 		}
 
@@ -429,5 +244,62 @@ $icons-color: #E6AE2A;
 				}
 			}
 		}
+	}
+}
+
+.make-order-block {
+	background: #FFB100;
+
+	&__header {
+		padding-top: 15px;
+	}
+
+	&__form {
+		width: 65%;
+		margin: 0 auto;
+		padding: 5px 0;
+
+		& .form {
+			&__inputs {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 5px 50px;
+				margin: 5px 0;
+
+				& input {
+					font-size: 16px;
+					font-weight: 300;
+					padding: 5px;
+					border: none;
+					line-height: 26px;
+					font-family: inherit;
+				}
+			}
+
+			&__textarea {
+				width: 100%;
+				border: none;
+				resize: none;
+				box-sizing: border-box;
+
+				font-size: 16px;
+				font-weight: 300;
+				padding: 5px;
+				margin: 0;
+				min-height: 150px;
+				font-family: inherit;
+
+			}
+
+			&__btn {
+				display: block;
+				margin: 5px auto;
+				background: #000;
+				color: #fff;
+				padding: 12px 50px;
+				text-transform: uppercase;
+			}
+		}
+
 	}
 }

@@ -1,0 +1,60 @@
+.contacts {
+	// margin-bottom: 30px;
+
+	&__location {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		grid-gap: 40px;
+
+		& .location {
+			&__map img {
+				width: 100%;
+			}
+
+			&__info {
+				display: flex;
+				flex-direction: column;
+
+				& .info {
+					&__element {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						margin: 5px 0;
+						& i {
+							width: 30px;
+							display: block;
+							text-align: center;
+							color: #FFB800;
+
+							&.fa-volume-control-phone {
+								transform: rotate(-45deg);
+							}
+						}
+
+						& .element {
+							&__text {
+								line-height: 20px;
+								width: 100%;
+								margin-left: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.text-block {
+	margin: 30px 0;
+
+	& ul {
+		list-style-type: circle;
+		list-style-position: inside;
+	}
+}
+
+.delivery-block {
+	margin: 30px 0;
+}

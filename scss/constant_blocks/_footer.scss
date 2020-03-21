@@ -1,0 +1,144 @@
+$footer-color: #E6B02B;
+footer {
+	background: #000;
+
+	& .footer {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		color: #fff;
+		margin: 0 auto;
+		padding: 30px 0;
+		width: 65%;
+
+		&__info {
+			& .info {
+				&__blocks {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					justify-content: center;
+					align-content: center;
+					margin-bottom: 20px;
+
+					& .blocks {
+						&__answers {
+							color: #fff;
+
+							& .answers {
+								&__header {
+									text-transform: uppercase;
+									margin-bottom: 10px;
+									font-weight: 500;
+									font-size: 16px;
+								}
+
+								&__link {
+									display: inline-block;
+									color: #fff;
+									border-bottom: 1px solid $footer-color;
+									line-height: 20px;
+									font-size: 14px;
+								}
+							}
+						}
+
+						&__rights {
+							display: flex;
+							flex-direction: column;
+							justify-content: flex-start;
+
+							& .rights {
+								&__element {
+									text-align: center;
+									padding: 10px 4px;
+									border-bottom: 1px solid $footer-color;
+									border-top: 1px solid $footer-color;
+									color: $footer-color;
+									margin-bottom: 20px;
+								}
+							}
+						}
+
+						&__social {
+							display: flex;
+							flex-direction: column;
+							justify-content: flex-start;
+							align-items: center;
+
+							& .social {
+								&__header {
+									& h1 {
+										font-size: 22px;
+										font-weight: bold;
+										text-align: left;
+										text-transform: uppercase;
+										letter-spacing: 2px;
+									}
+
+									& p {
+										font-size: 12px;
+										text-transform: uppercase;
+									}
+								}
+
+								&__links {
+									margin-top: 20px;
+									display: flex;
+									flex-direction: row;
+									justify-content: space-around;
+
+									& a {
+										margin: 0 5px;
+
+									}
+								}
+							}
+						}
+
+					}
+				}
+
+				&__copyright {
+					font-size: 12px;
+
+					& p {
+						margin-bottom: 10px;
+						line-height: 16px;
+
+						& span {
+							color: $footer-color;
+						}
+					}
+				}
+			}
+		}
+
+		&__contacts {
+			& .contacts {
+				&__element {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 10px 25px;
+					border: 1px solid $footer-color;
+					margin-bottom: 10px;
+
+					& .element {
+						&__phone {
+							font-weight: 500;
+							font-size: 20px;
+							color: $footer-color;
+						}
+
+						&__email,
+						&__address {
+							font-size: 12px;
+							font-weight: 300;
+							line-height: 22px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

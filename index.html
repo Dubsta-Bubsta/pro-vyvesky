@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/general.css">
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/constant-blocks.css">
+	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -14,7 +15,7 @@
 <body>
 	<header class="header">
 		<div class="header__element logo">
-			<a href="#"><img src="./img/logo.png"></a>
+			<a href="./"><img src="./img/logo.png"></a>
 		</div>
 		<div class="header__element location">
 			<i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -37,22 +38,23 @@
 			</div>
 		</div>
 	</header>
-
-
+	
 	<nav class="nav">
 		<ul class="nav__list list">
-			<div class="burger"><i class="fa fa-bars" aria-hidden="true"></i>
+			<div class="burger"
+				onClick="(function(){document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')})()">
+				<i class="fa fa-bars" aria-hidden="true"></i>
 			</div>
 
-			<li class="list__element link"><a href='#'>Наружная реклама</li></a>
-			<li class="list__element link"><a href='#'>Интерьерная реклама</li></a>
-			<li class="list__element link"><a href='#'>Широкоформатная печать</li></a>
+			<li class="list__element list__element_active link"><a href='#'>Наружная<br> реклама</li></a>
+			<li class="list__element link"><a href='#'>Интерьерная<br> реклама</li></a>
+			<li class="list__element link"><a href='#'>Широкоформатная<br> печать</li></a>
 			<li class="list__element link"><a href='#'>Услуги</li></a>
-			<li class="list__element link"><a href='#'>Портфолио</li></a>
-			<li class="list__element link"><a href='#'>Контакты</li></a>
+			<li class="list__element link"><a href='pages/portfolio.html'>Портфолио</li></a>
+			<li class="list__element link"><a href='pages/contacts'>Контакты</li></a>
 		</ul>
 
-		<div class="nav__detailed-block nav__detailed-block_active details">
+		<div class="nav__detailed-block  details">
 			<ul class="details__headers headers-list">
 				<li class="headers-list__element">Наружная реклама<i class="fa fa-angle-right" aria-hidden="true"></i>
 				</li>
@@ -94,29 +96,16 @@
 				<li class="variants-list__element">Вывески</li>
 				<li class="variants-list__element">Вывески</li>
 				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
 
 			</ul>
 		</div>
 	</nav>
 	<main>
-		<section class="image-example_street"></section>
+		<section class="image-example_street">
+			<img src="./img/image-example-1.png" alt="image-example-1">
+		</section>
 		<section class="product-list-block">
-			<h1 class="product-list-block__header section-header">Разработка и изготовление наружной рекламы</h1>
+			<h1 class="section-header">Разработка и изготовление наружной рекламы</h1>
 			<div class="product-list-block__list list">
 				<div class="list__element element">
 					<img class="element__img" src="./img/service-example.png" />
@@ -145,7 +134,10 @@
 			</div>
 		</section>
 		<section class="advantages-block">
-			<h1 class="advantages-block__header section-header-underline">Наши преимущества</h1>
+			<div class="advantages-block__header">
+				<h1 class="section-header-underline">Наши преимущества</h1>
+			</div>
+			
 			<div class="advantages-block__list list">
 				<div class="list__element element">
 					<img src="./img/stopwatch.png" class="element__img" />
@@ -166,7 +158,9 @@
 			</div>
 		</section>
 		<section class="theme-services-block">
-			<h1 class="theme-services-block__header section-header-underline">Услуги по темам</h1>
+			<div class="theme-services-block__header">
+				<h1 class="section-header-underline">Услуги по темам</h1>
+			</div>
 			<div class="theme-services-block__list list">
 				<div class="list__element element">
 					<div class="element__img">
@@ -226,7 +220,10 @@
 		</section>
 
 		<section class="work-examples-block">
-			<h1 class="work-examples-block__header section-header-underline">Примеры наших работ</h1>
+			<div class="work-examples-block__header">
+				<h1 class="section-header-underline">Примеры наших работ</h1>
+			</div>
+			
 			<div class="work-examples-block__img-list list">
 				<img class="list-element list__element-1" src="./img/work-example-1.png" alt="work-example">
 				<img class="list-element list__element-2" src="./img/work-example-2.png" alt="work-example">
@@ -238,7 +235,10 @@
 			</div>
 		</section>
 		<section class="order-of-actions-block">
-			<h1 class="order-of-actions-block__header section-header-underline">Порядок действий</h1>
+			<div class="order-of-actions-block__header">
+				<h1 class=" section-header-underline">Порядок действий</h1>
+			</div>
+			
 			<div class="order-of-actions-block__list list">
 				<div class="list__element element">
 					<img src="./img/actions-1.png" alt="">
@@ -276,17 +276,71 @@
 
 		<section class="make-order-block">
 			<h1 class="make-order-block__header section-header">Сделать заказ</h1>
-			<form action="#">
-				<input type="text" placeholder="Ваше имя">
-				<input type="text" placeholder="Компания">
-				<input type="text" placeholder="Телефон">
-				<input type="text" placeholder="E-mail">
-				<textarea type="text" placeholder="Комментарии"></textarea>
-				<button>Отправить</button>
+			<form action="#" class="make-order-block__form form">
+				<div class="form__inputs inputs">
+					<input type="text" placeholder="Ваше имя">
+					<input type="text" placeholder="Компания">
+					<input type="text" placeholder="Телефон">
+					<input type="text" placeholder="E-mail">
+				</div>
+				<textarea type="text" placeholder="Комментарии" class="form__textarea"></textarea>
+				<button class="form__btn">Отправить</button>
 			</form>
 		</section>
 	</main>
-	<footer></footer>
+	<footer>
+		<div class="footer">
+			<div class="footer__info info">
+				<div class="info__blocks blocks">
+					<div class="blocks__answers answers">
+						<h2 class="answers__header">Часто задаваемые вопросы</h2>
+						<div><a href="#" class="answers__link">Как сделать заказ?</a></div>
+						<div><a href="#" class="answers__link">Как к Вам добраться?</a></div>
+						<div><a href="#" class="answers__link">Как оплатить заказ?</a></div>
+						<div><a href="#" class="answers__link">Есть ли у вас доставка?</a></div>
+					</div>
+					<div class="blocks__rights rights">
+						<p class="rights__element">Условия и положения</p>
+						<p class="rights__element">Политика конфиденциальности</p>
+					</div>
+					<div class="blocks__social social">
+						<div class="social__header">
+							<h1>Подпишись</h1>
+							<p>И будь в курсе новостей!</p>
+						</div>
+						<div class="social__links">
+							<a href=""><img src="./img/social-telegram.png" alt=""></a>
+							<a href=""><img src="./img/social-instagram.png" alt=""></a>
+							<a href=""><img src="./img/social-skype.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="info__copyright">
+					<p>Цены указанные на сайте <span>provyveski</span> носят ориентировочный,<br>информационный характер
+						и не
+						являются публичной офертой.
+						<br>Актуальность ценовой политики необходимо уточнять у менеджеров по тел: 8 (495) 728-09-56</p>
+					<p>© 2020 типография provyveski. Все права защищены, полное и (или) частичное копирование,
+						воспроизведение, использование
+						<br>в любом виде запрещены и преследуются в соответствии с действующим законодательством
+						Российской Федерации.</p>
+				</div>
+			</div>
+			<div class="footer__contacts contacts">
+				<div class="contacts__element element">
+					<div class="element__phone">8 (495) 728-09-56</div>
+					<p class="element__email">zakaz@provyvesky.ru</p>
+					<p class="element__address">г.Москва, ул.Сайкина, д.17</p>
+				</div>
+				<div class="contacts__element element">
+					<div class="element__phone">8 (903) 226-89-46</div>
+					<p class="element__email">zakazdmd@stolitsaprint.ru</p>
+					<p class="element__address">г. Домодедово, ул. Кирова, дом 7, к 1 </p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
 </body>
 
 </html>
