@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/general.css">
@@ -37,16 +38,20 @@
 				<input class="search__input" />
 			</div>
 		</div>
+		<div class="header__burger"
+			onClick="(function(){document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')})()">
+			<img src="../img/burger.png" alt="burger">
+		</div>
 	</header>
 
 	<nav class="nav">
 		<ul class="nav__list list">
 			<div class="burger"
-				onClick="(function(){document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')})()">
-				<i class="fa fa-bars" aria-hidden="true"></i>
+				onClic	k="(function(){document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')})()">
+				<img src="../img/burger.png" alt="burger">
 			</div>
 
-			<li class="list__element link"><a href='#'>Наружная<br> реклама</li></a>
+			<li class="list__element list__element_active link"><a href='#'>Наружная<br> реклама</li></a>
 			<li class="list__element link"><a href='#'>Интерьерная<br> реклама</li></a>
 			<li class="list__element link"><a href='#'>Широкоформатная<br> печать</li></a>
 			<li class="list__element link"><a href='#'>Услуги</li></a>
@@ -96,7 +101,6 @@
 				<li class="variants-list__element">Вывески</li>
 				<li class="variants-list__element">Вывески</li>
 				<li class="variants-list__element">Вывески</li>
-
 			</ul>
 		</div>
 	</nav>
@@ -132,6 +136,41 @@
 					</div>
 				</div>
 			</div>
+		</section>
+
+		<section class="product-example-block-small">
+			<h1 class="product-pricing-block-small__header section-header">Объемные буквы</h1>
+			<div class="product-example-block-small__list list">
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+			</div>
+			<button class="details-btn btn">Показать еще<img src="../img/details-btn.png"
+				alt="details-btn"></button>
 		</section>
 
 		<section class="product-pricing-block">
@@ -295,42 +334,38 @@
 
 
 	<footer>
-		<div class="footer">
-			<div class="footer__info info">
-				<div class="info__blocks blocks">
-					<div class="blocks__answers answers">
-						<h2 class="answers__header">Часто задаваемые вопросы</h2>
-						<div><a href="#" class="answers__link">Как сделать заказ?</a></div>
-						<div><a href="#" class="answers__link">Как к Вам добраться?</a></div>
-						<div><a href="#" class="answers__link">Как оплатить заказ?</a></div>
-						<div><a href="#" class="answers__link">Есть ли у вас доставка?</a></div>
-					</div>
-					<div class="blocks__rights rights">
-						<p class="rights__element">Условия и положения</p>
-						<p class="rights__element">Политика конфиденциальности</p>
-					</div>
-					<div class="blocks__social social">
-						<div class="social__header">
-							<h1>Подпишись</h1>
-							<p>И будь в курсе новостей!</p>
-						</div>
-						<div class="social__links">
-							<a href=""><img src="../img/social-telegram.png" alt=""></a>
-							<a href=""><img src="../img/social-instagram.png" alt=""></a>
-							<a href=""><img src="../img/social-skype.png" alt=""></a>
-						</div>
-					</div>
+		<div class="footer container">
+			<div class="footer__answers answers">
+				<h2 class="answers__header">Часто задаваемые вопросы</h2>
+				<div><a href="#" class="answers__link">Как сделать заказ?</a></div>
+				<div><a href="#" class="answers__link">Как к Вам добраться?</a></div>
+				<div><a href="#" class="answers__link">Как оплатить заказ?</a></div>
+				<div><a href="#" class="answers__link">Есть ли у вас доставка?</a></div>
+			</div>
+			<div class="footer__rights rights">
+				<p class="rights__element">Условия и положения</p>
+				<p class="rights__element">Политика конфиденциальности</p>
+			</div>
+			<div class="footer__social social">
+				<div class="social__header">
+					<h1>Подпишись</h1>
+					<p>И будь в курсе новостей!</p>
 				</div>
-				<div class="info__copyright">
-					<p>Цены указанные на сайте <span>provyveski</span> носят ориентировочный,<br>информационный характер
-						и не
-						являются публичной офертой.
-						<br>Актуальность ценовой политики необходимо уточнять у менеджеров по тел: 8 (495) 728-09-56</p>
-					<p>© 2020 типография provyveski. Все права защищены, полное и (или) частичное копирование,
-						воспроизведение, использование
-						<br>в любом виде запрещены и преследуются в соответствии с действующим законодательством
-						Российской Федерации.</p>
+				<div class="social__links">
+					<a href=""><img src="../img/social-telegram.png" alt=""></a>
+					<a href=""><img src="../img/social-instagram.png" alt=""></a>
+					<a href=""><img src="../img/social-skype.png" alt=""></a>
 				</div>
+			</div>
+			<div class="footer__copyright">
+				<p>Цены указанные на сайте <span>provyveski</span> носят ориентировочный,<br>информационный характер
+					и не
+					являются публичной офертой.
+					<br>Актуальность ценовой политики необходимо уточнять у менеджеров по тел: 8 (495) 728-09-56</p>
+				<p>© 2020 типография provyveski. Все права защищены, полное и (или) частичное копирование,
+					воспроизведение, использование
+					<br>в любом виде запрещены и преследуются в соответствии с действующим законодательством
+					Российской Федерации.</p>
 			</div>
 			<div class="footer__contacts contacts">
 				<div class="contacts__element element">

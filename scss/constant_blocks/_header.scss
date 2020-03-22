@@ -2,16 +2,21 @@
 	font-weight: 500;
 	font-size: 20px;
 }
- 
+
 $icons-color: #E6AE2A;
+
 .header {
 	background: #000;
-	padding: 20px 100px;
+
+	padding: 30px 5%;
 	display: grid;
 	grid-template-columns: 1fr 2fr 2fr 3fr;
 	color: #fff;
 	font-weight: 100;
 
+	&__burger {
+		display: none;
+	}
 	&__element {
 		&.logo img {
 			width: 114.81px;
@@ -28,13 +33,11 @@ $icons-color: #E6AE2A;
 			align-items: center;
 		}
 
-
 		& .location {
 			&__city {
 				@include highlight_font();
 			}
 		}
-
 
 		&.location i {
 			color: $icons-color;
@@ -55,6 +58,8 @@ $icons-color: #E6AE2A;
 		}
 
 		&.search {
+			justify-content: flex-end;
+
 			&>div {
 				display: flex;
 				width: 80%;
@@ -80,6 +85,48 @@ $icons-color: #E6AE2A;
 				width: 100%;
 				border: none;
 			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	.header {
+		grid-template-columns: 1fr 2fr 2fr;	
+		&__element {
+			
+			&.search {
+				display: none;				
+			}
+						
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: "logo element"
+							 "logo burger";
+		&__element {
+			grid-area: element;
+			&.logo {
+				grid-area: logo;
+				display: flex;
+				justify-content: flex-start;
+			}
+			&.search, &.location {
+				display: none;				
+			}
+			&.contacts {
+				display: flex;
+				justify-content: flex-end;
+			}			
+		}
+		&__burger {
+			grid-area: burger;
+			display: flex;
+			justify-content: flex-end;
 		}
 	}
 }

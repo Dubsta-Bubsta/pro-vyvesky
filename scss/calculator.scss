@@ -1,20 +1,26 @@
 .calculator-examples {
 	margin: 30px 0;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(14%, 1fr));
+	grid-gap: 10px;
+
+
 	&__element {
+		margin-bottom: 10px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
 		&:hover {
 			color: #ECB62B;
 			text-decoration: underline;
 		}
+
 		& .element {
 			&__img {
 				width: 100%;
 			}
+
 			&__title {
 				text-transform: uppercase;
 				font-size: 12px;
@@ -25,12 +31,292 @@
 }
 
 .customise-product {
-	&__form {
-		& .form {
-			&__button {
-				background: #DC2618;
-				color: #fff;
+	width: 50%;
+	margin: 0 auto;
+
+	&__form .form {
+		&__input-block {
+			&_small {
+				& .input-block {
+					&__input {
+						width: 40%;
+						margin: 0 auto;
+						display: block;
+					}
+				}
+			}
+
+		}
+
+		&__inputs_small {
+			display: flex;
+
+			& .inputs_small {
+				& .input-block {
+					&__input-holder {
+						width: 90%;
+						display: block;
+						margin: 0 auto;
+						position: relative;
+
+						&:after,
+						&:before {
+							font-size: 26px;
+							font-weight: 500;
+							position: absolute;
+							top: 12.5%;
+						}
+
+						&:after {
+							content: ">";
+							right: -5px;
+						}
+
+						&:before {
+							content: "<";
+							left: -5px;
+						}
+					}
+				}
+			}
+		}
+
+		&__type-selectors-block .type-selectors-block {
+			&__selectors {
+				display: flex;
+				flex-direction: row;
+				box-sizing: border-box;
+				justify-content: space-between;
+
+				& .selectors {
+					&__selector {
+						margin: 0 5px;
+						width: 100%;
+						height: 100%;
+						display: inline;
+
+						&:last-child {
+							margin-right: 0;
+						}
+
+						&:first-child {
+							margin-left: 0;
+						}
+
+						& input[type=radio] {
+							display: none;
+
+							&:checked+label {
+								border: 3px solid #ECB62B;
+							}
+						}
+
+						& label {
+							width: 100%;
+							display: block;
+							text-align: center;
+							border: 3px solid #C5FCFC;
+							box-sizing: border-box;
+							padding: 10px 0;
+							font-size: 20px;
+							padding: 10px 0;
+						}
+					}
+				}
+			}
+		}
+
+		&__color-selectors-block {
+			margin: 30px 0;
+
+			& .color-selectors-block {
+				&__selectors {
+					width: 100%;
+					display: grid;
+					grid-template-columns: repeat(9, 1fr);
+					grid-gap: 5px;
+
+					& .selectors {
+						&__selector {
+							& .color-selector {
+								& input {
+									display: none;
+								}
+
+								& input+div {
+									box-sizing: border-box;
+									border: 1px solid #707070;
+									margin-left: auto;
+									margin-right: auto;
+									padding-top: 50%;
+									padding-bottom: 50%;
+									position: relative;
+
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									width: 100%;
+									height: 100%;
+
+									& img {
+										display: none;
+										width: 85%;
+									}
+								}
+
+								& input:checked+div {
+									padding: 0;
+									padding: 5px;
+
+									& img {
+										display: block;
+									}
+								}
+							}
+
+							&:nth-child(n+10) .color-selector img {
+								filter: invert(1);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__text-example {
+			margin: 30px 0;
+
+			& .text-example {
+				&__text {
+					text-align: center;
+					display: block;
+					font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+					font-size: 40px;
+					font-weight: 900;
+					-webkit-text-fill-color: #fff;
+					-webkit-text-stroke: 2px #017660;
+					text-shadow: 0 0 20px #ffff01;
+				}
+			}
+		}
+
+		&__order-block {
+			margin: 30px 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			& .order-block {
+				&__price {
+					font-weight: 500;
+
+					& span {
+						color: #dc2618;
+					}
+				}
+
+				&__button {
+					background: #DC2618;
+					color: #fff;
+					font-weight: 500;
+					font-size: 16px;
+					margin: 10px 0;
+				}
+
+				&__description {
+					text-align: center;
+					text-transform: uppercase;
+					font-size: 12px;
+					font-weight: 400;
+				}
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 1024px) {
+	.calculator-examples {
+		grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.calculator-examples {
+		grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+
+	}
+
+	.customise-product {
+		width: 100%;
+
+		&__form .form {
+			&__input-block {
+
+				&_small,
+				&_big {
+					& .input-block__input {
+						width: 100% !important;
+					}
+				}
+			}
+
+			&__inputs_small {
+				flex-direction: column;
+
+				& .input-block__input-holder {
+					width: 100% !important;
+
+					&:after {
+						right: 5px !important;
+					}
+
+					&:before {
+						left: 5px !important;
+					}
+				}
+			}
+
+			&__type-selectors-block .type-selectors-block {
+				&__selectors {
+					flex-direction: column;
+
+					& .selectors {
+						&__selector {
+							margin: 5px 0;
+						}
+					}
+
+				}
+			}
+			&__color-selectors-block .color-selectors-block  {
+				&__selectors {
+					grid-template-columns: repeat(4, 1fr);
+					& .selectors {
+						&__selector {
+							&:nth-child(17) {
+								grid-column: 2/3;
+							}
+						}
+					}
+				}
+			}
+			&__text-example .text-example {
+				&__text {
+					font-size: 70px;
+				}
+			}
+			&__order-block .order-block{
+				&__price {
+					font-size: 26px;
+				}
+				&__button {
+					width: 100%;
+					padding: 10px;
+				}
+			}
+		}
+	}
+
+
 }

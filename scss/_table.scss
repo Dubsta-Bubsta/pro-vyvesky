@@ -1,0 +1,50 @@
+table.table {
+	width: 100%;
+	border-spacing: 10px 0;
+	border-collapse: separate;
+
+	& tr:nth-child(odd) td,
+	& tr:nth-child(odd) th {
+		background: #C5FCFC;
+	}
+
+	& tr td,
+	& tr th {
+		padding: 10px 10px;
+
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	table.table {
+		&_responsive {
+			& th, & td {
+				text-align: left;
+				padding: 8px;
+				border: 1px solid #ddd;
+			}
+			& tr {
+				background-color: #f8f8f8;
+				display: block;
+				margin-bottom: 30px;
+			}
+			& tr th {
+				display: none;
+			}
+			& td {
+				display: block;
+				text-align: right;
+				&:before {
+					content: attr(data-label);
+					float: left;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}

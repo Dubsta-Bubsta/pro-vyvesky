@@ -64,4 +64,14 @@
 .delivery-block {
   margin: 30px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .contacts__location {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+}
 /*# sourceMappingURL=contacts.css.map */

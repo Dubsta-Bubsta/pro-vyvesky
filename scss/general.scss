@@ -1,0 +1,153 @@
+@import './table';
+
+body {
+	font-family: 'Geometria';
+	font-weight: 300;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+.fa {
+	font-size: 22px !important;
+}
+
+.section-header {
+	text-align: center;
+	margin: 30px 0 20px 0;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+h1.section-header {
+	font-size: 22px;
+
+}
+
+h2.section-header {
+	font-size: 20px;
+
+}
+
+h3.section-header {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
+h1.section-header-underline {
+	font-size: 24px;
+	text-align: center;
+	margin: 20px auto;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #707070;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.site-location {
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.order-btn {
+	background: #ffb700;
+	 & img {
+		margin-left: 5px;
+		width: 20px;
+	 }
+}
+
+
+.calc-btn {
+	color: #fff;
+	background: #42D1CF;
+	margin-right: 20px;
+	 & img {
+		margin-left: 5px;
+		width: 20px;
+	 }
+}
+
+.details-btn {
+	font-size: 12px;
+	margin-right: 20px;
+	color: #000;
+	background: #42d1cf;
+	& img {
+		margin-left: 5px;
+	}
+}
+
+
+button:hover {
+	cursor: pointer;
+	opacity: .9;
+	transition: .2s;
+}
+
+.input-block input {
+	width: 100%;
+	border: 3px solid #C5FCFC;
+	font-size: 22px;
+	padding: 7px;
+	font: inherit;
+	font-weight: 400;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.color-FFFFFF { background: #FFFFFF; }
+.color-FDDF01 { background: #FDDF01; }
+.color-FAB210 { background: #FAB210; }
+.color-F74902 { background: #F74902; }
+.color-EB0B36 { background: #EB0B36; }
+.color-F20500 { background: #F20500; }
+.color-C40401 { background: #C40401; }
+.color-810307 { background: #810307; }
+.color-FCA4A2 { background: #FCA4A2; }
+.color-5F0263 { background: #5F0263; }
+.color-68A2D0 { background: #68A2D0; }
+.color-0697FE { background: #0697FE; }
+.color-0457DB { background: #0457DB; }
+.color-034798 { background: #034798; }
+.color-000273 { background: #000273; }
+.color-06B452 { background: #06B452; }
+.color-044F28 { background: #044F28; }
+.color-222424 { background: #222424; }
+ 
+
+@media screen and (max-width: 1366px) {
+	.container {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.container {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.site-location {
+		text-align: center;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}

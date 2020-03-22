@@ -12,6 +12,18 @@
   margin: 0 auto;
 }
 
+.product__content .content__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .product__content .content__img img {
   width: 100%;
 }
@@ -61,10 +73,6 @@
           align-items: center;
 }
 
-.product-example-block-big__content .content__view .view__img {
-  width: 100%;
-}
-
 .product-example-block-big__content .content__view .view__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +118,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0 20px;
 }
 
 .also-interesting-block__links a {
@@ -121,8 +130,6 @@
 }
 
 .works-example-block {
-  width: 90%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +139,17 @@
           flex-direction: column;
 }
 
+.works-example-block > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .works-example-block__list {
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -174,6 +191,7 @@
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
+  margin: 0 auto;
 }
 
 .popular-orders-block__list .list__element .element__img img {
@@ -203,6 +221,12 @@
 
 .popular-orders-block__list .list__element .element__price button {
   font-size: 12px;
+}
+
+.product-example-block-small > .details-btn {
+  margin: 20px auto;
+  padding: 10px;
+  background: #ffb700;
 }
 
 .product-example-block-small__list {
@@ -236,6 +260,10 @@
   font-size: 14px;
 }
 
+.product-example-block-small__list .list__element .element__text {
+  margin: 0 10px;
+}
+
 .product-example-block-small__list .list__element .element__actions {
   margin: 0 10px;
   display: -webkit-box;
@@ -247,5 +275,92 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.fa-angle-right {
+  font-size: 60px !important;
+  color: #9C9B9B;
+}
+
+.fa-angle-right:first-child {
+  margin-right: 15px;
+}
+
+.fa-angle-right:last-child {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .product__content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .product__content .content__img img {
+    width: 70%;
+  }
+  .works-example-block .fa-angle-right {
+    display: none;
+  }
+  .works-example-block__list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .works-example-block__list img {
+    display: none;
+  }
+  .works-example-block__list img:nth-child(1), .works-example-block__list img:nth-child(2) {
+    display: block;
+  }
+  .popular-orders-block__list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .popular-orders-block__list .list__element:nth-child(n+5) {
+    display: none;
+  }
+  .popular-orders-block__list .list__element .element__title {
+    margin-bottom: 10px;
+  }
+  .popular-orders-block__list .list__element .element__price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .popular-orders-block__list .list__element .element__price p {
+    margin: 10px 0;
+  }
+  .popular-orders-block__list .list__element .element__price .order-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .product-example-block-big__content {
+    display: block;
+  }
+  .product-example-block-small__list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product__content .content__img img {
+    width: 100%;
+  }
+  .also-interesting-block__links {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .also-interesting-block__links a {
+    text-align: left;
+  }
+  .product-example-block-small__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=product.css.map */

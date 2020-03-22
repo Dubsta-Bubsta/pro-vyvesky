@@ -1,12 +1,16 @@
 .header {
   background: #000;
-  padding: 20px 100px;
+  padding: 30px 5%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr 2fr 3fr;
       grid-template-columns: 1fr 2fr 2fr 3fr;
   color: #fff;
   font-weight: 100;
+}
+
+.header__burger {
+  display: none;
 }
 
 .header__element.logo img {
@@ -53,6 +57,12 @@
           transform: rotate(-45deg);
 }
 
+.header__element.search {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .header__element.search > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,12 +94,69 @@
   border: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .header {
+    -ms-grid-columns: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 2fr;
+  }
+  .header__element.search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "logo element" "logo burger";
+  }
+  .header__element {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: element;
+  }
+  .header__element.logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header__element.search, .header__element.location {
+    display: none;
+  }
+  .header__element.contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header__burger {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: burger;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .nav {
   font-weight: 100;
 }
 
 .nav__list {
-  padding: 15px 100px;
+  padding: 15px 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,17 +187,20 @@
   margin: 0 7px;
   text-transform: uppercase;
   word-wrap: break-word;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-.nav__list .list__element_active {
-  font-weight: 300;
+.nav__list .list__element_active a {
+  font-weight: 400;
 }
 
 .nav__detailed-block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   display: none;
-  padding: 15px 15%;
+  padding: 15px 5%;
   position: absolute;
   background: #fff;
 }
@@ -204,6 +274,28 @@
   color: #D5960F;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav__list .list__element a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav__list .list__element a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__detailed-block_active {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 footer {
   background: #000;
 }
@@ -211,39 +303,26 @@ footer {
 footer .footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
   color: #fff;
-  margin: 0 auto;
   padding: 30px 0;
-  width: 65%;
+      grid-template-areas: "questions rights social contacts" "copyright copyright copyright contacts";
 }
 
-footer .footer__info .info__blocks {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-bottom: 20px;
-}
-
-footer .footer__info .info__blocks .blocks__answers {
+footer .footer__answers {
   color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: questions;
 }
 
-footer .footer__info .info__blocks .blocks__answers .answers__header {
+footer .footer__answers .answers__header {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
 }
 
-footer .footer__info .info__blocks .blocks__answers .answers__link {
+footer .footer__answers .answers__link {
   display: inline-block;
   color: #fff;
   border-bottom: 1px solid #E6B02B;
@@ -251,7 +330,10 @@ footer .footer__info .info__blocks .blocks__answers .answers__link {
   font-size: 14px;
 }
 
-footer .footer__info .info__blocks .blocks__rights {
+footer .footer__rights {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: rights;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,16 +346,18 @@ footer .footer__info .info__blocks .blocks__rights {
           justify-content: flex-start;
 }
 
-footer .footer__info .info__blocks .blocks__rights .rights__element {
+footer .footer__rights .rights__element {
   text-align: center;
   padding: 10px 4px;
-  border-bottom: 1px solid #E6B02B;
-  border-top: 1px solid #E6B02B;
+  border: 1px solid #E6B02B;
   color: #E6B02B;
   margin-bottom: 20px;
 }
 
-footer .footer__info .info__blocks .blocks__social {
+footer .footer__social {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: social;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,20 +373,21 @@ footer .footer__info .info__blocks .blocks__social {
           align-items: center;
 }
 
-footer .footer__info .info__blocks .blocks__social .social__header h1 {
+footer .footer__social .social__header h1 {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 400;
+  line-height: 26px;
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-footer .footer__info .info__blocks .blocks__social .social__header p {
+footer .footer__social .social__header p {
   font-size: 12px;
   text-transform: uppercase;
 }
 
-footer .footer__info .info__blocks .blocks__social .social__links {
+footer .footer__social .social__links {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,20 +400,29 @@ footer .footer__info .info__blocks .blocks__social .social__links {
       justify-content: space-around;
 }
 
-footer .footer__info .info__blocks .blocks__social .social__links a {
+footer .footer__social .social__links a {
+  width: 100%;
   margin: 0 5px;
 }
 
-footer .footer__info .info__copyright {
+footer .footer__social .social__links a img {
+  width: 100%;
+}
+
+footer .footer__copyright {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: copyright;
   font-size: 12px;
 }
 
-footer .footer__info .info__copyright p {
+footer .footer__copyright p {
   margin-bottom: 10px;
   line-height: 16px;
 }
 
-footer .footer__info .info__copyright p span {
+footer .footer__copyright p span {
   color: #E6B02B;
 }
 
@@ -361,5 +455,53 @@ footer .footer__contacts .contacts__element .element__email, footer .footer__con
   font-size: 12px;
   font-weight: 300;
   line-height: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+        grid-template-areas: "questions rights social" "contacts contacts contacts" "copyright copyright copyright" !important;
+  }
+  .footer__contacts {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .footer__contacts .contacts__element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+        grid-template-areas: "questions questions" "rights social" "contacts contacts" "copyright copyright" !important;
+    grid-gap: 20px 10px;
+  }
+  .footer__answers {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .footer__answers > div {
+    text-align: center;
+  }
+  .footer__contacts {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .footer__social .social__header h1 {
+    font-size: 18px !important;
+  }
+  .footer__rights p {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=constant-blocks.css.map */
