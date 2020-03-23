@@ -1,4 +1,6 @@
 .popup {
+  font-family: Geometria Light;
+  font-weight: 600;
   position: fixed;
   margin: 0 auto;
   left: 0;
@@ -63,6 +65,8 @@
   min-height: 70px;
   font-family: inherit;
   font-weight: 400;
+  font-family: Geometria Light;
+  font-weight: 600;
 }
 
 .popup__form .form__buttons {

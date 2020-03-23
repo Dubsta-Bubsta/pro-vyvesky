@@ -112,7 +112,7 @@ $icons-color: #E6AE2A;
 
 @media screen and (max-width: 768px) {
 	.header {
-		padding: 5px 5%;
+		padding: 5px 2.5%;
 		grid-template-columns: 1fr 2fr;
 		grid-template-areas: "logo element"
 			"logo burger";
@@ -153,6 +153,10 @@ $icons-color: #E6AE2A;
 				width: 50px;
 				height: 30px;
 			}
+	
+				&:hover {
+					cursor: pointer;
+				}
 		}
 	}
 }

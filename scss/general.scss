@@ -5,6 +5,7 @@ body {
 	overflow-x: hidden;
 	box-sizing: border-box;
 	font-weight: 400;
+	font-family: Geometria Light;
 }
 
 .fa {
@@ -16,16 +17,17 @@ body {
 	text-align: center;
 	margin: 30px 0 20px 0;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 900;
+	font-family: Geometria Light;
 }
 
 h1.section-header {
-	font-size: 22px;
+	font-size: 26px;
 
 }
 
 h2.section-header {
-	font-size: 20px;
+	font-size: 22px;
 
 }
 
@@ -35,6 +37,8 @@ h3.section-header {
 
 
 h1.section-header-underline {
+	font-weight: 900;
+	font-family: Geometria Light;
 	font-size: 24px;
 	margin: 30px auto 20px auto;
 	padding: 0 10px;
@@ -47,14 +51,17 @@ h1.section-header-underline {
 }
 
 .container {
-	width: 65%;
+	width: 70%;
 	margin: 0 auto;
 }
 
 .site-location {
 	margin-top: 30px;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 14px;
+	font-family: Geometria Light;
+	font-weight: 600;
+	letter-spacing: -0.5px;
 }
 
 .btn {
@@ -64,16 +71,19 @@ h1.section-header-underline {
 	align-items: center;
 	padding: 10px 20px;
 	text-transform: lowercase;
-	font-size: 14px;
+	font-size: 16px;
 	box-sizing: border-box;
+	font-family: Geometria Light;
+	font-weight: 600!important;
+
 }
 
 .order-btn {
 	background: #ffb700;
-	font-size: 18px;
+
 	& img {
 		margin-left: 5px;
-		width: 20px;
+		width: 24px;
 	}
 }
 
@@ -82,11 +92,10 @@ h1.section-header-underline {
 	color: #fff;
 	background: #42D1CF;
 	margin-right: 20px;
-	font-size: 18px;
 
 	& img {
 		margin-right: 5px;
-		width: 32px;
+		width: 24px;
 	}
 }
 
@@ -96,7 +105,7 @@ h1.section-header-underline {
 	background: #42d1cf;
 
 	& img {
-		margin-left: 5px;
+		margin-left: 20px;
 	}
 }
 
@@ -104,9 +113,9 @@ h1.section-header-underline {
 	background: #ffb700;
 	display: none;
 	margin: 10px 0;
-	font-size: 16px;
+
 	& img {
-		margin-left: 5px;
+		margin-left: 20px;
 	}
 }
 
@@ -128,10 +137,25 @@ button:hover {
 }
 
 .text-block {
-	line-height: 20px;
+	line-height: 22px;
+	font-family: Geometria Light;
+	font-weight: 600;
+	font-size: 18px;
 	& ul {
 		list-style-type: circle;
 		list-style-position: inside;
+	}
+}
+
+.table-block {
+	margin: 20px 0;
+	position: relative;
+
+	&__arrows {
+		position: absolute;
+		right: 0;
+		margin-top: 10px;
+		display: none;
 	}
 }
 
@@ -230,8 +254,13 @@ button:hover {
 
 	.btn {
 		display: flex;
-		align-self: center;
 		justify-content: center;
 		width: 100%;
+		font-size: 16px;
+	}
+	.table-block {
+		&__arrows {
+			display: block;
+		}
 	}
 }

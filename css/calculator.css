@@ -1,13 +1,18 @@
 .calculator-examples {
   margin: 30px 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(14%, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(14%, 1fr));
-  grid-gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .calculator-examples__element {
+  width: 15%;
+  margin: 5px;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,17 +37,18 @@
 
 .calculator-examples__element .element__title {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 10px;
 }
 
 .customise-product {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .customise-product__form .form__input-block_small .input-block__input {
   width: 40%;
+  font-size: 20px;
   margin: 0 auto;
   display: block;
 }
@@ -51,6 +57,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder {
@@ -58,23 +67,24 @@
   display: block;
   margin: 0 auto;
   position: relative;
+  font-size: 20px;
 }
 
 .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:after, .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:before {
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 50px;
+  font-weight: 400;
   position: absolute;
-  top: 12.5%;
+  top: -5px;
 }
 
 .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:after {
   content: ">";
-  right: -5px;
+  right: -12px;
 }
 
 .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:before {
   content: "<";
-  left: -5px;
+  left: -12px;
 }
 
 .customise-product__form .form__type-selectors-block .type-selectors-block__selectors {
@@ -122,9 +132,11 @@
   border: 3px solid #C5FCFC;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-transform: uppercase;
   padding: 10px 0;
   font-size: 20px;
-  padding: 10px 0;
+  font-family: Geometria Light;
+  font-weight: 600;
 }
 
 .customise-product__form .form__color-selectors-block {
@@ -193,7 +205,7 @@
   text-align: center;
   display: block;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 900;
   -webkit-text-fill-color: #fff;
   -webkit-text-stroke: 2px #017660;
@@ -216,6 +228,7 @@
 
 .customise-product__form .form__order-block .order-block__price {
   font-weight: 500;
+  font-size: 26px;
 }
 
 .customise-product__form .form__order-block .order-block__price span {
@@ -226,8 +239,9 @@
   background: #DC2618;
   color: #fff;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 24px !important;
   margin: 10px 0;
+  letter-spacing: 2px;
 }
 
 .customise-product__form .form__order-block .order-block__description {
@@ -238,16 +252,17 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .calculator-examples {
-    -ms-grid-columns: (minmax(30%, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  .calculator-examples__element {
+    width: 30%;
+  }
+  .customise-product {
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .calculator-examples {
-    -ms-grid-columns: (minmax(40%, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  .calculator-examples__element {
+    width: 40%;
   }
   .customise-product {
     width: 100%;
@@ -278,6 +293,17 @@
   }
   .customise-product__form .form__type-selectors-block .type-selectors-block__selectors .selectors__selector {
     margin: 5px 0;
+  }
+  .customise-product__form .form__type-selectors-block .type-selectors-block__selectors.selectors_small {
+    display: -ms-grid;
+    display: grid;
+    margin: 5px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0 10px;
+  }
+  .customise-product__form .form__type-selectors-block .type-selectors-block__selectors.selectors_small .selectors__selector label {
+    padding: 10px !important;
   }
   .customise-product__form .form__color-selectors-block .color-selectors-block__selectors {
     -ms-grid-columns: (1fr)[4];

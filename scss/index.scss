@@ -49,87 +49,15 @@
 							right: -6px;
 							bottom: -6px;
 						}
-
-						
 					}
-				}
-
-			}
-
-			&.block {
-				&-1 {
-					top: 57%;
-					left: 8%;
-				}
-
-				&-2 {
-					top: 35%;
-					left: 24%;
-				}
-
-				&-3 {
-					top: 43%;
-					left: 28%;
-				}
-
-				&-4 {
-					top: 28%;
-					left: 37%;
-				}
-
-				&-5 {
-					top: 53%;
-					left: 36%;
-				}
-
-				&-6 {
-					top: 31%;
-					left: 45%;
-				}
-
-				&-7 {
-					top: 47%;
-					left: 51%;
-				}
-
-				&-8 {
-					top: 14%;
-					left: 67%;
-				}
-
-				&-9 {
-					top: 25%;
-					left: 72%;
-				}
-
-				&-10 {
-					top: 32%;
-					left: 74%;
-				}
-
-				&-11 {
-					top: 43%;
-					left: 73%;
-				}
-
-				&-12 {
-					top: 22%;
-					left: 83%;
-				}
-
-				&-13 {
-					top: 37%;
-					left: 90%;
 				}
 			}
 		}
 	}
 
-
-	&__street {
+	&_street {
 		& .marker {
 			&__block {
-
 				&.block {
 					&-1 {
 						top: 57%;
@@ -279,9 +207,10 @@
 					text-align: center;
 					display: block;
 					margin: 10px auto;
-					font-size: 16px;
+					font-size: 18px;
 					line-height: 20px;
 					white-space: pre-wrap;
+					font-weight: 600;
 				}
 			}
 		}
@@ -320,7 +249,7 @@
 					}
 
 					&__text {
-						font-weight: 300;
+						font-weight: 600;
 						color: #fff;
 						text-transform: uppercase;
 						font-size: 18px;
@@ -369,18 +298,19 @@
 
 					& p {
 						color: #fff;
-						font-weight: 300;
-						padding-top: 10px;
+						font-weight: 600;
 						white-space: pre-wrap;
 						margin: 0 auto;
 						text-align: center;
-						font-size: 16px;
+						font-size: 14px;
+						line-height: 20px;
 					}
 
 					& img {
 						width: 100%;
 						height: 100%;
 						display: block;
+						padding-bottom: 10px;
 					}
 				}
 
@@ -393,7 +323,8 @@
 							padding: 8px;
 							background: #E0E1E2;
 							border-top: 1px solid #000;
-							font-size: 14px;
+							font-size: 12px;
+							font-family: Geometria;
 
 							&::before {
 								content: "\25CF";
@@ -498,18 +429,17 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-
 				text-transform: lowercase;
-
+				font-weight: 600;
 				& .element {
 					&__header {
 						margin: 7px 0;
-						font-size: 14px;
+						font-size: 16px;
 						text-align: center;
 					}
 
 					&__text {
-						font-size: 12px;
+						font-size: 14px;
 						text-align: center;
 						margin: 5px 0;
 					}
@@ -671,7 +601,7 @@
 		}
 	}
 
-	.image-example_street {
+	.image-example {
 		display: none;
 	}
 }

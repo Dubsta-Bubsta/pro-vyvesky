@@ -76,7 +76,7 @@
 }
 
 @font-face {
-	font-family: 'Geometria';
+	font-family: 'Geometria Light';
 	src: url('Geometria-LightItalic.eot');
 	src: local('Geometria LightItalic'), local('Geometria-LightItalic'),
 		url('Geometria-LightItalic.eot?#iefix') format('embedded-opentype'),
@@ -153,7 +153,7 @@
 }
 
 @font-face {
-	font-family: 'Geometria';
+	font-family: 'Geometria Light';
 	src: url('Geometria-Light.eot');
 	src: local('Geometria Light'), local('Geometria-Light'),
 		url('Geometria-Light.eot?#iefix') format('embedded-opentype'),
@@ -164,7 +164,7 @@
 }
 
 @font-face {
-	font-family: 'Geometria';
+	font-family: 'Geometria Extra Light';
 	src: url('Geometria-ExtraLight.eot');
 	src: local('Geometria ExtraLight'), local('Geometria-ExtraLight'),
 		url('Geometria-ExtraLight.eot?#iefix') format('embedded-opentype'),

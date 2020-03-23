@@ -1,6 +1,6 @@
 .nav {
 	font-weight: 100;
-
+	
 	&__list {
 		padding: 15px 5%;
 		display: flex;
@@ -11,6 +11,12 @@
 		align-items: flex-start;
 
 		& .burger {
+			margin-right: 10px;
+
+			&:hover {
+				cursor: pointer;
+			}
+
 			.fa {
 				font-size: 50px !important;
 				color: #fff;
@@ -19,19 +25,21 @@
 
 		& .list {
 			&__element {
+				margin: 0 1.5%;
 				text-align: center;
 
 				& a {
 					color: #fff;
-					margin: 0 7px;
 					text-transform: uppercase;
 					word-wrap: break-word;
-					font-size: 22px;
-					font-weight: 200;
+					font-size: 20px;
+					font-weight: 100;
+					font-family: Geometria Extra Light;
 				}
 
 				&_active a {
-					font-weight: 300;
+					font-family: Geometria Light;
+					font-weight: 600;
 				}
 			}
 		}
@@ -61,9 +69,10 @@
 				align-items: center;
 				text-transform: uppercase;
 				font-weight: 400;
-				font-size: 12px;
+				font-size: 14px;
 				padding: 10px 0 10px 10px;
 				text-align: left;
+				font-weight: 600;
 
 				& .fa {
 					margin: 0 15px;
@@ -77,16 +86,20 @@
 					}
 				}
 			}
+
 			&__variants-lists {
 				display: grid;
 			}
+
 			&__variants-list {
 				grid-column: 1;
 				grid-row: 1;
 				display: flex;
 				flex-wrap: wrap;
 				align-content: flex-start;
-				visibility: hidden;				
+				visibility: hidden;
+				justify-content: space-between;
+				font-weight: 600;
 
 				&.variants-list_active {
 					visibility: visible;
@@ -94,14 +107,14 @@
 				}
 
 				& .variants-list {
-				
 					&__element {
-						font-size: 12px;
+						font-size: 16px;
 						margin: 5px;
 						display: flex;
 						justify-content: left;
-						font-weight: 300;
+						font-weight: 400;
 						width: 20%;
+
 						&::before {
 							content: "\25CF";
 							width: 5px;
@@ -111,7 +124,8 @@
 
 						&:hover {
 							color: #D5960F;
-							&>a{
+
+							&>a {
 								color: #D5960F;
 							}
 						}
@@ -138,10 +152,13 @@
 @media screen and (max-width: 1024px) {
 	.nav {
 		&__list {
-
 			& .list {
-				&__element a {
-					font-size: 16px;
+				&__element {
+					margin: 0 5px;
+
+					a {
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -160,7 +177,7 @@
 	}
 }
 
-@media screen and (max-width: 768px) {	
+@media screen and (max-width: 768px) {
 	.nav {
 		&__list {
 			display: none;
@@ -168,6 +185,7 @@
 
 		&__detailed-block {
 			padding: 10px 0;
+
 			&_active {
 				grid-template-columns: 1fr;
 				display: none;
@@ -178,8 +196,10 @@
 					z-index: 5;
 				}
 			}
+
 			&_mobile {
-				position: fixed;
+				font-family: Geometria;
+				position: absolute;
 				display: flex;
 				transition: .5s;
 				left: 100%;
@@ -189,71 +209,79 @@
 				padding: 0 !important;
 				width: 90%;
 				margin-left: 10%;
-	
+
 				& .details {
 					&__variants-list {
 						margin-bottom: 10px;
 						display: none !important;
 						grid-template-columns: 1fr;
 						flex-direction: column;
-						padding-right: 20px;
-	
+						padding-right: 2.5%;
+
 						& .variants-list {
 							&__element {
 								display: flex;
-								align-items: flex-end!important;
-								justify-content: flex-end!important;
+								align-items: flex-end !important;
+								justify-content: flex-end !important;
 								text-align: right;
-								width: 100%!important;
+								width: 100% !important;
 								text-transform: initial;
-								font-size: 16px!important;
-								margin: 7px 0!important;
-	
+								font-size: 16px !important;
+								font-weight: 400;
+								margin: 7px 0 !important;
+
 								&::before {
 									content: "" !important;
 								}
+
 								&:hover {
 									color: #000;
-									&>a{
+
+									&>a {
 										color: #000;
 									}
 								}
 							}
 						}
 
-						
-	
+
+
 						&.variants-list_active {
 							display: flex !important;
 							align-items: flex-end;
 						}
 					}
-	
+
 					&__header {
 						display: flex;
 						flex-direction: row;
 						justify-content: space-between;
 						box-sizing: border-box;
-						padding: 10px 20px !important;
+						padding: 10px 2.5% !important;
 						text-align: right !important;
 						background: #fff !important;
 						font-size: 18px !important;
 						border-top: 1px solid #707070;
-						font-weight: 300 !important;
-	
+						font-weight: 400 !important;
+						letter-spacing: -1px;
+
 						&:hover {
 							cursor: pointer;
 						}
-						&_active .fa {
-							transform: rotate(180deg);
+
+						&_active {
+							font-weight: 500!important;
+							.fa {
+								transform: rotate(180deg);
+							}
 						}
-	
+
 						&__link {
 							display: block !important;
 						}
 					}
 				}
-			}	
+			}
 		}
 
 		&__bg_active {
