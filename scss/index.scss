@@ -207,7 +207,7 @@
 					text-align: center;
 					display: block;
 					margin: 10px auto;
-					font-size: 18px;
+					font-size: 20px;
 					line-height: 20px;
 					white-space: pre-wrap;
 					font-weight: 600;
@@ -302,7 +302,7 @@
 						white-space: pre-wrap;
 						margin: 0 auto;
 						text-align: center;
-						font-size: 14px;
+						font-size: 16px;
 						line-height: 20px;
 					}
 
@@ -320,11 +320,12 @@
 
 					& .info {
 						&__element {
-							padding: 8px;
+							padding: 10px;
 							background: #E0E1E2;
 							border-top: 1px solid #000;
-							font-size: 12px;
+							font-size: 16px;
 							font-family: Geometria;
+							font-weight: 400;
 
 							&::before {
 								content: "\25CF";
