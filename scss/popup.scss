@@ -24,10 +24,10 @@
 					border: 1px solid #000;
 					border-radius: 5px;
 					padding: 10px 5px;
-
 					text-align: center;
 					width: 90%;
 					box-sizing: border-box;
+					font-size: 16px;
 
 					&::-webkit-input-placeholder {
 						text-transform: uppercase;
@@ -69,22 +69,35 @@
 				justify-content: center;
 				align-items: center;
 
+				& .order-btn {
+					font-size: 18px!important;
+				}
+
 				& .buttons {
-					&__attach-btn {
-						background: #82D2D0;
-						padding: 5px 10px;
-						display: block;
-						text-transform: uppercase;
-						text-transform: uppercase;
-						font-size: 12px;
+					&__attach {
+						&-wrapper {
+							width: 100%;
+							& input[type=file]{
+								display: none;
+							}
+						}
+						&-btn {
+							background: #82D2D0;
+							padding: 10px 10px;
+							display: block;
+							text-transform: uppercase;
+							font-size: 14px;
+							text-align: center;
+						}
 					}
 
 					&__file-checkbox {
 						margin: 5px 0;
 						text-transform: uppercase;
 						font-size: 14px;
-					}
+					}					
 				}
+				
 			}
 		}
 	}
@@ -140,17 +153,23 @@
 			right: 12px;
 		}
 
-		&__form .form{
+		&__form .form {
 			&__buttons {
 				width: 100%;
-	
-					.btn {
-						padding: 10px;
-						width: 100%;
-						font-size: 16px;
+
+				.btn {
+					padding: 10px;
+					width: 100%;
+					font-size: 16px;
+				}
+
+				&__attach {
+					&-btn {
+						font-size: 10px;
 					}
-					
+				}
 			}
+			
 		}
 	}
 }

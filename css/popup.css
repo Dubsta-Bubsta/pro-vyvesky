@@ -30,6 +30,7 @@
   width: 90%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 16px;
 }
 
 .popup__form .form__inputs input::-webkit-input-placeholder {
@@ -80,13 +81,25 @@
           align-items: center;
 }
 
+.popup__form .form__buttons .order-btn {
+  font-size: 18px !important;
+}
+
+.popup__form .form__buttons .buttons__attach-wrapper {
+  width: 100%;
+}
+
+.popup__form .form__buttons .buttons__attach-wrapper input[type=file] {
+  display: none;
+}
+
 .popup__form .form__buttons .buttons__attach-btn {
   background: #82D2D0;
-  padding: 5px 10px;
+  padding: 10px 10px;
   display: block;
   text-transform: uppercase;
-  text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .popup__form .form__buttons .buttons__file-checkbox {
@@ -147,6 +160,9 @@
     padding: 10px;
     width: 100%;
     font-size: 16px;
+  }
+  .popup__form .form__buttons__attach-btn {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=popup.css.map */

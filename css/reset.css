@@ -104,6 +104,15 @@ section {
 	display: block;
 }
 
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
+}
+
 body {
 	line-height: 1;
 }
@@ -188,4 +197,32 @@ hr {
 	width: 100%;
 	background-color: #707070;
 	height: 1px;
+}
+
+::placeholder {
+	color: #000;
+}
+
+::-webkit-input-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+:-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+button {
+	background: transparent;
 }

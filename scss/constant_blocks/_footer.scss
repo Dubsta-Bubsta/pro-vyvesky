@@ -7,7 +7,7 @@ footer {
 		display: grid;
 		color: #fff;
 		padding: 30px 0;
-
+		grid-gap: 0 20px;
 		grid-template-areas: "questions rights social contacts""copyright copyright copyright contacts";
 
 
@@ -19,7 +19,6 @@ footer {
 				&__header {
 					text-transform: uppercase;
 					margin-bottom: 10px;
-					font-weight: 500;
 					font-size: 16px;
 				}
 
@@ -47,6 +46,8 @@ footer {
 					border: 1px solid $footer-color;
 					color: $footer-color;
 					margin-bottom: 20px;
+					font-size: 12px;
+					text-transform: uppercase;
 				}
 			}
 		}
@@ -97,8 +98,8 @@ footer {
 
 		&__copyright {
 			grid-area: copyright;
-			font-size: 12px;
-
+			font-size: 10px;
+			margin-top: 20px;
 			& p {
 				margin-bottom: 10px;
 				line-height: 16px;
@@ -110,6 +111,8 @@ footer {
 		}
 
 		&__contacts {
+			grid-row: 1/3;
+
 			& .contacts {
 				&__element {
 					display: flex;
@@ -118,20 +121,18 @@ footer {
 					align-items: center;
 					padding: 10px 25px;
 					border: 1px solid $footer-color;
-					margin-bottom: 10px;
+					margin-bottom: 20px;
 
 					& .element {
 						&__phone {
-							font-weight: 500;
-							font-size: 20px;
+							font-size: 22px;
 							color: $footer-color;
 						}
 
 						&__email,
 						&__address {
-							font-size: 12px;
-							font-weight: 300;
-							line-height: 22px;
+							font-size: 14px;
+							line-height: 24px;
 						}
 					}
 				}
@@ -144,9 +145,10 @@ footer {
 @media screen and (max-width: 1024px) {
 	.footer {
 		grid-template-areas: "questions rights social""contacts contacts contacts""copyright copyright copyright" !important;
-
+		grid-gap: 10px!important;
 		&__contacts {
-			grid-column: 1/4;
+			grid-column: 1/4!important;
+			grid-row: 2!important;
 
 			& .contacts {
 				&__element {
@@ -155,13 +157,16 @@ footer {
 				}
 			}
 		}
+		&__copyright {
+			margin-top: 0!important;
+		}
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.footer {
 		grid-template-areas: "questions questions""rights social""contacts contacts""copyright copyright" !important;
-		grid-gap: 20px 10px;
+		grid-gap: 30px 5px!important;
 
 		&__answers {
 			grid-column: 1/3;
@@ -174,17 +179,26 @@ footer {
 
 		&__contacts {
 			grid-column: 1/4;
+			grid-row: 3!important;
 		}
 
 		&__social {
 			& .social {
-				&__header h1 {
-					font-size: 18px!important;
-				}
+				&__header {
+					& h1 {
+						font-size: 18px!important;
+					}
+					& p {
+						font-size: 10px!important;
+					}
+				}				
 			}			
 		}
 		&__rights p {
-			font-size: 12px;
+			font-size: 10px!important;
+		}
+		&__copyright p{
+			font-size: 12px!important;
 		}
 	}
 }

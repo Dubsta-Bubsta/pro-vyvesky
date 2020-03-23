@@ -1,6 +1,6 @@
 @mixin highlight_font() {
-	font-weight: 500;
-	font-size: 20px;
+	font-weight: 400;
+	font-size: 24px;
 }
 
 $icons-color: #E6AE2A;
@@ -16,7 +16,9 @@ $icons-color: #E6AE2A;
 
 	&__burger {
 		display: none;
+		z-index: 5;
 	}
+
 	&__element {
 		&.logo img {
 			width: 114.81px;
@@ -31,6 +33,8 @@ $icons-color: #E6AE2A;
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
+			font-size: 18px;
+
 		}
 
 		& .location {
@@ -42,6 +46,7 @@ $icons-color: #E6AE2A;
 		&.location i {
 			color: $icons-color;
 			margin-right: 10px;
+			font-size: 28px !important;
 
 		}
 
@@ -52,6 +57,7 @@ $icons-color: #E6AE2A;
 		}
 
 		&.contacts i {
+			font-size: 28px !important;
 			color: $icons-color;
 			margin-right: 10px;
 			transform: rotate(-45deg);
@@ -62,7 +68,7 @@ $icons-color: #E6AE2A;
 
 			&>div {
 				display: flex;
-				width: 80%;
+				width: 70%;
 				justify-content: space-between;
 				align-items: center;
 				border-radius: 20px;
@@ -92,41 +98,79 @@ $icons-color: #E6AE2A;
 
 @media screen and (max-width: 1024px) {
 	.header {
-		grid-template-columns: 1fr 2fr 2fr;	
+		grid-template-columns: 1fr 2fr 2fr;
+
 		&__element {
-			
+
 			&.search {
-				display: none;				
+				display: none;
 			}
-						
+
 		}
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.header {
+		padding: 5px 5%;
 		grid-template-columns: 1fr 2fr;
 		grid-template-areas: "logo element"
-							 "logo burger";
+			"logo burger";
+
 		&__element {
 			grid-area: element;
+
 			&.logo {
 				grid-area: logo;
 				display: flex;
 				justify-content: flex-start;
+
 			}
-			&.search, &.location {
-				display: none;				
+
+			&.search,
+			&.location {
+				display: none;
 			}
+
 			&.contacts {
 				display: flex;
 				justify-content: flex-end;
-			}			
+				font-size: 18px !important;
+				& .contacts {
+					&__phone span {
+						font-size: 20px !important;
+					}
+				}
+			}
 		}
+
 		&__burger {
 			grid-area: burger;
 			display: flex;
 			justify-content: flex-end;
+			align-items: center;
+			& img {
+				width: 50px;
+				height: 30px;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	.header {	
+		&__element {
+			&.contacts {
+				display: flex;
+				justify-content: flex-end;
+				font-size: 14px !important;
+				& .contacts {
+					&__phone span {
+						font-size: 16px !important;
+					}
+				}
+			}
 		}
 	}
 }

@@ -10,8 +10,15 @@ table.table {
 
 	& tr td,
 	& tr th {
+		vertical-align: center;
+		text-align: center;
 		padding: 10px 10px;
-
+		& p {
+			margin-bottom: 10px;
+			&:last-child {
+				margin: 0;
+			}
+		}
 	}
 }
 

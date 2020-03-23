@@ -23,7 +23,14 @@
 			</div>
 			<textarea class="form__textarea" placeholder="Информация о заказе"></textarea>
 			<div class="form__buttons buttons">
-				<button class="btn buttons__attach-btn">Прикрепить файл</button>
+
+				<div class="buttons__attach-wrapper">
+					<input name="file" type="file" id="attach-btn" multiple>
+					<label for="attach-btn" class="btn buttons__attach-btn">
+						Прикрепить файл
+					</label>
+				 </div>
+
 				<div class="buttons__file-checkbox">
 					<input type="checkbox" id="ch1" class="checkbox">
 					<label for="ch1">Согласен на обработку персональных данных</label>
@@ -33,7 +40,7 @@
 			</div>
 		</form>
 		<div class="popup__close">
-			<img src="../img/close-popup.PNG" alt="">
+			<button><img src="../img/close-popup.PNG" alt=""></button>
 		</div>
 	</div>
 	<div class="popup-bg"></div>

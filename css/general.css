@@ -11,7 +11,19 @@ table.table tr:nth-child(odd) th {
 
 table.table tr td,
 table.table tr th {
+  vertical-align: center;
+  text-align: center;
   padding: 10px 10px;
+}
+
+table.table tr td p,
+table.table tr th p {
+  margin-bottom: 10px;
+}
+
+table.table tr td p:last-child,
+table.table tr th p:last-child {
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -45,14 +57,16 @@ table.table tr th {
 
 body {
   font-family: 'Geometria';
-  font-weight: 300;
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: 400;
 }
 
 .fa {
   font-size: 22px !important;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .section-header {
@@ -72,13 +86,12 @@ h2.section-header {
 
 h3.section-header {
   font-size: 18px;
-  font-weight: 400;
 }
 
 h1.section-header-underline {
   font-size: 24px;
-  text-align: center;
-  margin: 20px auto;
+  margin: 30px auto 20px auto;
+  padding: 0 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #707070;
   text-transform: uppercase;
@@ -119,12 +132,15 @@ h1.section-header-underline {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 20px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .order-btn {
   background: #ffb700;
+  font-size: 18px;
 }
 
 .order-btn img {
@@ -136,21 +152,32 @@ h1.section-header-underline {
   color: #fff;
   background: #42D1CF;
   margin-right: 20px;
+  font-size: 18px;
 }
 
 .calc-btn img {
-  margin-left: 5px;
-  width: 20px;
+  margin-right: 5px;
+  width: 32px;
 }
 
 .details-btn {
-  font-size: 12px;
   margin-right: 20px;
   color: #000;
   background: #42d1cf;
 }
 
 .details-btn img {
+  margin-left: 5px;
+}
+
+.show-more-btn {
+  background: #ffb700;
+  display: none;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.show-more-btn img {
   margin-left: 5px;
 }
 
@@ -171,6 +198,15 @@ button:hover {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.text-block {
+  line-height: 20px;
+}
+
+.text-block ul {
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 .color-FFFFFF {
@@ -262,6 +298,17 @@ button:hover {
     text-align: center;
     font-size: 14px;
     line-height: 20px;
+  }
+  .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=general.css.map */

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./css/constant-blocks.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<script src="./script/script.js"></script>
 </head>
 
 <body>
@@ -38,105 +38,425 @@
 				<input class="search__input" />
 			</div>
 		</div>
-		<div class="header__burger"
-			onClick="(function(){document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')})()">
+		<div class="header__burger js-header-burger">
 			<img src="./img/burger.png" alt="burger">
 		</div>
 	</header>
 
 	<nav class="nav">
 		<ul class="nav__list list">
-			<div class="burger"
-				onClick="(function(){document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')})()">
+			<div class="burger js-nav-burger">
 				<img src="./img/burger.png" alt="burger">
 			</div>
 
-			<li class="list__element list__element_active link"><a href='./pages/product-1.html'>Наружная<br> реклама</li></a>
+			<li class="list__element list__element_active link"><a href='./pages/product-1.html'>Наружная<br> реклама
+			</li></a>
 			<li class="list__element link"><a href='./pages/product-2.html'>Интерьерная<br> реклама</li></a>
 			<li class="list__element link"><a href='./pages/calculator.html'>Широкоформатная<br> печать</li></a>
 			<li class="list__element link"><a href='./pages/popup.html'>Услуги</li></a>
-			<li class="list__element link"><a href='pages/portfolio.html'>Портфолио</li></a>
-			<li class="list__element link"><a href='pages/contacts.html'>Контакты</li></a>
+			<li class="list__element link"><a href='./pages/portfolio.html'>Портфолио</li></a>
+			<li class="list__element link"><a href='./pages/contacts.html'>Контакты</li></a>
 		</ul>
 
 		<div class="nav__detailed-block details">
-			<ul class="details__headers headers-list">
-				<li class="headers-list__element">Наружная реклама<i class="fa fa-angle-right" aria-hidden="true"></i>
-				</li>
-				<li class="headers-list__element">Интерьерная реклама<i class="fa fa-angle-right"
-						aria-hidden="true"></i></li>
-				<li class="headers-list__element">Широкоформатная печать<i class="fa fa-angle-right"
-						aria-hidden="true"></i></li>
-			</ul>
-			<ul class="details__variants variants-list">
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-			</ul>
+			<div class="details__headers">
+				<div class="details__header js-nav-header">Наружная реклама<i class="fa fa-angle-right"
+						aria-hidden="true"></i>
+				</div>
+				<div class="details__header js-nav-header">Интерьерная реклама<i class="fa fa-angle-right"
+						aria-hidden="true"></i>
+				</div>
+				<div class="details__header js-nav-header">Широкоформатная печать<i class="fa fa-angle-right"
+						aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="details__variants-lists lists">
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Объемные свтовые буквы</a></li>
+					<li class="variants-list__element"><a href="#">Рекламные конструкции</a></li>
+					<li class="variants-list__element"><a href="#">Крышные установки</a></li>
+					<li class="variants-list__element"><a href="#">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="#">Флаги и флагштоки</a></li>
+					<li class="variants-list__element"><a href="#">Вывески из композита</a></li>
+					<li class="variants-list__element"><a href="#">Панель кронштейн</a></li>
+					<li class="variants-list__element"><a href="#">Световая панель</a></li>
+					<li class="variants-list__element"><a href="#">Авто-брендирование</a></li>
+					<li class="variants-list__element"><a href="#">Световые вывески</a></li>
+					<li class="variants-list__element"><a href="#">Несветовые вывески</a></li>
+					<li class="variants-list__element"><a href="#">Световые буквы</a></li>
+					<li class="variants-list__element"><a href="#">Рекламные пилоны</a></li>
+					<li class="variants-list__element"><a href="#">Маркизы</a></li>
+					<li class="variants-list__element"><a href="#">Входные группы</a></li>
+					<li class="variants-list__element"><a href="#">Световые короба</a></li>
+					<li class="variants-list__element"><a href="#">LED-панели</a></li>
+					<li class="variants-list__element"><a href="#">CITY-ФОРМАТ</a></li>
+					<li class="variants-list__element"><a href="#">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="#">Баннеры</a></li>
+				</ul>
+
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+				</ul>
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="#">Широкоформатная печать топеров</a></li>
+					<li class="variants-list__element"><a href="#">Печать на пленке</a></li>
+					<li class="variants-list__element"><a href="#">Демонтаж вывески</a></li>
+					<li class="variants-list__element"><a href="#">Печать наклеек</a></li>
+					<li class="variants-list__element"><a href="#">Печать на сетке</a></li>
+					<li class="variants-list__element"><a href="#">Печать штендеров</a></li>
+					<li class="variants-list__element"><a href="#">Печать роллапов</a></li>
+					<li class="variants-list__element"><a href="#">Мойка вывески</a></li>
+					<li class="variants-list__element"><a href="#">Световые вывески</a></li>
+				</ul>
+			</div>
+
+
 		</div>
+
+		<div class="nav__detailed-block nav__detailed-block_mobile details">
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down"
+						aria-hidden="true"></i>Наружная реклама
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Объемные свтовые буквы</a></li>
+					<li class="variants-list__element"><a href="#">Рекламные конструкции</a></li>
+					<li class="variants-list__element"><a href="#">Крышные установки</a></li>
+					<li class="variants-list__element"><a href="#">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="#">Флаги и флагштоки</a></li>
+					<li class="variants-list__element"><a href="#">Вывески из композита</a></li>
+					<li class="variants-list__element"><a href="#">Панель кронштейн</a></li>
+					<li class="variants-list__element"><a href="#">Световая панель</a></li>
+					<li class="variants-list__element"><a href="#">Авто-брендирование</a></li>
+					<li class="variants-list__element"><a href="#">Световые вывески</a></li>
+					<li class="variants-list__element"><a href="#">Несветовые вывески</a></li>
+					<li class="variants-list__element"><a href="#">Световые буквы</a></li>
+					<li class="variants-list__element"><a href="#">Рекламные пилоны</a></li>
+					<li class="variants-list__element"><a href="#">Маркизы</a></li>
+					<li class="variants-list__element"><a href="#">Входные группы</a></li>
+					<li class="variants-list__element"><a href="#">Световые короба</a></li>
+					<li class="variants-list__element"><a href="#">LED-панели</a></li>
+					<li class="variants-list__element"><a href="#">CITY-ФОРМАТ</a></li>
+					<li class="variants-list__element"><a href="#">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="#">Баннеры</a></li>
+
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down"
+						aria-hidden="true"></i>Интерьерная реклама
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down"
+						aria-hidden="true"></i>Широкоформатная печать
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="#">Широкоформатная печать топеров</a></li>
+					<li class="variants-list__element"><a href="#">Печать на пленке</a></li>
+					<li class="variants-list__element"><a href="#">Демонтаж вывески</a></li>
+					<li class="variants-list__element"><a href="#">Печать наклеек</a></li>
+					<li class="variants-list__element"><a href="#">Печать на сетке</a></li>
+					<li class="variants-list__element"><a href="#">Печать штендеров</a></li>
+					<li class="variants-list__element"><a href="#">Печать роллапов</a></li>
+					<li class="variants-list__element"><a href="#">Мойка вывески</a></li>
+					<li class="variants-list__element"><a href="#">Световые вывески</a></li>
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down"
+						aria-hidden="true"></i>Услуги
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+				</ul>
+			</div>
+			<div class="details__header details__header__link"><a href="./pages/portfolio.html">Портфолио</a></div>
+			<div class="details__header details__header__link"><a href="./pages/contacts.html">Контакты</a></div>
+		</div>
+		<div class="nav__bg"></div>
 	</nav>
+
 	<main>
-		<section class="image-example_street">
-			<img src="./img/image-example-1.png" alt="image-example-1">
+		<section class="image-example image-example_street">
+			<img src="./img/image-example-1.png" alt="image-example">
+			<div class="marker__block block block-1">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-2">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Текст</div>
+			</div>
+			<div class="marker__block block block-3">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-4">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-5">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-6">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-7">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-8">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Текст</div>
+			</div>
+			<div class="marker__block block block-9">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Текст</div>
+			</div>
+			<div class="marker__block block block-10">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Маркизы</div>
+			</div>
+			<div class="marker__block block block-11">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Текст</div>
+			</div>
+			<div class="marker__block block block-12">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-13">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Информационный пилон</div>
+			</div>
 		</section>
 		<section class="product-list-block container">
 			<h1 class="section-header">Разработка и изготовление наружной рекламы</h1>
-			<div class="product-list-block__list list container">
+			<div class="product-list-block__list list">
 				<div class="list__element element">
-					<img class="element__img" src="./img/service-example.png" />
+					<img class="element__img" src="./img/service-example-1.png" />
 					<p class="element__text">Вывески</p>
 				</div>
 				<div class="list__element element">
-					<img class="element__img" src="./img/service-example.png" />
-					<p class="element__text">Вывески</p>
+					<img class="element__img" src="./img/service-example-2.png" />
+					<p class="element__text">Вывески из композита</p>
 				</div>
 				<div class="list__element element">
-					<img class="element__img" src="./img/service-example.png" />
-					<p class="element__text">Вывески</p>
+					<img class="element__img" src="./img/service-example-3.png" />
+					<p class="element__text">Несветовые вывески</p>
 				</div>
 				<div class="list__element element">
-					<img class="element__img" src="./img/service-example.png" />
-					<p class="element__text">Вывески</p>
+					<img class="element__img" src="./img/service-example-4.png" />
+					<p class="element__text">Световые короба</p>
 				</div>
 				<div class="list__element element">
-					<img class="element__img" src="./img/service-example.png" />
-					<p class="element__text">Вывески</p>
+					<img class="element__img" src="./img/service-example-5.png" />
+					<p class="element__text">Световые вывески</p>
 				</div>
 				<div class="list__element element">
-					<img class="element__img" src="./img/service-example.png" />
-					<p class="element__text">Вывески</p>
+					<img class="element__img" src="./img/service-example-6.png" />
+					<p class="element__text">Объемные световые буквы</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-7.png" />
+					<p class="element__text">Панель-кронштейн</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-8.png" />
+					<p class="element__text">Световые буквы</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-9.png" />
+					<p class="element__text">Led-панели</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-10.png" />
+					<p class="element__text">Входные группы</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-11.png" />
+					<p class="element__text">Рекламные конструкции</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-12.png" />
+					<p class="element__text">Световая панель</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-13.png" />
+					<p class="element__text">Рекламные пилоны</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-14.png" />
+					<p class="element__text">City-формат</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-15.png" />
+					<p class="element__text">Баннеры</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-16.png" />
+					<p class="element__text">Крышные установки</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-17.png" />
+					<p class="element__text">Авто-брендирование</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-18.png" />
+					<p class="element__text">Маркизы</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-19.png" />
+					<p class="element__text">Оформление стоек</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-20.png" />
+					<p class="element__text">Флаги</p>
 				</div>
 			</div>
+			<button class="show-more-btn btn">Показать еще<img src="./img/details-btn.png" alt="details-btn"></button>
 		</section>
+		<h1 class="section-header">Разработка и изготовление наружной рекламы</h1>
+
+		<section class="image-example image-example_office">
+			<img src="./img/image-example-2.png" alt="image-example">
+			<div class="marker__block block block-1">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-2">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Текст</div>
+			</div>
+			<div class="marker__block block block-3">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_right">Логотип</div>
+			</div>
+			<div class="marker__block block block-4">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Текст</div>
+			</div>
+			<div class="marker__block block block-5">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Текст</div>
+			</div>
+			<div class="marker__block block block-6">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Выставочные стенды</div>
+			</div>
+			<div class="marker__block block block-7">
+				<img class="block__marker" src="./img/marker.png" alt="">
+				<div class="block__text block__text_left">Текст</div>
+			</div>
+		</section>
+		<section class="product-list-block container">
+			<div class="product-list-block__list list">
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-21.png" />
+					<p class="element__text">ROLL-UP</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-22.png" />
+					<p class="element__text">ИНТЕРЬЕРНЫЕ ВЫВЕСКИ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-23.png" />
+					<p class="element__text">ИНФО-СТЕНДЫ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-24.png" />
+					<p class="element__text">НАВИГАЦИЯ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-25.png" />
+					<p class="element__text">НАКЛЕЙКИ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-26.png" />
+					<p class="element__text">PRESS-WALL</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-27.png" />
+					<p class="element__text">ПЛАНЫ ЭВАКУАЦИИ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-28.png" />
+					<p class="element__text">СВЕТОВЫЕ ПАНЕЛИ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-29.png" />
+					<p class="element__text">ХАРДПОСТЕРЫ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-30.png" />
+					<p class="element__text">ОФОРМЛЕНИЕ СТОЕК</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-31.png" />
+					<p class="element__text">ВЫСТАВОЧНЫЕ СТЕНДЫ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-32.png" />
+					<p class="element__text">SHOW-BOX</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-33.png" />
+					<p class="element__text">ПЛАКАТЫ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-34.png" />
+					<p class="element__text">РОСТОВЫЕ ФИГУРЫ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-35.png" />
+					<p class="element__text">ПОСМАТЕРИАЛЫ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-36.png" />
+					<p class="element__text">ПЕЧАТЬ НА ПЛЕНКЕ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-37.png" />
+					<p class="element__text">ПЕЧАТЬ НА СЕТКЕ</p>
+				</div>
+				<div class="list__element element">
+					<img class="element__img" src="./img/service-example-38.png" />
+					<p class="element__text">ПЕЧАТЬ НА ХОЛСТЕ</p>
+				</div>
+
+			</div>
+			<button class="show-more-btn btn">Показать еще<img src="./img/details-btn.png" alt="details-btn"></button>
+		</section>
+
 		<section class="advantages-block">
 			<div class="advantages-block__header">
 				<h1 class="section-header-underline">Наши преимущества</h1>
@@ -169,7 +489,8 @@
 				<div class="list__element element">
 					<div class="element__img">
 						<img src="./img/theme-service-1.png" alt="theme-service">
-						<p>Городская реклама</p>
+						<p>Городская</p>
+						<p>реклама</p>
 					</div>
 					<ul class="element__info info">
 						<li class="info__element">Вывески</li>
@@ -183,7 +504,8 @@
 				<div class="list__element element">
 					<div class="element__img">
 						<img src="./img/theme-service-2.png" alt="theme-service">
-						<p>Входные группы</p>
+						<p>Входные</p>
+						<p>группы</p>
 					</div>
 					<ul class="element__info info">
 						<li class="info__element">Вывески</li>
@@ -197,7 +519,8 @@
 				<div class="list__element element">
 					<div class="element__img">
 						<img src="./img/theme-service-3.png" alt="theme-service">
-						<p>Оформление интерьера</p>
+						<p>Оформление</p>
+						<p>интерьера</p>
 					</div>
 					<ul class="element__info info">
 						<li class="info__element">Вывески и лого</li>
@@ -211,7 +534,8 @@
 				<div class="list__element element">
 					<div class="element__img">
 						<img src="./img/theme-service-4.png" alt="theme-service">
-						<p>Выставки Презентации</p>
+						<p>Выставки</p>
+						<p>Презентации</p>
 					</div>
 					<ul class="element__info info">
 						<li class="info__element">Пресс-воллы</li>
@@ -235,7 +559,7 @@
 				<div class="list__element list__element-4"><img src="./img/work-example-4.png" alt="work-example"></div>
 				<div class="list__element list__element-5"><img src="./img/work-example-5.png" alt="work-example"></div>
 				<div class="list__element list__element-6"><img src="./img/work-example-6.png" alt="work-example"></div>
-				<div class="list__element list__element-7"><img src="./img/work-example-7.png" alt="work-example"></div>				
+				<div class="list__element list__element-7"><img src="./img/work-example-7.png" alt="work-example"></div>
 			</div>
 		</section>
 		<section class="order-of-actions-block container">
@@ -302,6 +626,7 @@
 			</form>
 		</section>
 	</main>
+
 	<footer>
 		<div class="footer container">
 			<div class="footer__answers answers">

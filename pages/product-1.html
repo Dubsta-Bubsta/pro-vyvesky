@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="../css/product.css">
 	<link rel="stylesheet" href="../css/constant-blocks.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../script/script.js"></script>
 
 </head>
 
@@ -38,75 +39,328 @@
 				<input class="search__input" />
 			</div>
 		</div>
-		<div class="header__burger"
-			onClick="(function(){document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')})()">
+		<div class="header__burger js-header-burger">
 			<img src="../img/burger.png" alt="burger">
 		</div>
 	</header>
 
 	<nav class="nav">
 		<ul class="nav__list list">
-			<div class="burger" onClic
-				k="(function(){document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')})()">
+			<div class="burger js-nav-burger">
 				<img src="../img/burger.png" alt="burger">
 			</div>
 
-			<li class="list__element list__element_active link"><a href='#'>Наружная<br> реклама</li></a>
-			<li class="list__element link"><a href='#'>Интерьерная<br> реклама</li></a>
-			<li class="list__element link"><a href='#'>Широкоформатная<br> печать</li></a>
-			<li class="list__element link"><a href='#'>Услуги</li></a>
+			<li class="list__element list__element_active link"><a href='product-1.html'>Наружная<br> реклама
+			</li></a>
+			<li class="list__element link"><a href='product-2.html'>Интерьерная<br> реклама</li></a>
+			<li class="list__element link"><a href='calculator.html'>Широкоформатная<br> печать</li></a>
+			<li class="list__element link"><a href='popup.html'>Услуги</li></a>
 			<li class="list__element link"><a href='portfolio.html'>Портфолио</li></a>
 			<li class="list__element link"><a href='contacts.html'>Контакты</li></a>
 		</ul>
 
 		<div class="nav__detailed-block details">
-			<ul class="details__headers headers-list">
-				<li class="headers-list__element">Наружная реклама<i class="fa fa-angle-right" aria-hidden="true"></i>
-				</li>
-				<li class="headers-list__element">Интерьерная реклама<i class="fa fa-angle-right"
-						aria-hidden="true"></i></li>
-				<li class="headers-list__element">Широкоформатная печать<i class="fa fa-angle-right"
-						aria-hidden="true"></i></li>
-			</ul>
-			<ul class="details__variants variants-list">
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-				<li class="variants-list__element">Вывески</li>
-			</ul>
+			<div class="details__headers">
+				<div class="details__header js-nav-header">Наружная реклама<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</div>
+				<div class="details__header js-nav-header">Интерьерная реклама<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</div>
+				<div class="details__header js-nav-header">Широкоформатная печать<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="details__variants-lists lists">
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Объемные свтовые буквы</a></li>
+					<li class="variants-list__element"><a href="#">Рекламные конструкции</a></li>
+					<li class="variants-list__element"><a href="#">Крышные установки</a></li>
+					<li class="variants-list__element"><a href="#">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="#">Флаги и флагштоки</a></li>
+					<li class="variants-list__element"><a href="#">Вывески из композита</a></li>
+					<li class="variants-list__element"><a href="#">Панель кронштейн</a></li>
+					<li class="variants-list__element"><a href="#">Световая панель</a></li>
+					<li class="variants-list__element"><a href="#">Авто-брендирование</a></li>
+					<li class="variants-list__element"><a href="#">Световые вывески</a></li>
+					<li class="variants-list__element"><a href="#">Несветовые вывески</a></li>
+					<li class="variants-list__element"><a href="#">Световые буквы</a></li>
+					<li class="variants-list__element"><a href="#">Рекламные пилоны</a></li>
+					<li class="variants-list__element"><a href="#">Маркизы</a></li>
+					<li class="variants-list__element"><a href="#">Входные группы</a></li>
+					<li class="variants-list__element"><a href="#">Световые короба</a></li>
+					<li class="variants-list__element"><a href="#">LED-панели</a></li>
+					<li class="variants-list__element"><a href="#">CITY-ФОРМАТ</a></li>
+					<li class="variants-list__element"><a href="#">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="#">Баннеры</a></li>
+				</ul>
+				
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>					
+				</ul>				
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="#">Широкоформатная печать топеров</a></li>
+					<li class="variants-list__element"><a href="#">Печать на пленке</a></li>
+					<li class="variants-list__element"><a href="#">Демонтаж вывески</a></li>
+					<li class="variants-list__element"><a href="#">Печать наклеек</a></li>
+					<li class="variants-list__element"><a href="#">Печать на сетке</a></li>
+					<li class="variants-list__element"><a href="#">Печать штендеров</a></li>
+					<li class="variants-list__element"><a href="#">Печать роллапов</a></li>
+					<li class="variants-list__element"><a href="#">Мойка вывески</a></li>
+					<li class="variants-list__element"><a href="#">Световые вывески</a></li>
+				</ul>
+			</div>
+
+			
 		</div>
+
+		<div class="nav__detailed-block nav__detailed-block_mobile details">
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Наружная реклама
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Объемные свтовые буквы</a></li>
+					<li class="variants-list__element"><a href="#">Рекламные конструкции</a></li>
+					<li class="variants-list__element"><a href="#">Крышные установки</a></li>
+					<li class="variants-list__element"><a href="#">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="#">Флаги и флагштоки</a></li>
+					<li class="variants-list__element"><a href="#">Вывески из композита</a></li>
+					<li class="variants-list__element"><a href="#">Панель кронштейн</a></li>
+					<li class="variants-list__element"><a href="#">Световая панель</a></li>
+					<li class="variants-list__element"><a href="#">Авто-брендирование</a></li>
+					<li class="variants-list__element"><a href="#">Световые вывески</a></li>
+					<li class="variants-list__element"><a href="#">Несветовые вывески</a></li>
+					<li class="variants-list__element"><a href="#">Световые буквы</a></li>
+					<li class="variants-list__element"><a href="#">Рекламные пилоны</a></li>
+					<li class="variants-list__element"><a href="#">Маркизы</a></li>
+					<li class="variants-list__element"><a href="#">Входные группы</a></li>
+					<li class="variants-list__element"><a href="#">Световые короба</a></li>
+					<li class="variants-list__element"><a href="#">LED-панели</a></li>
+					<li class="variants-list__element"><a href="#">CITY-ФОРМАТ</a></li>
+					<li class="variants-list__element"><a href="#">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="#">Баннеры</a></li>
+	
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Интерьерная реклама
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>		
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Широкоформатная печать
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="#">Широкоформатная печать топеров</a></li>
+					<li class="variants-list__element"><a href="#">Печать на пленке</a></li>
+					<li class="variants-list__element"><a href="#">Демонтаж вывески</a></li>
+					<li class="variants-list__element"><a href="#">Печать наклеек</a></li>
+					<li class="variants-list__element"><a href="#">Печать на сетке</a></li>
+					<li class="variants-list__element"><a href="#">Печать штендеров</a></li>
+					<li class="variants-list__element"><a href="#">Печать роллапов</a></li>
+					<li class="variants-list__element"><a href="#">Мойка вывески</a></li>
+					<li class="variants-list__element"><a href="#">Световые вывески</a></li>
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Услуги
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">					
+				</ul>
+			</div>
+			<div class="details__header details__header__link"><a href="./portfolio.html">Портфолио</a></div>
+			<div class="details__header details__header__link"><a href="./contacts.html">Контакты</a></div>
+		</div>
+		<div class="nav__bg"></div>
 	</nav>
 
 	<main class="container">
-		<div class="site-location">Главная | Фотозоны</div>
+		<div class="site-location">Главная | Светящиеся буквы</div>
+		<section class="product-example-block-small">
+			<h1 class="product-pricing-block-small__header section-header">Объемные светящиеся буквы</h1>
+			<div class="product-example-block-small__list list">
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_2.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_2.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_2.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_2.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_2.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_2.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>				
+			</div>
+		</section>
+		
+		<section class="product-example-block-small">
+			<h1 class="product-pricing-block-small__header section-header">Объемные буквы</h1>
+			<div class="product-example-block-small__list list">
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img"src="../img/work-example_3.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__text">
+						<p>ВЫВЕСКА «ОБОРОНПРОМСЕРВИС» </p>
+						<p>Вывеска из объемных букв. </p>
+						<p>Лицо - нержавеющая сталь 3 мм. Контражурная подсветка.</p>
+					</div>
+				</div>
+			</div>
+			<button class="show-more-btn btn">Показать еще<img src="../img/details-btn.png"
+				alt="details-btn"></button>
+		</section>
+
+		<section class="product-pricing-block">
+			<h2 class="product-pricing-block__header section-header">Цена на светящиеся буквы</h2>
+			<table class="table">
+				<tr>
+					<th>Тип</th>
+					<th>Цена</th>
+				</tr>
+				<tr>
+					<td>Акрил</td>
+					<td>от 120 руб/cм</td>
+				</tr>
+				<tr>
+					<td>Акрил + ПВХ</td>
+					<td>от 75 руб/cм</td>
+				</tr>
+				<tr>
+					<td>ПВХ + Контражур</td>
+					<td>от 75 руб/cм</td>
+				</tr>
+				<tr>
+					<td>Металл + Контражур</td>
+					<td>от 150 руб/cм</td>
+				</tr>
+				<tr>
+					<td>Акрил + ПВХ + Контражур</td>
+					<td>от 120 руб/cм</td>
+				</tr>
+				<tr>
+					<td>Акрил + Металл</td>
+					<td>от 100 руб/cм</td>
+				</tr>
+				<tr>
+					<td>Ретро</td>
+					<td>от 140 руб/cм</td>
+				</tr>
+				<tr>
+					<td>Открытые Светодиоды</td>
+					<td>от 140 руб/cм</td>
+				</tr>
+				<tr>
+					<td>Открытый Неон</td>
+					<td>от 140 руб/cм</td>
+				</tr>
+			</table>
+		</section>
+
 		<section class="product">
 			<h1 class="product__header section-header">Фотозоны</h1>
 			<div class="product__content content">
@@ -135,146 +389,11 @@
 			</div>
 		</section>
 
-		<section class="works-example-block">
-			<h2 class="works-example-block__section-header section-header">Примеры наших работ</h2>
-			<div>
-				<i class="fa fa-angle-right  fa-rotate-180" aria-hidden="true"></i>
-				<div class="works-example-block__list list">
-					<img src="../img/work-example_1.png" alt="works-example">
-					<img src="../img/work-example_1.png" alt="works-example">
-					<img src="../img/work-example_1.png" alt="works-example">
-					<img src="../img/work-example_1.png" alt="works-example">
-					<img src="../img/work-example_1.png" alt="works-example">
-				</div>
-				<i class="fa fa-angle-right" aria-hidden="true"></i>
-			</div>
-
-			<div class="works-example-block__show-more-btn btn">Показать еще<img src="../img/details-btn.png"
-					alt="details-btn"></div>
-		</section>
-
-		<section class="product-pricing-block">
-			<h2 class="product-pricing-block__header section-header">Цена на оформление фотозоны</h2>
-			<table class="table">
-				<tr>
-					<th>Тип</th>
-					<th>Цена</th>
-				</tr>
-				<tr>
-					<td>Создание оригинального дизайна элементов фотозоны</td>
-					<td>от 5000 руб/м2</td>
-				</tr>
-				<tr>
-					<td>Создание проекта оформления фотозоны</td>
-					<td>от 3000 руб/м2</td>
-				</tr>
-				<tr>
-					<td>Отдельные элементы фотозон</td>
-					<td>от 400 руб</td>
-				</tr>
-				<tr>
-					<td>Фотозона под ключ</td>
-					<td>от 25000 руб</td>
-				</tr>
-			</table>
-		</section>
-		<section class="text-block">
-			<h2 class="section-header">Изготовление фотозон</h2>
-			<p>Стоимость изготовления фотозоны складывается из нескольких составных частей: разработка дизайна +
-				производство всех частей и элементов + аренда конструкций и каркасов + доставка и монтаж на площадке.
-			</p>
-			<p> Изготовление всех элементов и аксессуаров для фотозоны осуществляется нами под заказ, на основе
-				любых пожеланий наших клиентов к внешнему виду, размерам, форме, тематике исполнения и т.д. По сути,
-				вам требуется собраться с мыслями, зафиксировать все задумки в письменном виде и отправить нам
-				письмо, в котором обязательно отразить количество изделий, сроки готовности и место проведения
-				мероприятий (если нужна наша помощь с монтажом). Идеально, если к заказу будут также приложены фото
-				– примеры понравившейся продукции.</p>
-			<p>Структура работы строится следующим образом:</p>
-			<p>Получив от вас заявку, мы ответим развернутым коммерческим предложением с ответами на большинство
-				вопросов, предложим наше профессиональное решение стоящих задач.</p>
-			<p>После согласования всех моментов займемся проработкой внешнего вида, поверим ваш макет, а по
-				необходимости создадим оригинальный дизайн.</p>
-
-			<p>После получения от вас одобрения и подтверждения всех параметров запустим фотозону в производство,
-				контролируя все этапы.</p>
-			<p>По факту готовности привезем конструкции и аксессуары к вам до дверей, а также при сборке сложных
-				элементов поможем с монтажом и установкой на любой площадке Москвы и Московской области.
-				Возможности производства фотозон:</p>
-
-			<p>Широкоформатная печать, а, следовательно, оригинальные декорации и аксессуары.
-				Фигурная ажурная резка, а, следовательно, сложные объекты, а также простые украшения.
-				Конструкции, а, следовательно, возможность создание крупных объемных элементов.
-				Профессиональные декораторы, которые дополнят изделия нашего производства любыми
-				предметами, которые вы купите, оформив их согласно выбранной тематике.</p>
-		</section>
-
-
-		<section class="product-example-block-big">
-			<h1 class="section-header">X-BANNER</h1>
-
-			<div class="product-example-block-big__content content">
-				<div class="content__view view">
-					<img class="view__img" src="../img/product-example.png" alt="product-example">
-					<div class="view__buttons">
-						<button class="btn calc-btn">Рассчитать</button>
-						<button class="btn order-btn">Заказать<img src="../img/telegram-icon.png"
-								alt="telegram-icon"></button>
-					</div>
-				</div>
-				<div class="content__info info">
-					<div class="info__characteristics">
-						<ul>
-							<li>Вес - 2,3 кг</li>
-							<li>Конструкция с роллерным механизмом подмотки фотополотна</li>
-							<li>Литая баннерная ткань с печатью 1440 dpi</li>
-							<li>Сумка для транспортировки</li>
-							<li>Боковые декоративные крышки выполнены из Пластика АБС</li>
-						</ul>
-					</div>
-					<table class="table table_responsive">
-						<tr>
-							<th>Тип</th>
-							<th colspan="2">Без печати</th>
-							<th colspan="2">Баннерная ткань</th>
-							<th colspan="2">Полипропилен</th>
-						</tr>
-						<tr>
-							<td data-label="Тип">Количество</td>
-							<td data-label="Без печати">1-9шт.</td>
-							<td data-label="Без печати">10-29шт.</td>
-							<td data-label="Баннерная ткань">1-9шт.</td>
-							<td data-label="Баннерная ткань">10-29шт.</td>
-							<td data-label="Полипропилен">1-9шт.</td>
-							<td data-label="Полипропилен">10-29шт.</td>
-						</tr>
-						<tr>
-							<td data-label="Тип">60х180</td>
-							<td data-label="Без печати">2.490р</td>
-							<td data-label="Без печати">2.220р</td>
-							<td data-label="Баннерная ткань">3.130р</td>
-							<td data-label="Баннерная ткань">2.790р</td>
-							<td data-label="Полипропилен">3.440р</td>
-							<td data-label="Полипропилен">3.060р</td>
-						</tr>
-						<tr>
-							<td data-label="Тип">85х200</td>
-							<td data-label="Без печати">2.790р</td>
-							<td data-label="Без печати">2.490р</td>
-							<td data-label="Баннерная ткань">3.870р</td>
-							<td data-label="Баннерная ткань">3.450р</td>
-							<td data-label="Полипропилен">4.390р</td>
-							<td data-label="Полипропилен">3.910р</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</section>
-
 		<section class="also-interesting-block">
 			<h2 class="section-header">Также может быть вам интересно</h2>
 			<div class="also-interesting-block__links">
-				<a href="#">Roll-up lisadsadasdght</a>
-				<a href="#">Roll-up ligasdasht</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
 				<a href="#">Roll-up light</a>
 				<a href="#">Roll-up light</a>
 				<a href="#">Roll-up light</a>
@@ -290,6 +409,7 @@
 				<a href="#">Roll-up light</a>
 			</div>
 		</section>
+
 		<section class="popular-orders-block">
 			<h2 class="section-header">Популярные заказы</h2>
 			<div class="popular-orders-block__list list">
