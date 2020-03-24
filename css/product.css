@@ -323,6 +323,7 @@
 .product-example-block-small__list .list__element .element__text {
   margin: 10px;
   font-size: 14px;
+  line-height: 18px;
 }
 
 .product-example-block-small__list .list__element .element__actions {
