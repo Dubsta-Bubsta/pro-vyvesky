@@ -372,6 +372,10 @@
   font-family: Geometria Light;
 }
 
+.theme-services-block__list .list__element .element__info .info__element:hover {
+  font-family: Geometria Medium;
+}
+
 .theme-services-block__list .list__element .element__info .info__element::before {
   content: "\25CF";
   padding-right: 7px;
