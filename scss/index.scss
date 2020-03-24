@@ -21,12 +21,13 @@
 					transition: .5s;
 					z-index: -2;
 					opacity: 0;
-					padding: 5px;
+					padding: 5px 8px;
 					background: #fff;
-					font-size: 16px;
+					font-size: 22px;
 					position: absolute;
 					white-space: nowrap;
 					top: -30%;
+					font-family: Geometria Light;					
 
 					&_right {
 						left: 60%;
@@ -35,8 +36,9 @@
 							transform: rotate(-225deg);
 							color: #fff;
 							position: absolute;
-							left: -6px;
-    						bottom: -6px;
+							left: -10px;
+							bottom: -12px;
+							font-size: 26px;
 						}
 					}
 					&_left {
@@ -46,8 +48,10 @@
 							transform: rotate(45deg);
 							color: #fff;
 							position: absolute;
-							right: -6px;
-							bottom: -6px;
+							right: -12px;
+							bottom: -12px;
+							font-size: 30px;
+
 						}
 					}
 				}
@@ -60,68 +64,80 @@
 			&__block {
 				&.block {
 					&-1 {
-						top: 57%;
-						left: 8%;
+						top: 52%;
+						left: 5.5%;
 					}
 
 					&-2 {
-						top: 35%;
+						top: 26%;
 						left: 24%;
 					}
 
 					&-3 {
-						top: 43%;
-						left: 28%;
+						top: 33%;
+						left: 28.5%;
 					}
 
 					&-4 {
-						top: 28%;
+						top: 19%;
 						left: 37%;
 					}
 
 					&-5 {
-						top: 53%;
+						top: 46%;
 						left: 36%;
 					}
 
 					&-6 {
-						top: 31%;
-						left: 45%;
+						top: 20%;
+						left: 47%;
 					}
 
 					&-7 {
-						top: 47%;
+						top: 39.5%;
 						left: 51%;
 					}
 
 					&-8 {
-						top: 14%;
+						top: 3%;
 						left: 67%;
 					}
 
 					&-9 {
-						top: 25%;
+						top: 18%;
 						left: 72%;
 					}
 
 					&-10 {
-						top: 32%;
+						top: 25%;
 						left: 74%;
 					}
 
 					&-11 {
-						top: 43%;
+						top: 36%;
 						left: 73%;
 					}
 
 					&-12 {
-						top: 22%;
+						top: 15%;
 						left: 83%;
 					}
 
 					&-13 {
-						top: 37%;
+						top: 30%;
 						left: 90%;
+					}
+					&-13 {
+						top: 30%;
+						left: 90%;
+					}
+					&-14 {
+						top: 17%;
+						left: 15%;
+					}
+					&-15 {
+						top: 40%;
+						left: 95%;
 					}
 				}
 			}
@@ -198,26 +214,26 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			justify-content: space-around;
-			width: 15%;
-			margin: 15px;
-
+			justify-content: space-between;
+			width: 20%;
+			
 			.element {
 				&__text {
+					display: flex;
+					flex-direction: column;
 					text-align: center;
-					display: block;
-					margin: 10px auto;
+					margin: 20px auto;
 					font-size: 20px;
-					line-height: 20px;
-					white-space: pre-wrap;
-					font-weight: 600;
+					font-family: Geometria Light;
 				}
 			}
 		}
 	}
+	
 }
 
 .advantages-block {
+	font-family: Geometria Medium;
 	&__header {
 		display: flex;
 		align-items: center;
@@ -249,10 +265,10 @@
 					}
 
 					&__text {
-						font-weight: 600;
 						color: #fff;
 						text-transform: uppercase;
-						font-size: 18px;
+						font-size: 20px;
+						line-height: 24px;
 						margin-top: 10px;
 						word-wrap: break-word;
 						text-align: center;
@@ -270,20 +286,22 @@
 
 	&__header {
 		display: flex;
-		align-items: center;
+		align-items: center;		
 	}
 
 	&__list {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-		grid-gap: 10px;
-		justify-content: space-around;
+		// display: grid;
+		// grid-template-columns: 1fr 1fr 1fr 1fr;
+		// grid-gap: 10px;
+		justify-content: center;
 		align-items: flex-start;
+		display: flex;
+		flex-wrap: wrap;
 
 		& .list {
 			&__element {
-				height: 100%;
-				margin: 0 10px;
+				width: 300px;
+				margin: 10px;
 			}
 
 			&__element .element {
@@ -298,17 +316,14 @@
 
 					& p {
 						color: #fff;
-						font-weight: 600;
-						white-space: pre-wrap;
 						margin: 0 auto;
 						text-align: center;
 						font-size: 16px;
 						line-height: 20px;
+						font-family: Geometria Medium;
 					}
 
 					& img {
-						width: 100%;
-						height: 100%;
 						display: block;
 						padding-bottom: 10px;
 					}
@@ -324,8 +339,7 @@
 							background: #E0E1E2;
 							border-top: 1px solid #000;
 							font-size: 16px;
-							font-family: Geometria;
-							font-weight: 400;
+							font-family: Geometria Light;
 
 							&::before {
 								content: "\25CF";
@@ -399,6 +413,7 @@
 }
 
 .order-of-actions-block {
+	font-family: Geometria Light;
 	margin-top: 20px;
 	margin-bottom: 20px;
 
@@ -431,7 +446,6 @@
 				justify-content: center;
 				align-items: center;
 				text-transform: lowercase;
-				font-weight: 600;
 				& .element {
 					&__header {
 						margin: 7px 0;
@@ -472,7 +486,8 @@
 				margin: 5px 0;
 
 				& input {
-					font-size: 16px;
+					font-family: Geometria Light;
+					font-size: 18px;
 					padding: 5px;
 					padding-left: 15px;
 					border: none;
@@ -483,14 +498,15 @@
 			}
 
 			&__textarea {
+				font-family: Geometria Light;
 				width: 100%;
 				border: none;
 				resize: none;
 				box-sizing: border-box;
 
-				font-size: 16px;
+				font-size: 18px;
 				font-weight: 300;
-				padding: 15px;
+				padding: 14px;
 				margin: 0;
 				min-height: 120px;
 				font-family: inherit;
@@ -504,14 +520,49 @@
 				background: #000;
 				color: #fff;
 				padding: 12px 50px;
-				text-transform: uppercase;
+				text-transform: lowercase;
+				font-size: 20px;
+		font-family: Geometria Light;
+
 			}
 		}
 
 	}
 }
 
+@media screen and (max-width: 1600px) {
+	.image-example {
+		& .marker {
+			&__block {
+				.block {
+					&__marker {
+						width: 80%;
+					}
+				}
+			}
+		}
+	}
+
+	.theme-services-block {
+		&__list {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
 @media screen and (max-width: 1024px) {
+	.image-example {
+		& .marker {
+			&__block {
+				.block {
+					&__marker {
+						width: 60%;
+					}
+				}
+			}
+		}
+	}
+
 	.product-list-block {
 		&__list .list {
 			&__element {
@@ -557,6 +608,10 @@
 						&__text {
 							display: none;
 						}
+						&__header {
+							text-transform: uppercase;
+							font-size: 14px;
+						}
 					}
 				}
 			}
@@ -568,14 +623,21 @@
 @media screen and (max-width: 768px) {
 	.product-list-block {
 		&__list {
-			justify-content: space-between;
+			justify-content: space-around;
 
 			& .list {
 				&__element {
-					width: 40%;
+					min-width: 130px;
 
 					&:nth-child(n+9) {
 						display: none;
+					}
+					& .element__img {
+						width: 135px;
+					}
+					& .element__text {
+						font-size: 16px;
+
 					}
 				}
 			}
@@ -592,9 +654,12 @@
 
 					& input {
 						width: 100%;
+						font-size: 16px;
 					}
 				}
-
+				&__textarea {
+					font-size: 16px;
+				}
 				&__btn {
 					width: 100%;
 				}
@@ -611,6 +676,16 @@
 	.theme-services-block {
 		&__list {
 			grid-template-columns: 1fr;
+		}
+	}
+	.product-list-block {
+		&__list {
+
+			& .list {
+				&__element {
+					margin: 0;
+				}
+			}
 		}
 	}
 }

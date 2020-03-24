@@ -20,12 +20,13 @@
   transition: .5s;
   z-index: -2;
   opacity: 0;
-  padding: 5px;
+  padding: 5px 8px;
   background: #fff;
-  font-size: 16px;
+  font-size: 22px;
   position: absolute;
   white-space: nowrap;
   top: -30%;
+  font-family: Geometria Light;
 }
 
 .image-example .marker__block .block__text_right {
@@ -38,8 +39,9 @@
           transform: rotate(-225deg);
   color: #fff;
   position: absolute;
-  left: -6px;
-  bottom: -6px;
+  left: -10px;
+  bottom: -12px;
+  font-size: 26px;
 }
 
 .image-example .marker__block .block__text_left {
@@ -52,73 +54,89 @@
           transform: rotate(45deg);
   color: #fff;
   position: absolute;
-  right: -6px;
-  bottom: -6px;
+  right: -12px;
+  bottom: -12px;
+  font-size: 30px;
 }
 
 .image-example_street .marker__block.block-1 {
-  top: 57%;
-  left: 8%;
+  top: 52%;
+  left: 5.5%;
 }
 
 .image-example_street .marker__block.block-2 {
-  top: 35%;
+  top: 26%;
   left: 24%;
 }
 
 .image-example_street .marker__block.block-3 {
-  top: 43%;
-  left: 28%;
+  top: 33%;
+  left: 28.5%;
 }
 
 .image-example_street .marker__block.block-4 {
-  top: 28%;
+  top: 19%;
   left: 37%;
 }
 
 .image-example_street .marker__block.block-5 {
-  top: 53%;
+  top: 46%;
   left: 36%;
 }
 
 .image-example_street .marker__block.block-6 {
-  top: 31%;
-  left: 45%;
+  top: 20%;
+  left: 47%;
 }
 
 .image-example_street .marker__block.block-7 {
-  top: 47%;
+  top: 39.5%;
   left: 51%;
 }
 
 .image-example_street .marker__block.block-8 {
-  top: 14%;
+  top: 3%;
   left: 67%;
 }
 
 .image-example_street .marker__block.block-9 {
-  top: 25%;
+  top: 18%;
   left: 72%;
 }
 
 .image-example_street .marker__block.block-10 {
-  top: 32%;
+  top: 25%;
   left: 74%;
 }
 
 .image-example_street .marker__block.block-11 {
-  top: 43%;
+  top: 36%;
   left: 73%;
 }
 
 .image-example_street .marker__block.block-12 {
-  top: 22%;
+  top: 15%;
   left: 83%;
 }
 
 .image-example_street .marker__block.block-13 {
-  top: 37%;
+  top: 30%;
   left: 90%;
+}
+
+.image-example_street .marker__block.block-13 {
+  top: 30%;
+  left: 90%;
+}
+
+.image-example_street .marker__block.block-14 {
+  top: 17%;
+  left: 15%;
+}
+
+.image-example_street .marker__block.block-15 {
+  top: 40%;
+  left: 95%;
 }
 
 .image-example_office .marker__block.block-1 {
@@ -197,20 +215,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 15%;
-  margin: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
 }
 
 .product-list-block__list .list__element .element__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  display: block;
-  margin: 10px auto;
+  margin: 20px auto;
   font-size: 20px;
-  line-height: 20px;
-  white-space: pre-wrap;
-  font-weight: 600;
+  font-family: Geometria Light;
+}
+
+.advantages-block {
+  font-family: Geometria Medium;
 }
 
 .advantages-block__header {
@@ -261,10 +287,10 @@
 }
 
 .advantages-block__list .list__element .element__text {
-  font-weight: 600;
   color: #fff;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 24px;
   margin-top: 10px;
   word-wrap: break-word;
   text-align: center;
@@ -284,21 +310,22 @@
 }
 
 .theme-services-block__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(20%, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-  grid-gap: 10px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .theme-services-block__list .list__element {
-  height: 100%;
-  margin: 0 10px;
+  width: 300px;
+  margin: 10px;
 }
 
 .theme-services-block__list .list__element .element__img {
@@ -321,17 +348,14 @@
 
 .theme-services-block__list .list__element .element__img p {
   color: #fff;
-  font-weight: 600;
-  white-space: pre-wrap;
   margin: 0 auto;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  font-family: Geometria Medium;
 }
 
 .theme-services-block__list .list__element .element__img img {
-  width: 100%;
-  height: 100%;
   display: block;
   padding-bottom: 10px;
 }
@@ -345,8 +369,7 @@
   background: #E0E1E2;
   border-top: 1px solid #000;
   font-size: 16px;
-  font-family: Geometria;
-  font-weight: 400;
+  font-family: Geometria Light;
 }
 
 .theme-services-block__list .list__element .element__info .info__element::before {
@@ -435,6 +458,7 @@
 }
 
 .order-of-actions-block {
+  font-family: Geometria Light;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -489,7 +513,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-transform: lowercase;
-  font-weight: 600;
 }
 
 .order-of-actions-block__list .list__element .element__header {
@@ -530,7 +553,8 @@
 }
 
 .make-order-block__form .form__inputs input {
-  font-size: 16px;
+  font-family: Geometria Light;
+  font-size: 18px;
   padding: 5px;
   padding-left: 15px;
   border: none;
@@ -541,14 +565,15 @@
 }
 
 .make-order-block__form .form__textarea {
+  font-family: Geometria Light;
   width: 100%;
   border: none;
   resize: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
-  padding: 15px;
+  padding: 14px;
   margin: 0;
   min-height: 120px;
   font-family: inherit;
@@ -561,10 +586,25 @@
   background: #000;
   color: #fff;
   padding: 12px 50px;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  font-size: 20px;
+  font-family: Geometria Light;
+}
+
+@media screen and (max-width: 1600px) {
+  .image-example .marker__block .block__marker {
+    width: 80%;
+  }
+  .theme-services-block__list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .image-example .marker__block .block__marker {
+    width: 60%;
+  }
   .product-list-block__list .list__element {
     width: 30%;
     margin: 10px;
@@ -599,19 +639,28 @@
   .order-of-actions-block__list .list__holder .element__text {
     display: none;
   }
+  .order-of-actions-block__list .list__holder .element__header {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .product-list-block__list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .product-list-block__list .list__element {
-    width: 40%;
+    min-width: 130px;
   }
   .product-list-block__list .list__element:nth-child(n+9) {
     display: none;
+  }
+  .product-list-block__list .list__element .element__img {
+    width: 135px;
+  }
+  .product-list-block__list .list__element .element__text {
+    font-size: 16px;
   }
   .make-order-block__form {
     padding: 5px 0;
@@ -622,6 +671,10 @@
   }
   .make-order-block__form .form__inputs input {
     width: 100%;
+    font-size: 16px;
+  }
+  .make-order-block__form .form__textarea {
+    font-size: 16px;
   }
   .make-order-block__form .form__btn {
     width: 100%;
@@ -635,6 +688,9 @@
   .theme-services-block__list {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .product-list-block__list .list__element {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

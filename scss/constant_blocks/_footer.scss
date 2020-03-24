@@ -1,8 +1,8 @@
 $footer-color: #E6B02B;
 
 footer {
+	font-family: Geometria Medium;
 	background: #000;
-	font-weight: 600;
 	& .footer {
 		display: grid;
 		color: #fff;
@@ -19,7 +19,8 @@ footer {
 				&__header {
 					text-transform: uppercase;
 					margin-bottom: 10px;
-					font-size: 16px;
+					font-size: 12px;
+					font-family: Geometria ExtraBold;
 				}
 
 				&__link {
@@ -27,7 +28,7 @@ footer {
 					color: #fff;
 					border-bottom: 1px solid $footer-color;
 					line-height: 20px;
-					font-size: 14px;
+					font-size: 12px;
 				}
 			}
 		}
@@ -41,12 +42,13 @@ footer {
 
 			& .rights {
 				&__element {
+					width: 80%;
 					text-align: center;
 					padding: 10px 4px;
 					border: 1px solid $footer-color;
 					color: $footer-color;
 					margin-bottom: 20px;
-					font-size: 12px;
+					font-size: 10px;
 					text-transform: uppercase;
 				}
 			}
@@ -63,17 +65,17 @@ footer {
 			& .social {
 				&__header {
 					& h1 {
-						font-size: 22px;
-						font-weight: 400;
+						font-size: 16px;
+						font-family: Geometria ExtraBold;
 						line-height: 26px;
 						text-align: left;
 						text-transform: uppercase;
 						letter-spacing: 2px;
-						font-weight: 500;
 					}
 
 					& p {
-						font-size: 12px;
+						font-size: 8px;
+						letter-spacing: 0.5px;
 						text-transform: uppercase;
 					}
 				}
@@ -89,7 +91,7 @@ footer {
 						margin: 0 5px;
 
 						& img {
-							width: 100%;
+							width: 40px;
 						}
 					}
 				}
@@ -126,13 +128,14 @@ footer {
 
 					& .element {
 						&__phone {
-							font-size: 22px;
+							font-family: Geometria ExtraBold;
+							font-size: 20px;
 							color: $footer-color;
 						}
 
 						&__email,
 						&__address {
-							font-size: 14px;
+							font-size: 12px;
 							line-height: 24px;
 						}
 					}

@@ -1,18 +1,18 @@
 @mixin highlight_font() {
-	font-weight: 400;
 	font-size: 24px;
+	font-family: Geometria Light;
 }
 
 $icons-color: #E6AE2A;
 
 .header {
+	font-family: Geometria ExtraLight;
 	background: #000;
 
 	padding: 30px 5%;
 	display: grid;
 	grid-template-columns: 1fr 2fr 2fr 3fr;
 	color: #fff;
-	font-weight: 100;
 
 	&__burger {
 		display: none;
@@ -43,10 +43,11 @@ $icons-color: #E6AE2A;
 			}
 		}
 
-		&.location i {
+		&.location img, &.contacts img {
 			color: $icons-color;
 			margin-right: 10px;
 			font-size: 28px !important;
+			height: 26px;
 
 		}
 
@@ -54,13 +55,6 @@ $icons-color: #E6AE2A;
 			&__phone span {
 				@include highlight_font();
 			}
-		}
-
-		&.contacts i {
-			font-size: 28px !important;
-			color: $icons-color;
-			margin-right: 10px;
-			transform: rotate(-45deg);
 		}
 
 		&.search {

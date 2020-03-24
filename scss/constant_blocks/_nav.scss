@@ -1,7 +1,6 @@
 .nav {
-	font-weight: 100;
-	
 	&__list {
+		font-family: Geometria Thin;
 		padding: 15px 5%;
 		display: flex;
 		background: #000;
@@ -32,20 +31,18 @@
 					color: #fff;
 					text-transform: uppercase;
 					word-wrap: break-word;
-					font-size: 20px;
-					font-weight: 100;
-					font-family: Geometria Extra Light;
+					font-size: 24px;
 				}
 
-				&_active a {
-					font-family: Geometria Light;
-					font-weight: 600;
+				&_active a, &:hover {
+					font-family: Geometria ExtraLight;
 				}
 			}
 		}
 	}
 
 	&__detailed-block {
+
 		box-sizing: border-box;
 		width: 100%;
 		display: none;
@@ -68,11 +65,10 @@
 				justify-content: space-between;
 				align-items: center;
 				text-transform: uppercase;
-				font-weight: 400;
-				font-size: 14px;
+				font-size: 12px;
 				padding: 10px 0 10px 10px;
 				text-align: left;
-				font-weight: 600;
+				font-family: Geometria;
 
 				& .fa {
 					margin: 0 15px;
@@ -80,6 +76,7 @@
 
 				&:hover {
 					background: #BFF6F6;
+					font-family: Geometria Bold;
 
 					&+.details__variants-list {
 						visibility: visible;
@@ -99,7 +96,6 @@
 				align-content: flex-start;
 				visibility: hidden;
 				justify-content: space-between;
-				font-weight: 600;
 
 				&.variants-list_active {
 					visibility: visible;
@@ -109,10 +105,9 @@
 				& .variants-list {
 					&__element {
 						font-size: 14px;
-						margin: 5px;
+						margin: 10px 5px;
 						display: flex;
 						justify-content: left;
-						font-weight: 400;
 						width: 20%;
 
 						&::before {
