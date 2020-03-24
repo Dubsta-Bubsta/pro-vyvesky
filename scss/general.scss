@@ -18,17 +18,14 @@ body {
 	font-family: Geometria Light;
 }
 
-h1.section-header, h1.section-header-underline  {
+h1.section-header,
+h1.section-header-underline {
 	font-size: 30px;
 }
 
 h2.section-header {
-	font-size: 22px;
+	font-size: 26px;
 
-}
-
-h3.section-header {
-	font-size: 18px;
 }
 
 
@@ -52,10 +49,8 @@ h1.section-header-underline {
 .site-location {
 	margin-top: 30px;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 12px;
 	font-family: Geometria Light;
-	font-weight: 600;
-	letter-spacing: -0.5px;
 }
 
 .btn {
@@ -92,12 +87,12 @@ h1.section-header-underline {
 }
 
 .details-btn {
-	margin-right: 20px;
+	margin-right: 10px;
 	color: #000;
 	background: #42d1cf;
 
 	& img {
-		margin-left: 20px;
+		margin-left: 10px;
 	}
 }
 
@@ -120,19 +115,18 @@ button:hover {
 .input-block input {
 	width: 100%;
 	border: 3px solid #C5FCFC;
-	font-size: 22px;
+	font-size: 36px;
 	padding: 7px;
 	font: inherit;
-	font-weight: 400;
 	text-align: center;
 	box-sizing: border-box;
 }
 
 .text-block {
 	line-height: 22px;
+	font-size: 20px;
 	font-family: Geometria Light;
-	font-weight: 600;
-	font-size: 18px;
+
 	& ul {
 		list-style-type: circle;
 		list-style-position: inside;
@@ -224,7 +218,12 @@ button:hover {
 }
 
 
-
+.default {
+	font-family: 'Times New Roman', Times, serif!important;
+}
+.italic {
+	font-style: italic;
+}
 @media screen and (max-width: 1366px) {
 	.container {
 		width: 80%;
@@ -238,20 +237,22 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-h1.section-header, h1.section-header-underline  {
-	font-size: 20px;
-	font-family: Geometria Medium;
-	margin: 30px auto 20px auto;
-}
 
-h2.section-header {
-	font-size: 22px;
+	h1.section-header,
+	h1.section-header-underline {
+		font-size: 20px;
+		font-family: Geometria Medium;
+		margin: 30px auto 20px auto;
+	}
 
-}
+	h2.section-header {
+		font-size: 22px;
 
-h3.section-header {
-	font-size: 18px;
-}
+	}
+
+	h3.section-header {
+		font-size: 18px;
+	}
 
 	.site-location {
 		text-align: center;
@@ -265,9 +266,11 @@ h3.section-header {
 		width: 100%;
 		font-size: 16px;
 	}
+
 	.show-more-btn {
 		font-size: 20px;
 	}
+
 	.table-block {
 		&__arrows {
 			display: block;

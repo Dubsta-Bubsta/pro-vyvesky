@@ -4,7 +4,7 @@
 		padding: 15px 5%;
 		display: flex;
 		background: #000;
-
+		
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;
@@ -31,11 +31,11 @@
 					color: #fff;
 					text-transform: uppercase;
 					word-wrap: break-word;
-					font-size: 24px;
+					font-size: 20px;
 				}
 
 				&_active a, &:hover {
-					font-family: Geometria ExtraLight;
+					font-family: Geometria Light;
 				}
 			}
 		}
@@ -68,7 +68,7 @@
 				font-size: 12px;
 				padding: 10px 0 10px 10px;
 				text-align: left;
-				font-family: Geometria;
+				font-family: Geometria Light;
 
 				& .fa {
 					margin: 0 15px;
@@ -76,7 +76,7 @@
 
 				&:hover {
 					background: #BFF6F6;
-					font-family: Geometria Bold;
+					font-family: Geometria Medium;
 
 					&+.details__variants-list {
 						visibility: visible;
@@ -109,6 +109,7 @@
 						display: flex;
 						justify-content: left;
 						width: 20%;
+						text-transform: lowercase;
 
 						&::before {
 							content: "\25CF";
@@ -128,6 +129,8 @@
 				}
 			}
 		}
+		
+		&_mobile { left: 100%; }
 	}
 
 	&__bg {
@@ -141,6 +144,21 @@
 		opacity: 0;
 		z-index: -1;
 		transition: .3s;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.nav {
+		&__list {
+			& .list {
+				&__element {
+					margin: 0 5px;
+					& a {
+						font-size: 18px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -193,7 +211,7 @@
 			}
 
 			&_mobile {
-				font-family: Geometria;
+				font-family: Geometria Light;
 				position: absolute;
 				display: flex;
 				transition: .5s;
@@ -222,7 +240,6 @@
 								width: 100% !important;
 								text-transform: initial;
 								font-size: 16px !important;
-								font-weight: 400;
 								margin: 7px 0 !important;
 
 								&::before {
@@ -257,7 +274,6 @@
 						background: #fff !important;
 						font-size: 18px !important;
 						border-top: 1px solid #707070;
-						font-weight: 400 !important;
 						letter-spacing: -1px;
 
 						&:hover {
@@ -265,7 +281,7 @@
 						}
 
 						&_active {
-							font-weight: 500!important;
+							font-family: Geometria Medium;
 							.fa {
 								transform: rotate(180deg);
 							}

@@ -1,11 +1,8 @@
 .product {
 	font-family: Geometria Light;
-    font-weight: 400;
 	margin: 30px 0;
 
 	&__content {
-		padding-top: 20px;
-
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		grid-gap: 50px;
@@ -30,11 +27,8 @@
 
 				& .description {
 					&__text {
-						line-height: 22px;
-						font-size: 18px;
-						margin-bottom: 30px;
-						font-weight: 600;
-
+						font-size: 22px;
+						line-height: 26px;
 						& ul {
 							list-style-type: circle;
 							list-style-position: inside;
@@ -50,11 +44,9 @@
 						display: flex;
 						flex-direction: row;
 						align-items: center;
-
+						margin-top: 10px;
 						& .btn {
-							font-weight: 500;
-							font-size: 20px !important;
-							margin: 10px;
+							font-size: 24px !important;
 							letter-spacing: 2px;
 
 							& img {
@@ -71,7 +63,6 @@
 
 .product-example-block-big {
 	font-family: Geometria Light;
-    font-weight: 600;
 	&__content {
 		display: grid;
 		grid-template-columns: 1fr 3fr;
@@ -90,7 +81,6 @@
 
 						& .btn {
 							padding: 5px 10px;
-							font-weight: 400;
 							font-size: 18px !important;
 						}
 					}
@@ -125,7 +115,6 @@
 
 .also-interesting-block {
 	font-family: Geometria Light;
-    font-weight: 600;
 	margin: 30px 0;
 
 	&__links {
@@ -139,11 +128,13 @@
 			font-size: inherit;
 			line-height: 26px;
 			font-size: 18px;
+			font-family: Geometria;
 		}
 	}
 }
 
 .works-example-block {
+	font-family: Geometria Light;
 	display: flex;
 	flex-direction: column;
 
@@ -169,15 +160,13 @@
 		display: flex !important;
 		flex-direction: row;
 		align-items: center;
-		font-weight: 500;
 		font-size: 20px !important;
 		letter-spacing: 2px;
 	}
 }
 
 .popular-orders-block {
-	font-family: Geometria;
-    font-weight: 400;
+	font-family: Geometria Light;
 	margin: 30px 0 50px 0;
 
 	&__list {
@@ -194,8 +183,14 @@
 					}
 
 					&__title {
-						margin: 10px 0 20px 0;
-						font-size: 13px;
+						margin: 10px 0 5px 0;
+						font-size: 14px;
+						font-family: Geometria Bold;
+					}
+					&__text {
+						font-size: 14px;
+
+						font-family: Geometria Light;
 					}
 
 					&__price {
@@ -203,10 +198,13 @@
 						flex-direction: row;
 						align-items: center;
 						justify-content: space-between;
-
+						font-family: Geometria Bold;
+						margin-top: 10px;
 						& button {
 							font-size: 16px !important;
 							padding: 5px 10px;
+						font-family: Geometria Light;
+
 						}
 					}
 				}
@@ -217,7 +215,6 @@
 
 .product-example-block-small {
 	font-family: Geometria Light;
-	font-weight: 600;
 	margin: 30px 0;
 	&>.details-btn {
 		margin: 20px auto;
@@ -251,6 +248,8 @@
 						text-align: left;
 						text-transform: uppercase;
 						font-size: 14px;
+						font-family: Geometria Medium;
+
 					}
 
 					&__text {
@@ -261,6 +260,7 @@
 
 					&__actions {
 						margin: 0 10px;
+						margin-top: 10px;
 						display: flex;
 						align-items: center;
 						justify-content: space-around;
@@ -268,7 +268,7 @@
 						& .btn {
 							padding: 10px 15px;
 							width: 100%;
-							font-size: 14px;
+							font-size: 16px;
 							padding: 5px;
 						}
 					}
@@ -507,16 +507,7 @@ section .fa-angle-right {
 		&__list {
 			grid-template-columns: 1fr;
 
-			& .list {
-
-				&__element {
-					& .element__actions {
-						& .btn {
-							font-size: 14px !important;
-						}
-					}
-				}
-			}
+			
 
 			&.grid-5 {
 				grid-template-columns: 1fr;

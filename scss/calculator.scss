@@ -1,5 +1,5 @@
 .calculator-examples {
-	margin: 30px 0;
+	padding: 30px 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -24,7 +24,7 @@
 
 			&__title {
 				text-transform: uppercase;
-				font-size: 16px;
+				font-size: 14px;
 				margin-top: 10px;
 			}
 		}
@@ -37,17 +37,24 @@
 
 	&__form .form {
 		&__input-block {
+
 			&_small {
 				& .input-block {
 					&__input {
 						width: 40%;
-						font-size: 20px;
 						margin: 0 auto;
 						display: block;
+						font-size: 26px;
 					}
 				}
 			}
-
+			&_big {
+				& .input-block {
+					&__input {
+						font-size: 26px;
+					}
+				}
+			}
 		}
 
 		&__inputs_small {
@@ -60,7 +67,7 @@
 						display: block;
 						margin: 0 auto;
 						position: relative;
-						font-size: 20px;
+						font-size: 26px;
 
 						&:after,
 						&:before {
@@ -121,10 +128,9 @@
 							border: 3px solid #C5FCFC;
 							box-sizing: border-box;
 							text-transform: uppercase;
-							padding: 10px 0;
-							font-size: 20px;
+							padding: 15px 5px;
+							font-size: 22px;
 							font-family: Geometria Light;
-							font-weight: 600;
 						}
 					}
 				}
@@ -197,7 +203,6 @@
 					display: block;
 					font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 					font-size: 60px;
-					font-weight: 900;
 					-webkit-text-fill-color: #fff;
 					-webkit-text-stroke: 2px #017660;
 					text-shadow: 0 0 20px #ffff01;
@@ -213,10 +218,10 @@
 
 			& .order-block {
 				&__price {
-					font-weight: 500;
 					font-size: 26px;
-
+					margin-bottom: 20px;
 					& span {
+						font-family: Geometria Medium;
 						color: #dc2618;
 					}
 				}
@@ -224,10 +229,10 @@
 				&__button {
 					background: #DC2618;
 					color: #fff;
-					font-weight: 500;
-					font-size: 24px!important;
+					font-size: 40px!important;
 					margin: 10px 0;
 					letter-spacing: 2px;
+					padding: 0px 10px 7px 10px;
 					
 				}
 
@@ -235,7 +240,7 @@
 					text-align: center;
 					text-transform: uppercase;
 					font-size: 12px;
-					font-weight: 400;
+					width: 70%;
 				}
 			}
 		}
@@ -330,18 +335,30 @@
 					}
 				}
 			}
-			&__text-example .text-example {
-				&__text {
+			&__text-example  {
+
+				& h2 {
+					font-family: Geometria Medium;
+				}
+				& .text-example__text {
 					font-size: 70px;
 				}
 			}
-			&__order-block .order-block{
-				&__price {
-					font-size: 26px;
+			&__order-block {
+				& h2 {
+					font-family: Geometria Medium;
 				}
-				&__button {
-					width: 100%;
-					padding: 10px;
+				.order-block{
+					&__price {
+						font-size: 42px;
+					}
+					&__button {
+						width: 100%;
+						padding: 10px;
+					}
+					&__description {
+						width: 100%;
+					}
 				}
 			}
 		}

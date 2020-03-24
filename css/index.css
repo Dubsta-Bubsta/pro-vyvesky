@@ -693,8 +693,5 @@
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .product-list-block__list .list__element {
-    margin: 0;
-  }
 }
 /*# sourceMappingURL=index.css.map */

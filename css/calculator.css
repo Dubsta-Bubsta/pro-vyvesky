@@ -1,5 +1,5 @@
 .calculator-examples {
-  margin: 30px 0;
+  padding: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +37,7 @@
 
 .calculator-examples__element .element__title {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 10px;
 }
 
@@ -48,9 +48,13 @@
 
 .customise-product__form .form__input-block_small .input-block__input {
   width: 40%;
-  font-size: 20px;
   margin: 0 auto;
   display: block;
+  font-size: 26px;
+}
+
+.customise-product__form .form__input-block_big .input-block__input {
+  font-size: 26px;
 }
 
 .customise-product__form .form__inputs_small {
@@ -67,7 +71,7 @@
   display: block;
   margin: 0 auto;
   position: relative;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:after, .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:before {
@@ -133,10 +137,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-transform: uppercase;
-  padding: 10px 0;
-  font-size: 20px;
+  padding: 15px 5px;
+  font-size: 22px;
   font-family: Geometria Light;
-  font-weight: 600;
 }
 
 .customise-product__form .form__color-selectors-block {
@@ -206,7 +209,6 @@
   display: block;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 60px;
-  font-weight: 900;
   -webkit-text-fill-color: #fff;
   -webkit-text-stroke: 2px #017660;
   text-shadow: 0 0 20px #ffff01;
@@ -227,28 +229,29 @@
 }
 
 .customise-product__form .form__order-block .order-block__price {
-  font-weight: 500;
   font-size: 26px;
+  margin-bottom: 20px;
 }
 
 .customise-product__form .form__order-block .order-block__price span {
+  font-family: Geometria Medium;
   color: #dc2618;
 }
 
 .customise-product__form .form__order-block .order-block__button {
   background: #DC2618;
   color: #fff;
-  font-weight: 500;
-  font-size: 24px !important;
+  font-size: 40px !important;
   margin: 10px 0;
   letter-spacing: 2px;
+  padding: 0px 10px 7px 10px;
 }
 
 .customise-product__form .form__order-block .order-block__description {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 400;
+  width: 70%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -314,15 +317,24 @@
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+  .customise-product__form .form__text-example h2 {
+    font-family: Geometria Medium;
+  }
   .customise-product__form .form__text-example .text-example__text {
     font-size: 70px;
   }
+  .customise-product__form .form__order-block h2 {
+    font-family: Geometria Medium;
+  }
   .customise-product__form .form__order-block .order-block__price {
-    font-size: 26px;
+    font-size: 42px;
   }
   .customise-product__form .form__order-block .order-block__button {
     width: 100%;
     padding: 10px;
+  }
+  .customise-product__form .form__order-block .order-block__description {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=calculator.css.map */

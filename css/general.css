@@ -1,7 +1,6 @@
 table.table {
   width: 100%;
   font-family: Geometria Light;
-  font-weight: 600;
   border-spacing: 10px 0;
   border-collapse: separate;
 }
@@ -85,16 +84,13 @@ body {
   font-family: Geometria Light;
 }
 
-h1.section-header, h1.section-header-underline {
+h1.section-header,
+h1.section-header-underline {
   font-size: 30px;
 }
 
 h2.section-header {
-  font-size: 22px;
-}
-
-h3.section-header {
-  font-size: 18px;
+  font-size: 26px;
 }
 
 h1.section-header-underline {
@@ -123,10 +119,8 @@ h1.section-header-underline {
 .site-location {
   margin-top: 30px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   font-family: Geometria Light;
-  font-weight: 600;
-  letter-spacing: -0.5px;
 }
 
 .btn {
@@ -172,13 +166,13 @@ h1.section-header-underline {
 }
 
 .details-btn {
-  margin-right: 20px;
+  margin-right: 10px;
   color: #000;
   background: #42d1cf;
 }
 
 .details-btn img {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .show-more-btn {
@@ -201,10 +195,9 @@ button:hover {
 .input-block input {
   width: 100%;
   border: 3px solid #C5FCFC;
-  font-size: 22px;
+  font-size: 36px;
   padding: 7px;
   font: inherit;
-  font-weight: 400;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -212,9 +205,8 @@ button:hover {
 
 .text-block {
   line-height: 22px;
+  font-size: 20px;
   font-family: Geometria Light;
-  font-weight: 600;
-  font-size: 18px;
 }
 
 .text-block ul {
@@ -306,6 +298,14 @@ button:hover {
   background: #222424;
 }
 
+.default {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
 @media screen and (max-width: 1366px) {
   .container {
     width: 80%;
@@ -319,7 +319,8 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  h1.section-header, h1.section-header-underline {
+  h1.section-header,
+  h1.section-header-underline {
     font-size: 20px;
     font-family: Geometria Medium;
     margin: 30px auto 20px auto;

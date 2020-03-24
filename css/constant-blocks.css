@@ -223,7 +223,7 @@
 }
 
 .nav__list .list__element_active a, .nav__list .list__element:hover {
-  font-family: Geometria ExtraLight;
+  font-family: Geometria Light;
 }
 
 .nav__detailed-block {
@@ -266,7 +266,7 @@
   font-size: 12px;
   padding: 10px 0 10px 10px;
   text-align: left;
-  font-family: Geometria;
+  font-family: Geometria Light;
 }
 
 .nav__detailed-block .details__header .fa {
@@ -275,7 +275,7 @@
 
 .nav__detailed-block .details__header:hover {
   background: #BFF6F6;
-  font-family: Geometria Bold;
+  font-family: Geometria Medium;
 }
 
 .nav__detailed-block .details__header:hover + .details__variants-list {
@@ -320,6 +320,7 @@
       -ms-flex-pack: left;
           justify-content: left;
   width: 20%;
+  text-transform: lowercase;
 }
 
 .nav__detailed-block .details__variants-list .variants-list__element::before {
@@ -337,6 +338,10 @@
   color: #D5960F;
 }
 
+.nav__detailed-block_mobile {
+  left: 100%;
+}
+
 .nav__bg {
   position: fixed;
   top: 0;
@@ -349,6 +354,15 @@
   z-index: -1;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media screen and (max-width: 1350px) {
+  .nav__list .list__element {
+    margin: 0 5px;
+  }
+  .nav__list .list__element a {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -386,7 +400,7 @@
     z-index: 5;
   }
   .nav__detailed-block_mobile {
-    font-family: Geometria;
+    font-family: Geometria Light;
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -429,7 +443,6 @@
     width: 100% !important;
     text-transform: initial;
     font-size: 16px !important;
-    font-weight: 400;
     margin: 7px 0 !important;
   }
   .nav__detailed-block_mobile .details__variants-list .variants-list__element::before {
@@ -467,14 +480,13 @@
     background: #fff !important;
     font-size: 18px !important;
     border-top: 1px solid #707070;
-    font-weight: 400 !important;
     letter-spacing: -1px;
   }
   .nav__detailed-block_mobile .details__header:hover {
     cursor: pointer;
   }
   .nav__detailed-block_mobile .details__header_active {
-    font-weight: 500 !important;
+    font-family: Geometria Medium;
   }
   .nav__detailed-block_mobile .details__header_active .fa {
     -webkit-transform: rotate(180deg);
@@ -544,7 +556,7 @@ footer .footer__rights {
 footer .footer__rights .rights__element {
   width: 80%;
   text-align: center;
-  padding: 10px 4px;
+  padding: 10px;
   border: 1px solid #E6B02B;
   color: #E6B02B;
   margin-bottom: 20px;
@@ -717,7 +729,8 @@ footer .footer__contacts .contacts__element .element__email, footer .footer__con
     font-size: 10px !important;
   }
   .footer__rights p {
-    font-size: 10px !important;
+    font-size: 9px !important;
+    text-align: left !important;
   }
   .footer__copyright p {
     font-size: 12px !important;

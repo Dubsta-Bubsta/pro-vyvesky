@@ -27,10 +27,11 @@
 					position: absolute;
 					white-space: nowrap;
 					top: -30%;
-					font-family: Geometria Light;					
+					font-family: Geometria Light;
 
 					&_right {
 						left: 60%;
+
 						&::after {
 							content: "\25B6";
 							transform: rotate(-225deg);
@@ -41,8 +42,10 @@
 							font-size: 26px;
 						}
 					}
+
 					&_left {
 						right: 60%;
+
 						&::before {
 							content: "\25B6";
 							transform: rotate(45deg);
@@ -127,14 +130,17 @@
 						top: 30%;
 						left: 90%;
 					}
+
 					&-13 {
 						top: 30%;
 						left: 90%;
 					}
+
 					&-14 {
 						top: 17%;
 						left: 15%;
 					}
+
 					&-15 {
 						top: 40%;
 						left: 95%;
@@ -216,7 +222,7 @@
 			align-items: center;
 			justify-content: space-between;
 			width: 20%;
-			
+
 			.element {
 				&__text {
 					display: flex;
@@ -229,11 +235,12 @@
 			}
 		}
 	}
-	
+
 }
 
 .advantages-block {
 	font-family: Geometria Medium;
+
 	&__header {
 		display: flex;
 		align-items: center;
@@ -286,13 +293,10 @@
 
 	&__header {
 		display: flex;
-		align-items: center;		
+		align-items: center;
 	}
 
 	&__list {
-		// display: grid;
-		// grid-template-columns: 1fr 1fr 1fr 1fr;
-		// grid-gap: 10px;
 		justify-content: center;
 		align-items: flex-start;
 		display: flex;
@@ -321,6 +325,7 @@
 						font-size: 16px;
 						line-height: 20px;
 						font-family: Geometria Medium;
+					
 					}
 
 					& img {
@@ -340,7 +345,9 @@
 							border-top: 1px solid #000;
 							font-size: 16px;
 							font-family: Geometria Light;
-
+							&:hover {
+								font-family: Geometria Medium;
+							}
 							&::before {
 								content: "\25CF";
 								padding-right: 7px;
@@ -446,6 +453,7 @@
 				justify-content: center;
 				align-items: center;
 				text-transform: lowercase;
+
 				& .element {
 					&__header {
 						margin: 7px 0;
@@ -522,7 +530,7 @@
 				padding: 12px 50px;
 				text-transform: lowercase;
 				font-size: 20px;
-		font-family: Geometria Light;
+				font-family: Geometria Light;
 
 			}
 		}
@@ -608,6 +616,7 @@
 						&__text {
 							display: none;
 						}
+
 						&__header {
 							text-transform: uppercase;
 							font-size: 14px;
@@ -632,9 +641,11 @@
 					&:nth-child(n+9) {
 						display: none;
 					}
+
 					& .element__img {
 						width: 135px;
 					}
+
 					& .element__text {
 						font-size: 16px;
 
@@ -657,9 +668,11 @@
 						font-size: 16px;
 					}
 				}
+
 				&__textarea {
 					font-size: 16px;
 				}
+
 				&__btn {
 					width: 100%;
 				}
@@ -676,16 +689,6 @@
 	.theme-services-block {
 		&__list {
 			grid-template-columns: 1fr;
-		}
-	}
-	.product-list-block {
-		&__list {
-
-			& .list {
-				&__element {
-					margin: 0;
-				}
-			}
 		}
 	}
 }
