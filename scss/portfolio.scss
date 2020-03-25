@@ -1,13 +1,8 @@
 .portfolio {
 	font-family: Geometria Light;
-	font-weight: 600;
 	margin-top: 30px;
 	margin-bottom: 30px;
 
-	&__header {
-		margin: 30px 0 20px 0;
-	}
-	
 	&__list {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -36,19 +31,20 @@
 					&__title {
 						margin: 20px 0 ;
 						text-transform: uppercase;
-						font-size: 16px;
+						font-size: 19.82px!important;
 						font-family: Geometria Medium;
 						letter-spacing: 0.77px;
-
+						line-height: 23.79px!important;
 					}
 
 					&__details-btn {
 						margin: 10px;
 						background: #FFB800;
 						padding: 10px;
-						font-size: 18px;
+						font-size: 22.28px!important;
+						line-height: 26.74px!important;
 						& img {
-							margin-left: 5px;
+							margin-left: 10px;
 						}
 					}
 				}
@@ -57,10 +53,75 @@
 	}
 }
 
+.portfolio-subsection-block {
+	padding-bottom: 30px;
+
+	& .show-more-btn {
+		display: block;
+		margin: 40px auto;
+		font-size: 31.73px;
+		line-height: 38.08px;
+		letter-spacing: 0.95px;
+		& img {
+			width: 14.11px;
+			height: 15.54px;
+		}
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+		grid-gap: 35px;
+
+		& .list {
+			&__element {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				background: #E0E3E3;
+
+				& .element {
+					&__img {
+						width: 100%;
+						display: block;
+					}
+
+					&__title {
+						margin: 0 15px;
+
+						margin-top: 8px ;
+						text-transform: uppercase;
+						font-size: 17px!important;
+						font-family: Geometria Medium;
+						letter-spacing: 0.66px;
+						line-height: 20.4px!important;
+					}
+
+					&__text {
+						margin: 0 15px ;
+						margin-bottom: 10px;
+						font-size: 16px!important;
+						font-family: Geometria Light;
+						letter-spacing: 0.62px;
+						line-height: 20.4px!important;
+					}
+				}
+			}
+		}
+	}
+}
+
+
 @media screen and (max-width: 1024px) {
 	.portfolio {
 		&__list {
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr 1fr;			
+		}
+	}
+	.portfolio-subsection-block {
+		&__list {
+			grid-template-columns: 1fr 1fr;			
 		}
 	}
 }
@@ -73,6 +134,40 @@
 				font-size: 16px!important;
 				width: 90%;
 			}
+
+			& .list {
+				&__element {
+					& .element {
+						&__title {
+							margin: 20px 0 ;
+							font-size: 18px!important;
+							font-family: Geometria Medium;
+							letter-spacing: 0.7px!important;
+							line-height: 19px!important;
+						}
+	
+						&__details-btn {
+							margin: 10px;
+							background: #FFB800;
+							padding: 5px!important;
+							font-size: 20px!important;
+							line-height: 38px!important;
+							letter-spacing: 0.6px!important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.portfolio-subsection-block {
+		padding-bottom: 0;
+		&__list {
+			grid-template-columns: 1fr;			
+		}
+		& .show-more-btn {
+			font-size: 20px;
+			line-height: 38px;
+			letter-spacing: 0.6px;
 		}
 	}
 }

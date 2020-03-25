@@ -181,3 +181,12 @@
 	font-weight: 100;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'MicrosoftYaHeiLight';
+	src: url('chinese.msyh.ttf');
+	src: local('MicrosoftYaHeiLight'), local('MicrosoftYaHeiLight'),
+		url('chinese.msyh.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}

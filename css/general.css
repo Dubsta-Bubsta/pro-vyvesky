@@ -103,7 +103,7 @@ body {
 
 h1.section-header,
 h1.section-header-underline {
-  font-size: 30px;
+  font-size: 37px;
   letter-spacing: 1.44px;
 }
 
@@ -144,7 +144,9 @@ h1.section-header-underline {
 .site-location {
   margin-top: 30px;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: 0.62px;
   font-family: Geometria Light;
 }
 
@@ -177,7 +179,7 @@ h1.section-header-underline {
 
 .order-btn img {
   margin-left: 5px;
-  width: 24px;
+  width: 48px;
 }
 
 .calc-btn {
@@ -205,7 +207,9 @@ h1.section-header-underline {
   background: #ffb700;
   display: none;
   margin: 25px 0;
-  font-size: 24px;
+  font-size: 31.73px;
+  letter-spacing: 0.6px;
+  line-height: 38px;
 }
 
 .show-more-btn img {
@@ -358,7 +362,9 @@ button:hover {
   h1.section-header,
   h1.section-header-underline {
     font-size: 21px;
+    line-height: 31.4px;
     font-family: Geometria Medium;
+    margin: 30px auto 20px auto;
   }
   h2.section-header {
     font-size: 16px;
@@ -371,9 +377,9 @@ button:hover {
   }
   .site-location {
     text-align: center;
-    font-size: 13px;
-    line-height: 20px;
-    letter-spacing: 0.62px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0px;
   }
   .btn {
     display: -webkit-box;
@@ -383,11 +389,12 @@ button:hover {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    font-size: 16px;
     color: #121515;
   }
   .show-more-btn {
     font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 38px;
   }
   .table-block__arrows {
     display: block;

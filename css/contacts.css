@@ -1,20 +1,21 @@
-.contacts {
+main .contacts {
   font-family: Geometria Light;
+  padding-top: 70px;
 }
 
-.contacts__location {
+main .contacts__location {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 2fr;
       grid-template-columns: 3fr 2fr;
-  grid-gap: 40px;
+  grid-gap: 50px;
 }
 
-.contacts__location .location__map img {
+main .contacts__location .location__map img {
   width: 100%;
 }
 
-.contacts__location .location__info {
+main .contacts__location .location__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,11 +25,11 @@
           flex-direction: column;
 }
 
-.contacts__location .location__info hr {
+main .contacts__location .location__info hr {
   margin: 20px 0;
 }
 
-.contacts__location .location__info .info__element {
+main .contacts__location .location__info .info__element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,45 +40,50 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px 0;
+  margin: 10px 0;
+  padding-left: 10px;
 }
 
-.contacts__location .location__info .info__element img {
+main .contacts__location .location__info .info__element img {
   width: 32px;
   display: block;
   text-align: center;
   margin-right: 15px;
 }
 
-.contacts__location .location__info .info__element img.marker-icon {
+main .contacts__location .location__info .info__element img.marker-icon {
   width: 25px;
 }
 
-.contacts__location .location__info .info__element .element__text {
-  font-size: 26px;
-  line-height: 28px;
+main .contacts__location .location__info .info__element .element__text {
+  font-size: 29.29px;
+  line-height: 35.15px;
   width: 100%;
   margin-left: 5px;
   letter-spacing: 0.85px;
 }
 
-.text-block {
+.contacts-text-block {
   margin: 30px 0;
-  font-size: 22px;
+  font-size: 28px;
+  line-height: 33.56px;
+  letter-spacing: 0.56px;
 }
 
-.text-block ul {
+.contacts-text-block ul {
+  list-style-type: circle;
+  list-style-position: inside;
   margin: 5px 0;
-  font-size: 26px;
+  font-size: 36px;
 }
 
-.text-block ul li {
+.contacts-text-block ul li {
   margin: 0 15px;
 }
 
-.text-block ul span,
-.text-block ul p {
-  font-size: 22px;
+.contacts-text-block ul span,
+.contacts-text-block ul p {
+  font-size: 28px;
 }
 
 .delivery-block {
@@ -91,128 +97,188 @@
 }
 
 .delivery-block table.table tr th {
-  font-size: 24px;
+  font-size: 39.83px;
+  letter-spacing: 1.16px;
+  line-height: 47.8px;
+}
+
+.delivery-block table.table tr th:not(:first-child) {
+  letter-spacing: 0.4px;
 }
 
 .delivery-block table.table tr td {
-  font-size: 20px;
+  font-size: 26.92px;
+  letter-spacing: 0.78px;
+  line-height: 32.3px;
 }
 
 @media screen and (max-width: 1600px) {
-  .contacts__location .location__info .info__element {
-    margin: 10px 0;
-  }
-  .contacts__location .location__info .info__element img {
+  main .contacts__location .location__info .info__element img {
     width: 26px;
   }
-  .contacts__location .location__info .info__element img.marker-icon {
+  main .contacts__location .location__info .info__element img.marker-icon {
     width: 22px;
   }
-  .contacts__location .location__info .info__element .element__text {
+  main .contacts__location .location__info .info__element .element__text {
     font-size: 22px;
     line-height: 24px;
   }
-  .text-block p {
-    font-size: 22px;
-    line-height: 24px;
+  .contacts-text-block {
+    font-size: 22px !important;
+    line-height: 26px;
   }
-  .text-block ul {
-    font-size: 26px;
+  .contacts-text-block ul {
+    font-size: 28px;
   }
-  .text-block ul p, .text-block ul li span {
-    font-size: 22px;
-    line-height: 24px;
+  .contacts-text-block ul li {
+    margin: 0;
+  }
+  .contacts-text-block ul li span {
+    margin-left: -10px;
+  }
+  .contacts-text-block ul p,
+  .contacts-text-block ul li span {
+    font-size: 22px !important;
+    line-height: 26px;
   }
 }
 
 @media screen and (max-width: 1366px) {
-  .contacts__location .location__map img {
+  main .contacts__location .location__map img {
     width: 100%;
   }
-  .contacts__location .location__info .info__element {
+  main .contacts__location .location__info .info__element {
     margin: 10px 0;
   }
-  .contacts__location .location__info .info__element img {
+  main .contacts__location .location__info .info__element img {
     width: 26px;
   }
-  .contacts__location .location__info .info__element img.marker-icon {
+  main .contacts__location .location__info .info__element img.marker-icon {
     width: 22px;
   }
-  .contacts__location .location__info .info__element .element__text {
+  main .contacts__location .location__info .info__element .element__text {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 24px;
   }
-  .text-block p {
-    font-size: 20px;
-    line-height: 22px;
+  .contacts-text-block {
+    font-size: 20px !important;
+    line-height: 24px;
   }
-  .text-block ul {
+  .contacts-text-block ul {
     font-size: 24px;
   }
-  .text-block ul p, .text-block ul li span {
+  .contacts-text-block ul p,
+  .contacts-text-block ul li span {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 24px;
+  }
+  .delivery-block table.table tr th {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .delivery-block table.table tr td {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .contacts__location .location__info .info__element {
+  main .contacts__location .location__info .info__element {
     margin: 5px 0;
   }
-  .contacts__location .location__info .info__element img {
+  main .contacts__location .location__info .info__element img {
     width: 22px;
   }
-  .contacts__location .location__info .info__element img.marker-icon {
+  main .contacts__location .location__info .info__element img.marker-icon {
     width: 16px;
   }
-  .contacts__location .location__info .info__element .element__text {
+  main .contacts__location .location__info .info__element .element__text {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 24px;
   }
-  .text-block p {
-    font-size: 18px;
-    line-height: 20px;
+  .contacts-text-block {
+    font-size: 18px !important;
+    line-height: 24px;
   }
-  .text-block ul {
-    font-size: 22px;
+  .contacts-text-block ul {
+    font-size: 24px;
   }
-  .text-block ul p, .text-block ul li span {
-    font-size: 18px;
-    line-height: 20px;
+  .contacts-text-block ul p,
+  .contacts-text-block ul li span {
+    font-size: 18px !important;
+    line-height: 24px;
+  }
+  .delivery-block table.table tr th {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .delivery-block table.table tr td {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .contacts__location {
+  main .contacts {
+    padding-top: 0;
+  }
+  main .contacts__location {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 10px;
   }
-  .contacts__location .location__info .info__element {
-    margin: 10px 0;
+  main .contacts__location .location__info .info__element {
+    padding-left: 0;
   }
-  .contacts__location .location__info .info__element img {
+  main .contacts__location .location__info .info__element img {
     width: 26px;
   }
-  .contacts__location .location__info .info__element img.marker-icon {
+  main .contacts__location .location__info .info__element img.marker-icon {
     width: 20px;
   }
-  .contacts__location .location__info .info__element .element__text {
-    font-size: 16px;
-    line-height: 18px;
+  main .contacts__location .location__info .info__element .element__text {
+    font-size: 19px;
+    line-height: 27px;
   }
-  .text-block p {
-    font-size: 16px !important;
-    line-height: 18px;
+  .contacts-text-block {
+    font-size: 19px !important;
+    line-height: 24.6px;
   }
-  .text-block ul {
-    font-size: 20px;
+  .contacts-text-block ul {
+    font-size: 24px;
   }
-  .text-block ul p, .text-block ul li span {
-    font-size: 16px !important;
-    line-height: 18px;
+  .contacts-text-block ul li {
+    margin: 0;
+  }
+  .contacts-text-block ul li span {
+    margin-left: -10px;
+  }
+  .contacts-text-block ul p,
+  .contacts-text-block ul li span {
+    font-size: 19px !important;
+    line-height: 24.6px;
+  }
+  .delivery-block table.table tr td:first-child,
+  .delivery-block table.table tr th:first-child {
+    text-align: left;
+    width: auto;
+  }
+  .delivery-block table.table tr th {
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 13px;
+  }
+  .delivery-block table.table tr th:not(:first-child) {
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 13px;
+  }
+  .delivery-block table.table tr td {
+    font-size: 18px;
+    letter-spacing: 0.52px;
+    line-height: 20px;
   }
 }
 /*# sourceMappingURL=contacts.css.map */

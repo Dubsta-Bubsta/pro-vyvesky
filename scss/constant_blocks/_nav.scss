@@ -31,7 +31,8 @@
 					color: #fff;
 					text-transform: uppercase;
 					word-wrap: break-word;
-					font-size: 22px;
+					font-size: 26px;
+					line-height: 30px;
 				}
 
 				&_active a, &:hover {
@@ -65,7 +66,7 @@
 				justify-content: space-between;
 				align-items: center;
 				text-transform: uppercase;
-				font-size: 13px;
+				font-size: 16px;
 				padding: 10px 0 10px 10px;
 				text-align: left;
 				font-family: Geometria Light;
@@ -104,7 +105,8 @@
 
 				& .variants-list {
 					&__element {
-						font-size: 15px;
+						font-family: MicrosoftYaHeiLight;
+						font-size: 18px;
 						margin: 10px 5px;
 						display: flex;
 						justify-content: left;
@@ -147,14 +149,16 @@
 	}
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1336px) {
 	.nav {
 		&__list {
 			& .list {
 				&__element {
 					margin: 0 5px;
 					& a {
-						font-size: 18px;
+						font-size: 21px;
+						line-height: 22px;
+
 					}
 				}
 			}
@@ -170,7 +174,8 @@
 					margin: 0 5px;
 
 					a {
-						font-size: 16px;
+						font-size: 17px;
+						line-height: 21px;
 					}
 				}
 			}
@@ -183,7 +188,8 @@
 		&__list {
 			& .list {
 				&__element a {
-					font-size: 14px;
+					font-size: 15px;
+					line-height: 19px;
 				}
 			}
 		}
@@ -239,9 +245,10 @@
 								text-align: right;
 								width: 100% !important;
 								text-transform: initial;
-								font-size: 16px !important;
-								margin: 7px 0 !important;
-
+								font-size: 17px !important;
+								line-height: 31.4px;
+								font-family: Geometria Light;
+								margin: 0!important;
 								&::before {
 									content: "" !important;
 								}
@@ -255,8 +262,6 @@
 								}
 							}
 						}
-
-
 
 						&.variants-list_active {
 							display: flex !important;
@@ -272,7 +277,8 @@
 						padding: 10px 2.5% !important;
 						text-align: right !important;
 						background: #fff !important;
-						font-size: 18px !important;
+						font-size: 19px !important;
+						line-height: 31.4px;
 						border-top: 1px solid #707070;
 						letter-spacing: -1px;
 
@@ -282,6 +288,7 @@
 
 						&_active {
 							font-family: Geometria Medium;
+							line-height: 22.4px;
 							.fa {
 								transform: rotate(180deg);
 							}

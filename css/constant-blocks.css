@@ -34,12 +34,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .header__element .location__city {
-  font-size: 24px;
-  font-family: Geometria Light;
+  font-size: 26px;
+  font-family: Geometria;
 }
 
 .header__element.location img, .header__element.contacts img {
@@ -50,8 +50,8 @@
 }
 
 .header__element .contacts__phone span {
-  font-size: 24px;
-  font-family: Geometria Light;
+  font-size: 26px;
+  font-family: Geometria;
 }
 
 .header__element.search {
@@ -73,8 +73,8 @@
           align-items: center;
   border-radius: 20px;
   background: #fff;
-  padding: 1px 10px;
-  height: 22px;
+  padding: 2px 10px;
+  font-size: 22px;
 }
 
 .header__element.search .fa {
@@ -87,8 +87,33 @@
 }
 
 .header__element .search__input {
+  font-size: 20px;
   width: 100%;
   border: none;
+  font-family: Geometria Light;
+}
+
+@media screen and (max-width: 1336px) {
+  .header__element.location, .header__element.contacts, .header__element.search {
+    font-size: 20px !important;
+  }
+  .header__element.location img, .header__element.contacts img {
+    margin-right: 9px;
+    font-size: 28px !important;
+    height: 25px;
+  }
+  .header__element .contacts__phone span {
+    font-size: 23px;
+  }
+  .header__element.search > div {
+    width: 70%;
+    padding: 2px 10px;
+    font-size: 22px;
+  }
+  .header__element .search__input {
+    font-size: 20px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -219,7 +244,8 @@
   color: #fff;
   text-transform: uppercase;
   word-wrap: break-word;
-  font-size: 22px;
+  font-size: 26px;
+  line-height: 30px;
 }
 
 .nav__list .list__element_active a, .nav__list .list__element:hover {
@@ -263,7 +289,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 16px;
   padding: 10px 0 10px 10px;
   text-align: left;
   font-family: Geometria Light;
@@ -311,7 +337,8 @@
 }
 
 .nav__detailed-block .details__variants-list .variants-list__element {
-  font-size: 15px;
+  font-family: MicrosoftYaHeiLight;
+  font-size: 18px;
   margin: 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,12 +383,13 @@
   transition: .3s;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1336px) {
   .nav__list .list__element {
     margin: 0 5px;
   }
   .nav__list .list__element a {
-    font-size: 18px;
+    font-size: 21px;
+    line-height: 22px;
   }
 }
 
@@ -370,13 +398,15 @@
     margin: 0 5px;
   }
   .nav__list .list__element a {
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 21px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .nav__list .list__element a {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 19px;
   }
 }
 
@@ -442,8 +472,10 @@
     text-align: right;
     width: 100% !important;
     text-transform: initial;
-    font-size: 16px !important;
-    margin: 7px 0 !important;
+    font-size: 17px !important;
+    line-height: 31.4px;
+    font-family: Geometria Light;
+    margin: 0 !important;
   }
   .nav__detailed-block_mobile .details__variants-list .variants-list__element::before {
     content: "" !important;
@@ -478,7 +510,8 @@
     padding: 10px 2.5% !important;
     text-align: right !important;
     background: #fff !important;
-    font-size: 18px !important;
+    font-size: 19px !important;
+    line-height: 31.4px;
     border-top: 1px solid #707070;
     letter-spacing: -1px;
   }
@@ -487,6 +520,7 @@
   }
   .nav__detailed-block_mobile .details__header_active {
     font-family: Geometria Medium;
+    line-height: 22.4px;
   }
   .nav__detailed-block_mobile .details__header_active .fa {
     -webkit-transform: rotate(180deg);
@@ -525,7 +559,8 @@ footer .footer__answers {
 footer .footer__answers .answers__header {
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: 0.21px;
   font-family: Geometria ExtraBold;
 }
 
@@ -533,8 +568,10 @@ footer .footer__answers .answers__link {
   display: inline-block;
   color: #fff;
   border-bottom: 1px solid #E6B02B;
-  line-height: 20px;
-  font-size: 14px;
+  line-height: 18px;
+  font-size: 15px;
+  letter-spacing: 0.45px;
+  margin-bottom: 5px;
 }
 
 footer .footer__rights {
@@ -563,8 +600,10 @@ footer .footer__rights .rights__element {
   border: 0.5px solid #E6B02B;
   color: #E6B02B;
   margin-bottom: 20px;
-  font-size: 11px;
+  font-size: 11.15px;
+  line-height: 13.39px;
   text-transform: uppercase;
+  font-family: Geometria Medium;
 }
 
 footer .footer__social {
@@ -587,17 +626,17 @@ footer .footer__social {
 }
 
 footer .footer__social .social__header h1 {
-  font-size: 20px;
+  font-size: 21.84px;
   font-family: Geometria ExtraBold;
   line-height: 26px;
   text-align: left;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.66px;
 }
 
 footer .footer__social .social__header p {
-  font-size: 10px;
-  letter-spacing: 0.5px;
+  font-size: 10.2px;
+  letter-spacing: 0.3px;
   text-transform: uppercase;
 }
 
@@ -628,14 +667,14 @@ footer .footer__copyright {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: copyright;
-  font-size: 11px;
   margin-top: 20px;
 }
 
 footer .footer__copyright p {
   margin-bottom: 10px;
-  line-height: 16px;
-  letter-spacing: 0.3px;
+  line-height: 13.39px;
+  letter-spacing: 0.33px;
+  font-size: 11.1px;
 }
 
 footer .footer__copyright p span {
@@ -669,37 +708,20 @@ footer .footer__contacts .contacts__element {
 
 footer .footer__contacts .contacts__element .element__phone {
   font-family: Geometria ExtraBold;
-  font-size: 22px;
+  font-size: 26.79px;
+  line-height: 32.15px;
   color: #E6B02B;
 }
 
 footer .footer__contacts .contacts__element .element__email, footer .footer__contacts .contacts__element .element__address {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 14.95px;
+  line-height: 17.94px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 1366px) {
-  .footer__answers .answers__header, .footer__answers .answers__link {
-    font-size: 14px !important;
-  }
-  .footer__contacts .contacts__element .element__phone {
-    font-size: 20px !important;
-  }
-  .footer__contacts .contacts__element .element__email, .footer__contacts .contacts__element .element__address {
-    font-size: 12px !important;
-  }
-  .footer__social .social__header h1 {
-    font-size: 18px !important;
-  }
-  .footer__social .social__header p {
-    font-size: 9px !important;
-  }
   .footer__rights p {
-    font-size: 10px !important;
-    text-align: left !important;
-  }
-  .footer__copyright p {
-    font-size: 12px !important;
+    text-align: left;
   }
 }
 
@@ -732,7 +754,7 @@ footer .footer__contacts .contacts__element .element__email, footer .footer__con
 @media screen and (max-width: 768px) {
   .footer {
         grid-template-areas: "questions questions" "rights social" "contacts contacts" "copyright copyright" !important;
-    grid-gap: 30px 5px !important;
+    grid-gap: 30px 10px !important;
   }
   .footer__answers {
     -ms-grid-column: 1;
@@ -741,7 +763,10 @@ footer .footer__contacts .contacts__element .element__email, footer .footer__con
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .footer__answers > div {
+  .footer__answers h2, .footer__answers div {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.45px;
     text-align: center;
   }
   .footer__contacts {
@@ -751,18 +776,44 @@ footer .footer__contacts .contacts__element .element__email, footer .footer__con
     -ms-grid-row: 3 !important;
     grid-row: 3 !important;
   }
+  .footer__contacts .contacts__element:last-child {
+    margin-bottom: 0;
+  }
+  .footer__contacts .contacts__element .element__phone {
+    font-size: 26.79px;
+    line-height: 32.15px;
+  }
+  .footer__contacts .contacts__element .element__email, .footer__contacts .contacts__element .element__address {
+    font-size: 14.95px;
+    line-height: 17.94px;
+    padding: 5px;
+  }
   .footer__social .social__header h1 {
-    font-size: 17px !important;
+    font-size: 21.96px !important;
   }
   .footer__social .social__header p {
-    font-size: 10px !important;
+    letter-spacing: 0.3px;
+    font-size: 10.25px;
+    line-height: 12.3px;
+  }
+  .footer__social .social__links {
+    margin-top: 10px !important;
+  }
+  .footer__rights {
+    display: -ms-grid !important;
+    display: grid !important;
   }
   .footer__rights p {
-    font-size: 8px !important;
+    width: auto !important;
     text-align: left !important;
+    padding: 5px !important;
+    line-height: 12.3px;
+    margin-bottom: 0 !important;
   }
   .footer__copyright p {
-    font-size: 12px !important;
+    font-size: 10px !important;
+    line-height: 13.39px !important;
+    letter-spacing: 0.3px !important;
   }
 }
 /*# sourceMappingURL=constant-blocks.css.map */

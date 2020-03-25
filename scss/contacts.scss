@@ -1,10 +1,12 @@
-.contacts {
+main .contacts {
 	font-family: Geometria Light;
+
+	padding-top: 70px;
 
 	&__location {
 		display: grid;
 		grid-template-columns: 3fr 2fr;
-		grid-gap: 40px;
+		grid-gap: 50px;
 
 		& .location {
 			&__map img {
@@ -24,7 +26,8 @@
 						display: flex;
 						flex-direction: row;
 						align-items: center;
-						margin: 15px 0;
+						margin: 10px 0;
+						padding-left: 10px;
 
 						& img {
 							width: 32px;
@@ -39,12 +42,11 @@
 
 						& .element {
 							&__text {
-								font-size: 26px;
-								line-height: 28px;
+								font-size: 29.29px;
+								line-height: 35.15px;
 								width: 100%;
 								margin-left: 5px;
 								letter-spacing: 0.85px;
-								;
 							}
 						}
 					}
@@ -54,19 +56,25 @@
 	}
 }
 
-.text-block {
+.contacts-text-block {
 	margin: 30px 0;
-	font-size: 22px;
+	font-size: 28px;
+	line-height: 33.56px;
+	letter-spacing: 0.56px;
 
 	ul {
+		list-style-type: circle;
+		list-style-position: inside;
 		margin: 5px 0;
-		font-size: 26px;
+		font-size: 36px;
+
 		& li {
 			margin: 0 15px;
 		}
+
 		& span,
 		& p {
-			font-size: 22px;
+			font-size: 28px;
 		}
 	}
 }
@@ -83,11 +91,19 @@
 		}
 
 		& tr th {
-			font-size: 24px;
+			font-size: 39.83px;
+			letter-spacing: 1.16px;
+			line-height: 47.8px;
+
+			&:not(:first-child) {
+				letter-spacing: 0.4px;
+			}
 		}
 
 		& tr td {
-			font-size: 20px;
+			font-size: 26.92px;
+			letter-spacing: 0.78px;
+			line-height: 32.3px;
 		}
 	}
 }
@@ -95,27 +111,24 @@
 
 
 @media screen and (max-width: 1600px) {
-	.contacts {
+	main .contacts {
 		&__location {
 			& .location {
 				&__info {
-					& .info {
-						&__element {
-							margin: 10px 0;
+					& .info__element {
 
-							& img {
-								width: 26px;
+						& img {
+							width: 26px;
 
-								&.marker-icon {
-									width: 22px;
-								}
+							&.marker-icon {
+								width: 22px;
 							}
+						}
 
-							& .element {
-								&__text {
-									font-size: 22px;
-									line-height: 24px;
-								}
+						& .element {
+							&__text {
+								font-size: 22px;
+								line-height: 24px;
 							}
 						}
 					}
@@ -124,25 +137,32 @@
 		}
 	}
 
-	.text-block {
-		& p {
-			font-size: 22px;
-			line-height: 24px;
-		}
+	.contacts-text-block {
+		font-size: 22px !important;
+		line-height: 26px;
 
-		ul {
-			font-size: 26px;
+		& ul {
+			font-size: 28px;
 
-			& p, & li span {
-				font-size: 22px;
-				line-height: 24px;
+			li {
+				margin: 0;
+
+				& span {
+					margin-left: -10px;
+				}
+			}
+
+			& p,
+			& li span {
+				font-size: 22px !important;
+				line-height: 26px;
 			}
 		}
 	}
 }
 
 @media screen and (max-width: 1366px) {
-	.contacts {
+	main .contacts {
 		&__location {
 			& .location {
 				&__map img {
@@ -165,7 +185,7 @@
 							& .element {
 								&__text {
 									font-size: 20px;
-									line-height: 22px;
+									line-height: 24px;
 								}
 							}
 						}
@@ -175,18 +195,30 @@
 		}
 	}
 
-	.text-block {
-		& p {
-			font-size: 20px;
-			line-height: 22px;
-		}
+	.contacts-text-block {
+		font-size: 20px !important;
+		line-height: 24px;
 
 		& ul {
 			font-size: 24px;
-
-			& p, & li span {
+			& p,
+			& li span {
 				font-size: 20px;
-				line-height: 22px;
+				line-height: 24px;
+			}
+		}
+	}
+
+	.delivery-block {
+		& table.table {
+			& tr th {
+				font-size: 32px;
+				line-height: 42px;
+			}
+	
+			& tr td {
+				font-size: 24px;
+				line-height: 30px;
 			}
 		}
 	}
@@ -194,7 +226,7 @@
 
 
 @media screen and (max-width: 1024px) {
-	.contacts {
+	main .contacts {
 		&__location {
 			& .location {
 				&__info {
@@ -214,7 +246,7 @@
 							& .element {
 								&__text {
 									font-size: 18px;
-									line-height: 20px;
+									line-height: 24px;
 								}
 							}
 						}
@@ -224,25 +256,39 @@
 		}
 	}
 
-	.text-block {
-		& p {
-			font-size: 18px;
-			line-height: 20px;
-		}
+	.contacts-text-block {
+		font-size: 18px !important;
+		line-height: 24px;
 
 		& ul {
-			font-size: 22px;
+			font-size: 24px;
+			& p,
+			& li span {
+				font-size: 18px !important;
+				line-height: 24px;
+			}
+		}
+	}
 
-			& p, & li span{
-				font-size: 18px;
-				line-height: 20px;
+	.delivery-block {
+		& table.table {
+			& tr th {
+				font-size: 26px;
+				line-height: 36px;
+			}
+	
+			& tr td {
+				font-size: 20px;
+				line-height: 26px;
 			}
 		}
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.contacts {
+	main .contacts {
+		padding-top: 0;
+
 		&__location {
 			display: grid;
 			grid-template-columns: 1fr;
@@ -253,7 +299,7 @@
 
 					& .info {
 						&__element {
-							margin: 10px 0;
+							padding-left: 0;
 
 							& img {
 								width: 26px;
@@ -265,8 +311,8 @@
 
 							& .element {
 								&__text {
-									font-size: 16px;
-									line-height: 18px;
+									font-size: 19px;
+									line-height: 27px;
 								}
 							}
 						}
@@ -276,17 +322,58 @@
 		}
 	}
 
-	.text-block {
-		& p {
-			font-size: 16px!important;
-								line-height: 18px;
-		}
+	.contacts-text-block {
+		font-size: 19px !important;
+		line-height: 24.6px;
+
 		& ul {
-			font-size: 20px;
-			& p, & li span {
-				font-size: 16px!important;
-				line-height: 18px;
+			font-size: 24px;
+
+			li {
+				margin: 0;
+
+				& span {
+					margin-left: -10px;
+				}
+			}
+
+			& p,
+			& li span {
+
+				font-size: 19px !important;
+				line-height: 24.6px;
 			}
 		}
 	}
+
+	.delivery-block {
+		& table.table {
+
+			& tr td:first-child,
+			& tr th:first-child {
+				text-align: left;
+				width: auto;
+			}
+
+			& tr th {
+				font-size: 17px;
+				letter-spacing: 0px;
+				line-height: 13px;
+
+				&:not(:first-child) {
+					font-size: 18px;
+					letter-spacing: 0.18px;
+					line-height: 13px;
+				}
+			}
+
+			& tr td {
+				font-size: 18px;
+				letter-spacing: 0.52px;
+				line-height: 20px;
+			}
+		}
+	}
+
+
 }

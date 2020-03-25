@@ -1,6 +1,6 @@
 @mixin highlight_font() {
-	font-size: 24px;
-	font-family: Geometria Light;
+	font-size: 26px;
+	font-family: Geometria;
 }
 
 $icons-color: #E6AE2A;
@@ -33,7 +33,7 @@ $icons-color: #E6AE2A;
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-			font-size: 18px;
+			font-size: 22px;
 
 		}
 
@@ -67,8 +67,9 @@ $icons-color: #E6AE2A;
 				align-items: center;
 				border-radius: 20px;
 				background: #fff;
-				padding: 1px 10px;
-				height: 22px;
+				padding: 2px 10px;
+				font-size: 22px;
+
 			}
 
 			& .fa {
@@ -82,13 +83,65 @@ $icons-color: #E6AE2A;
 
 		& .search {
 			&__input {
+				font-size: 20px;
 				width: 100%;
 				border: none;
+				font-family: Geometria Light;
+
 			}
 		}
 	}
 }
 
+
+@media screen and (max-width: 1336px) {
+	.header {
+
+		&__element {
+			&.location,
+			&.contacts,
+			&.search {
+				font-size: 20px!important;
+	
+			}
+	
+			& .location {
+				&__city {
+					
+				}
+			}
+	
+			&.location img, &.contacts img {
+				margin-right: 9px;
+				font-size: 28px !important;
+				height: 25px;
+	
+			}
+	
+			& .contacts {
+				&__phone span {
+					font-size: 23px;
+				}
+			}
+	
+			&.search {
+				&>div {
+					width: 70%;
+					padding: 2px 10px;
+					font-size: 22px;
+	
+				}
+			}
+	
+			& .search {
+				&__input {
+					font-size: 20px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 1024px) {
 	.header {
