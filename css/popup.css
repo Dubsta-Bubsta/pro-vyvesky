@@ -82,6 +82,7 @@
   font-size: 16px;
   vertical-align: middle;
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 .popup__form .form__textarea:-ms-input-placeholder {
@@ -89,6 +90,7 @@
   font-size: 16px;
   vertical-align: middle;
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 .popup__form .form__textarea::-ms-input-placeholder {
@@ -96,6 +98,7 @@
   font-size: 16px;
   vertical-align: middle;
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 .popup__form .form__textarea::placeholder {
@@ -103,33 +106,35 @@
   font-size: 16px;
   vertical-align: middle;
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 .popup__form .form__textarea::-webkit-placeholder {
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
-  vertical-align: middle;
+  padding-top: 15px;
 }
 
 .popup__form .form__textarea::-moz-placeholder {
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
+  padding-top: 15px;
 }
 
 .popup__form .form__textarea:-moz-placeholder {
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
-  vertical-align: middle;
+  padding-top: 15px;
 }
 
 .popup__form .form__textarea:-ms-input-placeholder {
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
-  vertical-align: middle;
+  padding-top: 15px;
 }
 
 .popup__form .form__buttons {
@@ -252,7 +257,7 @@
     margin: 20px auto;
     z-index: 1;
     background: #fff;
-    padding: 20px;
+    padding: 20px 10px;
   }
   .popup h1 {
     text-align: left;
@@ -264,10 +269,35 @@
   .popup__form .form__textarea {
     height: 20vh;
   }
+  .popup__form .form__textarea::-webkit-input-placeholder {
+    padding-top: 6.5vh;
+  }
+  .popup__form .form__textarea:-ms-input-placeholder {
+    padding-top: 6.5vh;
+  }
+  .popup__form .form__textarea::-ms-input-placeholder {
+    padding-top: 6.5vh;
+  }
+  .popup__form .form__textarea::placeholder {
+    padding-top: 6.5vh;
+  }
+  .popup__form .form__textarea::-webkit-placeholder {
+    padding-top: 6.5vh;
+  }
+  .popup__form .form__textarea::-moz-placeholder {
+    padding-top: 6.5vh;
+  }
+  .popup__form .form__textarea:-moz-placeholder {
+    padding-top: 6.5vh;
+  }
+  .popup__form .form__textarea:-ms-input-placeholder {
+    padding-top: 6.5vh;
+  }
   .popup__form .form__buttons {
     width: 100%;
   }
-  .popup__form .form__buttons > div, .popup__form .form__buttons > button {
+  .popup__form .form__buttons > div,
+  .popup__form .form__buttons > button {
     margin: 15px 0;
   }
   .popup__form .form__buttons .btn {
@@ -279,7 +309,7 @@
     font-size: 20px !important;
   }
   .popup__form .form__buttons .buttons__file-checkbox {
-    font-size: 14px;
+    font-size: 13.5px;
   }
   .popup__form .form__buttons__attach-btn {
     font-size: 10px;

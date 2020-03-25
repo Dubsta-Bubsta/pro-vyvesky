@@ -73,36 +73,35 @@
 					font-size: 16px;
 					vertical-align: middle;
 					text-transform: uppercase;
+					padding-top: 15px;
 				}
+
 				&::-webkit-placeholder {
 					text-transform: uppercase;
 					font-size: 16px;
 					text-align: center;
-					vertical-align: middle;
-
+					padding-top: 15px;
 				}
 
 				&::-moz-placeholder {
 					text-transform: uppercase;
 					font-size: 16px;
 					text-align: center;
-
+					padding-top: 15px;
 				}
 
 				&:-moz-placeholder {
 					text-transform: uppercase;
 					font-size: 16px;
 					text-align: center;
-					vertical-align: middle;
-
+					padding-top: 15px;
 				}
 
 				&:-ms-input-placeholder {
 					text-transform: uppercase;
 					font-size: 16px;
 					text-align: center;
-					vertical-align: middle;
-
+					padding-top: 15px;
 				}
 
 				box-sizing: border-box;
@@ -130,7 +129,7 @@
 				& .buttons {
 					&__attach {
 						&-wrapper {
-							padding: 5px 0 0 0!important;
+							padding: 5px 0 0 0 !important;
 							width: 100%;
 
 							& input[type=file] {
@@ -145,8 +144,8 @@
 							text-transform: uppercase;
 							font-size: 12px;
 							text-align: center;
-						}						
-					}				
+						}
+					}
 
 					&__file-checkbox {
 						margin: 5px 0;
@@ -155,14 +154,17 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
+
 						& input {
 							display: none;
+
 							&:checked {
-								& + .chbx  {
-									background: #000;								
+								&+.chbx {
+									background: #000;
 								}
 							}
 						}
+
 						& .chbx {
 							display: flex;
 							justify-content: center;
@@ -171,11 +173,11 @@
 							width: 12px;
 							height: 12px;
 							margin-right: 5px;
-							
+
 						}
 					}
-					
 				}
+
 				& .order-btn {
 					padding: 5px;
 				}
@@ -217,7 +219,7 @@
 	}
 }
 
-@media screen and (max-width: 768px) {	
+@media screen and (max-width: 768px) {
 	.popup {
 		box-sizing: border-box;
 		position: fixed;
@@ -227,12 +229,13 @@
 		margin: 20px auto;
 		z-index: 1;
 		background: #fff;
-		padding: 20px;
+		padding: 20px 10px;
 
 
 		& h1 {
 			text-align: left;
 		}
+
 		&__close {
 			top: 12px;
 			right: 12px;
@@ -241,30 +244,60 @@
 		&__form .form {
 			&__textarea {
 				height: 20vh;
+
+				&::placeholder {
+					padding-top: 6.5vh;
+				}
+
+				&::-webkit-placeholder {
+					padding-top: 6.5vh;
+
+				}
+
+				&::-moz-placeholder {
+					padding-top: 6.5vh;
+
+				}
+
+				&:-moz-placeholder {
+					padding-top: 6.5vh;
+
+				}
+
+				&:-ms-input-placeholder {
+					padding-top: 6.5vh;
+
+				}
 			}
+
 			&__buttons {
 				width: 100%;
-				&> div, &>button{
+
+				&>div,
+				&>button {
 					margin: 15px 0;
 				}
+
 				& .btn {
 					padding: 10px;
 					width: 100%;
 					font-size: 16px;
 				}
+
 				& .order-btn {
-					font-size: 20px!important;
+					font-size: 20px !important;
 				}
+
 				& .buttons__file-checkbox {
-					font-size: 14px;
+					font-size: 13.5px;
 				}
+
 				&__attach {
 					&-btn {
 						font-size: 10px;
 					}
 				}
 			}
-
 		}
 	}
 }
