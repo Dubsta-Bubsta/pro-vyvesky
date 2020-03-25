@@ -1,8 +1,9 @@
 h1.section-header {
 	margin-bottom: 40px;
 }
+
 .calculator-examples {
-	
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -39,15 +40,15 @@ h1.section-header {
 	margin: 0 auto;
 
 	&.width-100 {
-		width: 100%;		
+		width: 100%;
 	}
 
 	h2.section-header {
-		margin: 35px 0 25px 0;
+		margin: 35px 0 15px 0;
 	}
-	.form-100 {
 
-	}
+	.form-100 {}
+
 	&__form .form {
 		&__input-block {
 
@@ -61,18 +62,22 @@ h1.section-header {
 					}
 				}
 			}
+
 			&_big {
 				& .input-block {
 					&__input {
 						font-size: 26px;
 					}
 				}
+
+				
 			}
 		}
 
 		&__inputs_small {
 			display: flex;
 			justify-content: center;
+
 			& .inputs_small {
 				& .input-block {
 					&__input-holder {
@@ -87,12 +92,12 @@ h1.section-header {
 							font-size: 50px;
 							font-weight: 400;
 							position: absolute;
-							top: -5px;
+							top: 0px;
 						}
 
 						&:after {
 							content: ">";
-							right: -12px;							
+							right: -12px;
 						}
 
 						&:before {
@@ -113,11 +118,12 @@ h1.section-header {
 
 				& .selectors {
 					&_small {
-						
+
 						& .selectors__selector {
 							width: 30%;
 						}
 					}
+
 					&__selector {
 						margin: 0 5px;
 						width: 100%;
@@ -150,6 +156,7 @@ h1.section-header {
 							padding: 15px 5px;
 							font-size: 22px;
 							font-family: Geometria Light;
+
 							&.small-font {
 								font-size: 18px;
 							}
@@ -242,6 +249,7 @@ h1.section-header {
 				&__price {
 					font-size: 26px;
 					margin-bottom: 20px;
+
 					& span {
 						font-family: Geometria Medium;
 						color: #dc2618;
@@ -251,18 +259,19 @@ h1.section-header {
 				&__button {
 					background: #DC2618;
 					color: #fff;
-					font-size: 40px!important;
+					font-size: 40px !important;
 					margin: 10px 0;
 					letter-spacing: 2px;
-					padding: 0px 10px 7px 10px;
-					
+					padding: 0px 5px 2px 5px;
+
 				}
 
 				&__description {
 					text-align: center;
 					text-transform: uppercase;
 					font-size: 12px;
-					width: 70%;
+					width: 50%;
+					margin-top: 5px;
 				}
 			}
 		}
@@ -275,6 +284,7 @@ h1.section-header {
 			width: 30%;
 		}
 	}
+
 	.customise-product {
 		width: 80%;
 	}
@@ -285,6 +295,11 @@ h1.section-header {
 	.calculator-examples {
 		&__element {
 			width: 40%;
+
+			&:hover {
+				text-decoration: none;
+				font-family: Geometria Medium;
+			}
 		}
 	}
 
@@ -301,7 +316,29 @@ h1.section-header {
 						font-family: Geometria;
 						font-size: 18px;
 					}
+					& .input-block__input-holder {
+						position: relative;
+						&:after,
+						&:before {
+							font-size: 50px;
+							font-weight: 400;
+							position: absolute;
+							top: -5px;
+						}
+	
+						&:after {
+							content: ">";
+							right: -12px;
+						}
+	
+						&:before {
+							content: "<";
+							left: -12px;
+						}
+					}
 				}
+				
+					
 			}
 
 			&__inputs_small {
@@ -317,9 +354,10 @@ h1.section-header {
 					&:before {
 						left: 5px !important;
 					}
+
 					& input {
 						font-family: Geometria;
-						font-size: 18px;
+						font-size: 21px;
 					}
 				}
 			}
@@ -329,43 +367,49 @@ h1.section-header {
 					flex-direction: column;
 
 					& .selectors {
-						
+
 						&__selector {
 							margin: 5px 0;
+
 							& label {
 								font-family: Geometria;
-									font-size: 18px;		
-									
-							}					
-						}						
+								font-size: 18px;
+
+							}
+						}
 					}
+
 					&.selectors_small {
-					
+
 						display: flex;
-						justify-content:center;
+						justify-content: center;
 						flex-wrap: wrap;
 						flex-direction: row;
+
 						& .selectors {
 							&__selector {
 								margin: 5px;
 								width: 30%;
+
 								& label {
-									padding: 10px!important;
+									padding: 10px !important;
 									font-family: Geometria;
 									font-size: 18px;
-									
+
 								}
-								
+
 							}
-							
+
 						}
 					}
 
 				}
 			}
-			&__color-selectors-block .color-selectors-block  {
+
+			&__color-selectors-block .color-selectors-block {
 				&__selectors {
 					grid-template-columns: repeat(4, 1fr);
+
 					& .selectors {
 						&__selector {
 							&:nth-child(17) {
@@ -375,27 +419,32 @@ h1.section-header {
 					}
 				}
 			}
-			&__text-example  {
 
-				& h3 {
+			&__text-example {
+
+				& .section-header {
 					font-family: Geometria Medium;
 					font-size: 21px;
 				}
 			}
+
 			&__order-block {
-				& h3 {
+				& .section-header {
 					font-family: Geometria Medium;
 					font-size: 21px;
 				}
-				.order-block{
+
+				.order-block {
 					&__price {
 						font-size: 42px;
 						letter-spacing: 1.79px;
 					}
+
 					&__button {
 						width: 100%;
-						padding: 10px;
+						padding-bottom: 4px;
 					}
+
 					&__description {
 						width: 100%;
 					}

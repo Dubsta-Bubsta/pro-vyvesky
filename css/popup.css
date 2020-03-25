@@ -39,24 +39,28 @@
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .popup__form .form__inputs input::-moz-placeholder {
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .popup__form .form__inputs input:-moz-placeholder {
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .popup__form .form__inputs input:-ms-input-placeholder {
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .popup__form .form__textarea {
@@ -77,23 +81,54 @@
   text-align: center;
   font-size: 16px;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .popup__form .form__textarea:-ms-input-placeholder {
   text-align: center;
   font-size: 16px;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .popup__form .form__textarea::-ms-input-placeholder {
   text-align: center;
   font-size: 16px;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .popup__form .form__textarea::placeholder {
   text-align: center;
   font-size: 16px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.popup__form .form__textarea::-webkit-placeholder {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.popup__form .form__textarea::-moz-placeholder {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
+
+.popup__form .form__textarea:-moz-placeholder {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.popup__form .form__textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
   vertical-align: middle;
 }
 
@@ -128,7 +163,7 @@
 
 .popup__form .form__buttons .buttons__attach-btn {
   background: #82D2D0;
-  padding: 5px;
+  padding: 2px 5px;
   display: block;
   text-transform: uppercase;
   font-size: 12px;
@@ -148,6 +183,33 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.popup__form .form__buttons .buttons__file-checkbox input {
+  display: none;
+}
+
+.popup__form .form__buttons .buttons__file-checkbox input:checked + .chbx div {
+  background: #000;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+}
+
+.popup__form .form__buttons .buttons__file-checkbox .chbx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #000;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
 }
 
 .popup__form .form__buttons .order-btn {
