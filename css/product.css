@@ -42,21 +42,6 @@
           justify-content: space-between;
 }
 
-.product__content .content__description .description__text {
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.product__content .content__description .description__text ul {
-  list-style-type: circle;
-  list-style-position: inside;
-  margin-bottom: 20px;
-}
-
-.product__content .content__description .description__text ul li {
-  line-height: 36px;
-}
-
 .product__content .content__description .description__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,6 +91,7 @@
 }
 
 .product-example-block-big__content .content__view .view__buttons {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,14 +119,8 @@
           justify-content: space-between;
 }
 
-.product-example-block-big__content .content__info .info__characteristics ul {
-  list-style-type: circle;
-  list-style-position: inside;
-  margin-bottom: 20px;
-}
-
-.product-example-block-big__content .content__info .info__characteristics ul li {
-  line-height: 36px;
+.product-example-block-big__content .content__info .info__table-block.table-center tr td, .product-example-block-big__content .content__info .info__table-block.table-center tr th {
+  text-align: center;
 }
 
 .product-example-block-big__content .content__info .info__text-block {
@@ -162,12 +142,13 @@
 }
 
 .also-interesting-block__links a {
-  text-align: center;
+  text-align: left;
   color: #0082FB;
   font-size: inherit;
   line-height: 26px;
   font-size: 18px;
   font-family: Geometria;
+  letter-spacing: 0.72px;
 }
 
 .works-example-block {
@@ -205,7 +186,7 @@
 }
 
 .works-example-block .show-more-btn {
-  margin: 10px auto;
+  margin: 25px auto;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -216,7 +197,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 20px !important;
   letter-spacing: 2px;
 }
 
@@ -286,7 +266,7 @@
 
 .product-example-block-small > .show-more-btn {
   display: block;
-  margin: 10px auto;
+  margin: 40px auto 55px auto;
 }
 
 .product-example-block-small__list {
@@ -294,7 +274,7 @@
   display: grid;
   -ms-grid-columns: (minmax(30%, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-  grid-gap: 20px;
+  grid-gap: 50px;
 }
 
 .product-example-block-small__list .list__element {
@@ -314,22 +294,21 @@
 }
 
 .product-example-block-small__list .list__element .element__title {
-  margin: 10px;
+  margin: 15px 15px 0 15px;
   text-align: left;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Geometria Medium;
 }
 
 .product-example-block-small__list .list__element .element__text {
-  margin: 10px;
-  font-size: 14px;
+  margin: 0 15px;
+  font-size: 15px;
   line-height: 18px;
 }
 
 .product-example-block-small__list .list__element .element__actions {
-  margin: 0 10px;
-  margin-top: 10px;
+  margin: 10px 10px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,6 +349,11 @@
 
 .product-example-block-small__list.grid-5 .list__element .element__text {
   font-size: 12px;
+}
+
+.text-block .section-header {
+  text-align: left;
+  letter-spacing: 1.17px;
 }
 
 section .fa-angle-right {
@@ -484,6 +468,7 @@ section .fa-angle-right:last-child {
   }
   .product__content .content__description .description__buttons .btn {
     margin: 10px 0;
+    font-size: 22px !important;
   }
   .works-example-block__list {
     -ms-grid-columns: 1fr 1fr;

@@ -44,9 +44,9 @@
 
 .header__element.location img, .header__element.contacts img {
   color: #E6AE2A;
-  margin-right: 10px;
+  margin-right: 9px;
   font-size: 28px !important;
-  height: 26px;
+  height: 25px;
 }
 
 .header__element .contacts__phone span {
@@ -557,7 +557,7 @@ footer .footer__rights .rights__element {
   width: 80%;
   text-align: center;
   padding: 10px;
-  border: 1px solid #E6B02B;
+  border: 0.5px solid #E6B02B;
   color: #E6B02B;
   margin-bottom: 20px;
   font-size: 10px;
@@ -632,6 +632,7 @@ footer .footer__copyright {
 footer .footer__copyright p {
   margin-bottom: 10px;
   line-height: 16px;
+  letter-spacing: 0.3px;
 }
 
 footer .footer__copyright p span {

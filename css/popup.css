@@ -1,6 +1,5 @@
 .popup {
   font-family: Geometria Light;
-  font-weight: 600;
   position: fixed;
   margin: 0 auto;
   left: 0;
@@ -25,11 +24,12 @@
 }
 
 .popup__form .form__inputs input {
+  width: 100%;
+  font-family: Geometria Light;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 5px;
   text-align: center;
-  width: 90%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
@@ -37,36 +37,64 @@
 
 .popup__form .form__inputs input::-webkit-input-placeholder {
   text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
 }
 
 .popup__form .form__inputs input::-moz-placeholder {
   text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
 }
 
 .popup__form .form__inputs input:-moz-placeholder {
   text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
 }
 
 .popup__form .form__inputs input:-ms-input-placeholder {
   text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
 }
 
 .popup__form .form__textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 15px 0;
+  margin-top: 15px;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 5px;
-  text-transform: uppercase;
-  text-align: center;
   resize: none;
   width: 100%;
   min-height: 70px;
   font-family: inherit;
-  font-weight: 400;
   font-family: Geometria Light;
-  font-weight: 600;
+}
+
+.popup__form .form__textarea::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.popup__form .form__textarea:-ms-input-placeholder {
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.popup__form .form__textarea::-ms-input-placeholder {
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.popup__form .form__textarea::placeholder {
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
 }
 
 .popup__form .form__buttons {
@@ -90,6 +118,7 @@
 }
 
 .popup__form .form__buttons .buttons__attach-wrapper {
+  padding: 5px 0 0 0 !important;
   width: 100%;
 }
 
@@ -99,17 +128,30 @@
 
 .popup__form .form__buttons .buttons__attach-btn {
   background: #82D2D0;
-  padding: 10px 10px;
+  padding: 5px;
   display: block;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
 .popup__form .form__buttons .buttons__file-checkbox {
   margin: 5px 0;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup__form .form__buttons .order-btn {
+  padding: 5px;
 }
 
 .popup__close {
@@ -153,17 +195,32 @@
     background: #fff;
     padding: 20px;
   }
+  .popup h1 {
+    text-align: left;
+  }
   .popup__close {
     top: 12px;
     right: 12px;
   }
+  .popup__form .form__textarea {
+    height: 20vh;
+  }
   .popup__form .form__buttons {
     width: 100%;
+  }
+  .popup__form .form__buttons > div, .popup__form .form__buttons > button {
+    margin: 15px 0;
   }
   .popup__form .form__buttons .btn {
     padding: 10px;
     width: 100%;
     font-size: 16px;
+  }
+  .popup__form .form__buttons .order-btn {
+    font-size: 20px !important;
+  }
+  .popup__form .form__buttons .buttons__file-checkbox {
+    font-size: 14px;
   }
   .popup__form .form__buttons__attach-btn {
     font-size: 10px;

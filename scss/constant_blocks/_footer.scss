@@ -45,7 +45,7 @@ footer {
 					width: 80%;
 					text-align: center;
 					padding: 10px;
-					border: 1px solid $footer-color;
+					border: 0.5px solid $footer-color;
 					color: $footer-color;
 					margin-bottom: 20px;
 					font-size: 10px;
@@ -106,7 +106,7 @@ footer {
 			& p {
 				margin-bottom: 10px;
 				line-height: 16px;
-
+				letter-spacing: 0.3px;
 				& span {
 					color: $footer-color;
 				}

@@ -205,65 +205,115 @@
 		<h1 class="contacts__header section-header">Калькулятор табличек</h1>
 
 	
-		<div class="customise-product">
+		<div class="customise-product width-100">
 			<form class="customise-product__form form" action="#">
 				<!-- У каждого чекбокса должен быть id и label-->
 				<div class="form__type-selectors-block type-selectors-block">
-					<h3 class="section-header">Материал</h3>
+					<h2 class="section-header">Материал</h2>
 					<div class="type-selectors-block__selectors selectors_big selectors ">
 						<div class="selectors__selector">
 							<input type="radio" id="type1_1" name="type-selector">
-							<label for="type1_1">Подвесной</label>
+							<label for="type1_1">Металл</label>
 						</div>
 						<div class="selectors__selector">
 							<input type="radio" id="type1_2" name="type-selector">
-							<label for="type1_2">Настенный</label>
+							<label for="type1_2">Пластик</label>
 						</div>
 						<div class="selectors__selector">
 							<input type="radio" id="type1_3" name="type-selector">
-							<label for="type1_3">Двустронний</label>
+							<label for="type1_3">Орг.стекло</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type1_4" name="type-selector">
+							<label for="type1_4">Дерево</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type1_5" name="type-selector">
+							<label for="type1_5">Дибонд</label>
 						</div>
 					</div>
 				</div>
 				<div class="form__type-selectors-block type-selectors-block">
-					<h3 class="section-header">Выберите тип шрифта вывески</h3>
-					<div class="type-selectors-block__selectors selectors_small selectors ">
+					<h3 class="section-header">Изображение</h3>
+					<div class="type-selectors-block__selectors selectors selectors_big">
 						<div class="selectors__selector">
-							<input type="radio" id="type2_1" name="type-selector">
-							<label for="type2_1">A4</label>
+							<input type="radio" id="type2_1" name="type-selector-1">
+							<label for="type2_1">Печать</label>
 						</div>
 						<div class="selectors__selector">
-							<input type="radio" id="type2_2" name="type-selector">
-							<label for="type2_2">A2</label>
+							<input type="radio" id="type2_2" name="type-selector-1">
+							<label for="type2_2">Пленка</label>
 						</div>
 						<div class="selectors__selector">
-							<input type="radio" id="type2_3" name="type-selector">
-							<label for="type2_3">A3</label>
+							<input type="radio" id="type2_3" name="type-selector-1">
+							<label for="type2_3">Гравировка</label>
+						</div>						
+					</div>
+				</div>
+				<div class="form__type-selectors-block type-selectors-block">
+					<h2 class="section-header">Крепление</h2>
+					<div class="type-selectors-block__selectors selectors_big selectors ">
+						<div class="selectors__selector">
+							<input type="radio" id="type3_1" name="type-selector-2">
+							<label class="small-font" for="type3_1">Самоклейка</label>
 						</div>
 						<div class="selectors__selector">
-							<input type="radio" id="type2_4" name="type-selector">
-							<label for="type2_4">A1</label>
+							<input type="radio" id="type3_2" name="type-selector-2">
+							<label class="small-font" for="type3_2">Саморезы</label>
 						</div>
 						<div class="selectors__selector">
-							<input type="radio" id="type2_5" name="type-selector">
-							<label for="type2_5">A 0</label>
+							<input type="radio" id="type3_3" name="type-selector-2">
+							<label class="small-font" for="type3_3">Кронштейн</label>
 						</div>
 						<div class="selectors__selector">
-							<input type="radio" id="type2_6" name="type-selector">
-							<label for="type2_6">Свой</label>
+							<input type="radio" id="type3_4" name="type-selector-2">
+							<label class="small-font" for="type3_4">Дистанционно</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type3_5" name="type-selector-2">
+							<label class="small-font" for="type3_5">Настольная</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type3_5" name="type-selector-2">
+							<label class="small-font" for="type3_6">Ручная</label>
 						</div>
 					</div>
 				</div>
-			
+				<div class="form__type-selectors-block type-selectors-block">
+					<h2 class="section-header">Толщина (мм)</h2>
+					<div class="type-selectors-block__selectors selectors_small selectors ">
+						<div class="selectors__selector">
+							<input type="radio" id="type4_1" name="type-selector-3">
+							<label for="type4_1">2</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type4_2" name="type-selector-3">
+							<label for="type4_2">3</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type4_3" name="type-selector-3">
+							<label for="type4_3">4</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type4_4" name="type-selector-3">
+							<label for="type4_4">5</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type4_5" name="type-selector-3">
+							<label for="type4_5">Другое</label>
+						</div>
+						
+					</div>
+				</div>
 				<div class="form__inputs_small inputs_small">
 					<div class="inputs_small input-block">
-						<h3 class="section-header">Укажите высоту (мм)</h3>
+						<h2 class="section-header">Укажите высоту (мм)</h2>
 						<div class="input-block__input-holder">
 							<input class="input">
 						</div>
 					</div>
 					<div class="inputs_small input-block">
-						<h3 class="section-header">Укажите ширину (мм)</h3>
+						<h2 class="section-header">Укажите ширину (мм)</h2>
 						<div class="input-block__input-holder">
 							<input class="input">
 						</div>

@@ -1,6 +1,5 @@
 .popup {
 	font-family: Geometria Light;
-    font-weight: 600;
 	position: fixed;
 	margin: 0 auto;
 	left: 0;
@@ -23,48 +22,65 @@
 				grid-gap: 10px;
 
 				& input {
+					width: 100%;
+					font-family: Geometria Light;
+
 					border: 1px solid #000;
-					border-radius: 5px;
+					border-radius: 10px;
 					padding: 10px 5px;
 					text-align: center;
-					width: 90%;
 					box-sizing: border-box;
 					font-size: 16px;
 
 					&::-webkit-input-placeholder {
 						text-transform: uppercase;
+						font-size: 16px;
+						text-align: center;
+
 					}
 
 					&::-moz-placeholder {
 						text-transform: uppercase;
+						font-size: 16px;
+						text-align: center;
+
 					}
 
 					&:-moz-placeholder {
 						text-transform: uppercase;
+						font-size: 16px;
+						text-align: center;
+
 					}
 
 					&:-ms-input-placeholder {
 						text-transform: uppercase;
+						font-size: 16px;
+						text-align: center;
+
 					}
 
 				}
 			}
 
 			&__textarea {
+				&::placeholder {
+					text-align: center;
+					font-size: 16px;
+					vertical-align: middle;
+
+				}
+
 				box-sizing: border-box;
-				margin: 15px 0;
+				margin-top: 15px;
 				border: 1px solid #000;
-				border-radius: 5px;
+				border-radius: 10px;
 				padding: 10px 5px;
-				text-transform: uppercase;
-				text-align: center;
 				resize: none;
 				width: 100%;
 				min-height: 70px;
 				font-family: inherit;
-				font-weight: 400;
 				font-family: Geometria Light;
-    font-weight: 600;
 			}
 
 			&__buttons {
@@ -74,34 +90,43 @@
 				align-items: center;
 
 				& .order-btn {
-					font-size: 18px!important;
+					font-size: 18px !important;
 				}
 
 				& .buttons {
 					&__attach {
 						&-wrapper {
+							padding: 5px 0 0 0!important;
 							width: 100%;
-							& input[type=file]{
+
+							& input[type=file] {
 								display: none;
 							}
 						}
+
 						&-btn {
 							background: #82D2D0;
-							padding: 10px 10px;
+							padding: 5px;
 							display: block;
 							text-transform: uppercase;
-							font-size: 14px;
+							font-size: 12px;
 							text-align: center;
-						}
-					}
+						}						
+					}				
 
 					&__file-checkbox {
 						margin: 5px 0;
 						text-transform: uppercase;
-						font-size: 14px;
-					}					
+						font-size: 12px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					
 				}
-				
+				& .order-btn {
+					padding: 5px;
+				}
 			}
 		}
 	}
@@ -140,7 +165,7 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {	
 	.popup {
 		box-sizing: border-box;
 		position: fixed;
@@ -152,28 +177,42 @@
 		background: #fff;
 		padding: 20px;
 
+
+		& h1 {
+			text-align: left;
+		}
 		&__close {
 			top: 12px;
 			right: 12px;
 		}
 
 		&__form .form {
+			&__textarea {
+				height: 20vh;
+			}
 			&__buttons {
 				width: 100%;
-
-				.btn {
+				&> div, &>button{
+					margin: 15px 0;
+				}
+				& .btn {
 					padding: 10px;
 					width: 100%;
 					font-size: 16px;
 				}
-
+				& .order-btn {
+					font-size: 20px!important;
+				}
+				& .buttons__file-checkbox {
+					font-size: 14px;
+				}
 				&__attach {
 					&-btn {
 						font-size: 10px;
 					}
 				}
 			}
-			
+
 		}
 	}
 }
