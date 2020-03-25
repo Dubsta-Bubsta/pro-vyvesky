@@ -64,6 +64,7 @@ h1.section-header {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .customise-product__form .form__input-block_small .input-block__input {
