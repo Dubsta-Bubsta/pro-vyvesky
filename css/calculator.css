@@ -187,7 +187,8 @@ h1.section-header {
 }
 
 .customise-product__form .form__color-selectors-block {
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .customise-product__form .form__color-selectors-block .color-selectors-block__selectors {
@@ -245,7 +246,8 @@ h1.section-header {
 }
 
 .customise-product__form .form__text-example {
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .customise-product__form .form__text-example .text-example__text {
@@ -259,7 +261,8 @@ h1.section-header {
 }
 
 .customise-product__form .form__order-block {
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
