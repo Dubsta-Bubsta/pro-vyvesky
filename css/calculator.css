@@ -1,3 +1,7 @@
+h1.section-header {
+  margin-bottom: 40px;
+}
+
 .calculator-examples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +54,7 @@
 }
 
 .customise-product h2.section-header {
-  margin: 35px 0 15px 0;
+  margin: 35px 0 25px 0;
 }
 
 .customise-product__form .form__input-block_small .input-block__input {

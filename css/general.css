@@ -108,7 +108,7 @@ h1.section-header-underline {
 }
 
 h2.section-header {
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 1.17px;
 }
 
@@ -181,7 +181,7 @@ h1.section-header-underline {
 }
 
 .calc-btn {
-  color: #fff;
+  color: #fff !important;
   background: #42D1CF;
   margin-right: 20px;
 }
@@ -240,14 +240,18 @@ button:hover {
 }
 
 .text-block ul {
-  font-size: 18px;
+  font-size: 26px;
   line-height: 26px;
   list-style-type: circle;
   list-style-position: inside;
 }
 
+.text-block ul span {
+  font-size: 20px;
+}
+
 .table-block {
-  margin: 20px 0;
+  margin: 30px 0;
   position: relative;
 }
 
@@ -357,8 +361,9 @@ button:hover {
     font-family: Geometria Medium;
   }
   h2.section-header {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0;
+    margin-bottom: 20px;
   }
   h3.section-header {
     letter-spacing: 0;
@@ -366,7 +371,7 @@ button:hover {
   }
   .site-location {
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.62px;
   }
@@ -390,6 +395,13 @@ button:hover {
   .text-block {
     color: #000;
     line-height: 18px;
+    font-size: 16px;
+  }
+  .text-block ul {
+    font-size: 24px;
+    line-height: 22px;
+  }
+  .text-block ul span {
     font-size: 16px;
   }
   .input-block input {

@@ -25,7 +25,7 @@ h1.section-header-underline {
 }
 
 h2.section-header {
-	font-size: 24px;
+	font-size: 22px;
 	letter-spacing: 1.17px;
 }
 h3.section-header {
@@ -83,7 +83,7 @@ h1.section-header-underline {
 
 
 .calc-btn {
-	color: #fff;
+	color: #fff!important;
 	background: #42D1CF;
 	margin-right: 20px;
 
@@ -139,15 +139,18 @@ button:hover {
 	letter-spacing: 0.55px;
 
 	& ul {
-		font-size: 18px;
+		font-size: 26px;
 		line-height: 26px;
 		list-style-type: circle;
 		list-style-position: inside;
+		& span {
+			font-size: 20px;
+		}
 	}
 }
 
 .table-block {
-	margin: 20px 0;
+	margin: 30px 0;
 	position: relative;
 
 	&__arrows {
@@ -261,9 +264,9 @@ button:hover {
 	}
 
 	h2.section-header {
-		font-size: 18px;
+		font-size: 16px;
 		letter-spacing: 0;
-
+		margin-bottom: 20px;
 	}
 
 	h3.section-header {
@@ -273,7 +276,7 @@ button:hover {
 
 	.site-location {
 		text-align: center;
-		font-size: 15px;
+		font-size: 13px;
 		line-height: 20px;
 		letter-spacing: 0.62px;
 	}
@@ -300,6 +303,14 @@ button:hover {
 		color: #000;
 		line-height: 18px;
 	font-size: 16px;
+
+	& ul {
+		font-size: 24px;
+		line-height: 22px;
+		& span {
+			font-size: 16px;
+		}
+	}
 	}
 	.input-block input {
 		

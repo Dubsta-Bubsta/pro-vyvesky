@@ -91,7 +91,7 @@
 }
 
 .product-example-block-big__content .content__view .view__buttons {
-  margin-top: 20px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +286,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background: #E0E3E3;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 .product-example-block-small__list .list__element .element__img {
@@ -294,7 +294,7 @@
 }
 
 .product-example-block-small__list .list__element .element__title {
-  margin: 15px 15px 0 15px;
+  margin: 10px 10px 5px 10px;
   text-align: left;
   text-transform: uppercase;
   font-size: 16px;
@@ -302,7 +302,7 @@
 }
 
 .product-example-block-small__list .list__element .element__text {
-  margin: 0 15px;
+  margin: 0 10px;
   font-size: 15px;
   line-height: 18px;
 }
