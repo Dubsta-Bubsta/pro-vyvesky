@@ -10,6 +10,10 @@
   grid-gap: 40px;
 }
 
+.contacts__location .location__map img {
+  width: 100%;
+}
+
 .contacts__location .location__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,15 +63,39 @@
 
 .text-block {
   margin: 30px 0;
+  font-size: 22px;
+}
+
+.text-block ul {
+  margin: 5px 0;
+  font-size: 26px;
+}
+
+.text-block ul li {
+  margin: 0 15px;
+}
+
+.text-block ul span,
+.text-block ul p {
+  font-size: 22px;
 }
 
 .delivery-block {
   margin: 30px 0;
 }
 
-.delivery-block table.table tr td:first-child, .delivery-block table.table tr th:first-child {
+.delivery-block table.table tr td:first-child,
+.delivery-block table.table tr th:first-child {
   text-align: left;
   width: auto;
+}
+
+.delivery-block table.table tr th {
+  font-size: 22px;
+}
+
+.delivery-block table.table tr td {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -81,6 +109,17 @@
     width: 22px;
   }
   .contacts__location .location__info .info__element .element__text {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .text-block p {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .text-block ul {
+    font-size: 26px;
+  }
+  .text-block ul p, .text-block ul li span {
     font-size: 22px;
     line-height: 24px;
   }
@@ -103,6 +142,17 @@
     font-size: 20px;
     line-height: 22px;
   }
+  .text-block p {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .text-block ul {
+    font-size: 24px;
+  }
+  .text-block ul p, .text-block ul li span {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -116,6 +166,17 @@
     width: 16px;
   }
   .contacts__location .location__info .info__element .element__text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .text-block p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .text-block ul {
+    font-size: 22px;
+  }
+  .text-block ul p, .text-block ul li span {
     font-size: 18px;
     line-height: 20px;
   }
@@ -140,6 +201,17 @@
   }
   .contacts__location .location__info .info__element .element__text {
     font-size: 16px;
+    line-height: 18px;
+  }
+  .text-block p {
+    font-size: 16px !important;
+    line-height: 18px;
+  }
+  .text-block ul {
+    font-size: 20px;
+  }
+  .text-block ul p, .text-block ul li span {
+    font-size: 16px !important;
     line-height: 18px;
   }
 }
