@@ -306,6 +306,8 @@
 			&__element {
 				width: 300px;
 				margin: 10px;
+				min-height: 15px;
+				
 			}
 
 			&__element .element {
@@ -325,7 +327,7 @@
 						font-size: 16px;
 						line-height: 20px;
 						font-family: Geometria Medium;
-					
+						
 					}
 
 					& img {
@@ -352,6 +354,11 @@
 								content: "\25CF";
 								padding-right: 7px;
 								color: #FFB100;
+							}
+							&.empty {
+								&::before {
+									content: "";
+								}
 							}
 						}
 					}
@@ -456,20 +463,20 @@
 
 				& .element {
 					&__header {
-						margin: 7px 0;
-						font-size: 16px;
+						margin: 12px 0 7px 0;
+						font-size: 17px;
 						text-align: center;
 					}
 
 					&__text {
-						font-size: 14px;
+						font-size: 15px;
 						text-align: center;
-						margin: 5px 0;
+						margin: 10px 0;
 					}
 				}
 
 				& img {
-					width: 13vh;
+					width: 150px;
 				}
 			}
 		}
@@ -490,14 +497,13 @@
 			&__inputs {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				grid-gap: 5px 50px;
+				grid-gap: 7px 50px;
 				margin: 5px 0;
 
 				& input {
 					font-family: Geometria Light;
-					font-size: 18px;
-					padding: 5px;
-					padding-left: 15px;
+					font-size: 21px;
+					padding: 15px 10px 10px 15px;
 					border: none;
 					line-height: 26px;
 					font-family: inherit;
@@ -516,10 +522,10 @@
 				font-weight: 300;
 				padding: 14px;
 				margin: 0;
+				margin-top: 7px;
 				min-height: 120px;
 				font-family: inherit;
 				font-weight: 400;
-
 			}
 
 			&__btn {
@@ -554,6 +560,18 @@
 	.theme-services-block {
 		&__list {
 			grid-template-columns: 1fr 1fr;
+		}
+	}
+	.order-of-actions-block {
+		&__list {
+			& .list {				
+				&__element {				
+	
+					& img {
+						width: 100px;
+					}
+				}
+			}
 		}
 	}
 }

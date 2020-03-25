@@ -219,7 +219,7 @@
   color: #fff;
   text-transform: uppercase;
   word-wrap: break-word;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .nav__list .list__element_active a, .nav__list .list__element:hover {
@@ -525,7 +525,7 @@ footer .footer__answers {
 footer .footer__answers .answers__header {
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: Geometria ExtraBold;
 }
 
@@ -534,7 +534,7 @@ footer .footer__answers .answers__link {
   color: #fff;
   border-bottom: 1px solid #E6B02B;
   line-height: 20px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 footer .footer__rights {
@@ -548,19 +548,22 @@ footer .footer__rights {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer__rights .rights__element {
-  width: 80%;
+  width: 70%;
   text-align: center;
   padding: 10px;
   border: 0.5px solid #E6B02B;
   color: #E6B02B;
   margin-bottom: 20px;
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
@@ -584,7 +587,7 @@ footer .footer__social {
 }
 
 footer .footer__social .social__header h1 {
-  font-size: 16px;
+  font-size: 20px;
   font-family: Geometria ExtraBold;
   line-height: 26px;
   text-align: left;
@@ -593,7 +596,7 @@ footer .footer__social .social__header h1 {
 }
 
 footer .footer__social .social__header p {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
@@ -617,7 +620,7 @@ footer .footer__social .social__links a {
 }
 
 footer .footer__social .social__links a img {
-  width: 40px;
+  width: 43px;
 }
 
 footer .footer__copyright {
@@ -625,7 +628,7 @@ footer .footer__copyright {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: copyright;
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 20px;
 }
 
@@ -659,20 +662,45 @@ footer .footer__contacts .contacts__element {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 25px;
+  padding: 15px 25px;
   border: 1px solid #E6B02B;
   margin-bottom: 20px;
 }
 
 footer .footer__contacts .contacts__element .element__phone {
   font-family: Geometria ExtraBold;
-  font-size: 20px;
+  font-size: 22px;
   color: #E6B02B;
 }
 
 footer .footer__contacts .contacts__element .element__email, footer .footer__contacts .contacts__element .element__address {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 1366px) {
+  .footer__answers .answers__header, .footer__answers .answers__link {
+    font-size: 14px !important;
+  }
+  .footer__contacts .contacts__element .element__phone {
+    font-size: 20px !important;
+  }
+  .footer__contacts .contacts__element .element__email, .footer__contacts .contacts__element .element__address {
+    font-size: 12px !important;
+  }
+  .footer__social .social__header h1 {
+    font-size: 18px !important;
+  }
+  .footer__social .social__header p {
+    font-size: 9px !important;
+  }
+  .footer__rights p {
+    font-size: 10px !important;
+    text-align: left !important;
+  }
+  .footer__copyright p {
+    font-size: 12px !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {

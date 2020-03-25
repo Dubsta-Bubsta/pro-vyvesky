@@ -19,7 +19,7 @@ footer {
 				&__header {
 					text-transform: uppercase;
 					margin-bottom: 10px;
-					font-size: 12px;
+					font-size: 14px;
 					font-family: Geometria ExtraBold;
 				}
 
@@ -28,7 +28,7 @@ footer {
 					color: #fff;
 					border-bottom: 1px solid $footer-color;
 					line-height: 20px;
-					font-size: 12px;
+					font-size: 14px;
 				}
 			}
 		}
@@ -38,17 +38,17 @@ footer {
 
 			display: flex;
 			flex-direction: column;
-			justify-content: flex-start;
-
+			justify-content: center;
+			align-items: center;
 			& .rights {
-				&__element {
-					width: 80%;
+				&__element {					
+					width: 70%;
 					text-align: center;
 					padding: 10px;
 					border: 0.5px solid $footer-color;
 					color: $footer-color;
 					margin-bottom: 20px;
-					font-size: 10px;
+					font-size: 11px;
 					text-transform: uppercase;
 				}
 			}
@@ -65,7 +65,7 @@ footer {
 			& .social {
 				&__header {
 					& h1 {
-						font-size: 16px;
+						font-size: 20px;
 						font-family: Geometria ExtraBold;
 						line-height: 26px;
 						text-align: left;
@@ -74,7 +74,7 @@ footer {
 					}
 
 					& p {
-						font-size: 8px;
+						font-size: 10px;
 						letter-spacing: 0.5px;
 						text-transform: uppercase;
 					}
@@ -91,7 +91,7 @@ footer {
 						margin: 0 5px;
 
 						& img {
-							width: 40px;
+							width: 43px;
 						}
 					}
 				}
@@ -101,7 +101,7 @@ footer {
 
 		&__copyright {
 			grid-area: copyright;
-			font-size: 10px;
+			font-size: 11px;
 			margin-top: 20px;
 			& p {
 				margin-bottom: 10px;
@@ -122,20 +122,20 @@ footer {
 					flex-direction: column;
 					justify-content: center;
 					align-items: center;
-					padding: 10px 25px;
+					padding: 15px 25px;
 					border: 1px solid $footer-color;
 					margin-bottom: 20px;
 
 					& .element {
 						&__phone {
 							font-family: Geometria ExtraBold;
-							font-size: 20px;
+							font-size: 22px;
 							color: $footer-color;
 						}
 
 						&__email,
 						&__address {
-							font-size: 12px;
+							font-size: 14px;
 							line-height: 24px;
 						}
 					}
@@ -145,7 +145,54 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1366px) {
+	.footer {
+		&__answers {
+			& .answers {
+				&__header, &__link {
+					font-size: 14px!important;
+				}			
+			}
+		}
 
+		&__contacts {
+			& .contacts {
+				&__element {
+					& .element {
+						&__phone {
+							font-size: 20px!important;
+						}
+
+						&__email,
+						&__address {
+							font-size: 12px!important;							
+						}
+					}
+				}
+			}
+		}
+
+		&__social {
+			& .social {
+				&__header {
+					& h1 {
+						font-size: 18px!important;
+					}
+					& p {
+						font-size: 9px!important;
+					}
+				}				
+			}			
+		}
+		&__rights p {
+			font-size: 10px!important;
+			text-align: left!important;
+		}
+		&__copyright p{
+			font-size: 12px!important;
+		}
+	}
+}
 @media screen and (max-width: 1024px) {
 	.footer {
 		grid-template-areas: "questions rights social""contacts contacts contacts""copyright copyright copyright" !important;
