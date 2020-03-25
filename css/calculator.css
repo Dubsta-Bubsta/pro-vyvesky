@@ -2,7 +2,20 @@ h1.section-header {
   margin-bottom: 40px;
 }
 
-.calculator-examples {
+.customise-product.width-100 {
+  width: 100%;
+}
+
+.customise-product h2.section-header {
+  margin: 35px 0 15px 0;
+}
+
+.customise-product .form-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +26,7 @@ h1.section-header {
           justify-content: center;
 }
 
-.calculator-examples__element {
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
   width: 15%;
   margin: 10px;
   margin-bottom: 10px;
@@ -29,32 +42,28 @@ h1.section-header {
           align-items: center;
 }
 
-.calculator-examples__element:hover {
-  color: #ECB62B;
-  text-decoration: underline;
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector input[type=radio] {
+  display: none;
 }
 
-.calculator-examples__element .element__img {
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector input[type=radio]:checked ~ label .selector__title {
+  text-decoration: underline;
+  font-family: Geometria Medium;
+  color: #ECB62B;
+}
+
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector label:hover {
+  cursor: pointer;
+}
+
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector .selector__img {
   width: 100%;
 }
 
-.calculator-examples__element .element__title {
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector .selector__title {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 10px;
-}
-
-.customise-product {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.customise-product.width-100 {
-  width: 100%;
-}
-
-.customise-product h2.section-header {
-  margin: 35px 0 15px 0;
 }
 
 .customise-product__form .form__input-block_small .input-block__input {
@@ -100,6 +109,21 @@ h1.section-header {
 .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:before {
   content: "<";
   left: -12px;
+}
+
+.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder.small-arrows:after, .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder.small-arrows:before {
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  top: 20px;
+}
+
+.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder.small-arrows:after {
+  right: 5px;
+}
+
+.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder.small-arrows:before {
+  left: 5px;
 }
 
 .customise-product__form .form__type-selectors-block .type-selectors-block__selectors {
@@ -270,29 +294,30 @@ h1.section-header {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-  width: 50%;
+  width: 400px;
   margin-top: 5px;
 }
 
 @media screen and (max-width: 1024px) {
-  .calculator-examples__element {
-    width: 30%;
-  }
-  .customise-product {
+  .customise-product .form-container {
     width: 80%;
+    margin: 0 auto;
+  }
+  .customise-product .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
+    width: 26%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .calculator-examples__element {
+  .customise-product .form-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
     width: 40%;
   }
-  .calculator-examples__element:hover {
+  .customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector input[type=radio]:checked ~ label .selector__title {
     text-decoration: none;
-    font-family: Geometria Medium;
-  }
-  .customise-product {
-    width: 100%;
   }
   .customise-product__form .form__input-block_small .input-block__input, .customise-product__form .form__input-block_big .input-block__input {
     width: 100% !important;

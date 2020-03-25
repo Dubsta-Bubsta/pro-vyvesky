@@ -158,11 +158,8 @@
 						& input {
 							display: none;
 							&:checked {
-								& + .chbx div {
-									background: #000;
-									width: 10px ;
-									height: 10px;
-									margin: 0 auto;
+								& + .chbx  {
+									background: #000;								
 								}
 							}
 						}

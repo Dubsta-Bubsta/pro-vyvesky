@@ -189,11 +189,8 @@
   display: none;
 }
 
-.popup__form .form__buttons .buttons__file-checkbox input:checked + .chbx div {
+.popup__form .form__buttons .buttons__file-checkbox input:checked + .chbx {
   background: #000;
-  width: 10px;
-  height: 10px;
-  margin: 0 auto;
 }
 
 .popup__form .form__buttons .buttons__file-checkbox .chbx {
