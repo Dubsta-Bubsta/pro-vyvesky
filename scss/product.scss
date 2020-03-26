@@ -14,10 +14,6 @@
 				align-items: center;
 				width: 80%;
 				margin: 0 auto;
-
-				& img {
-					width: 100%;
-				}
 			}
 
 			&__description {
@@ -27,30 +23,50 @@
 
 				& .description {
 					&__text {
-						// font-size: 22px;
-						// line-height: 26px;
-						// & ul {
-						// 	list-style-type: circle;
-						// 	list-style-position: inside;
-						// 	margin-bottom: 20px;
+						font-size: 28.04px;
+						line-height: 33.65px;
+						ul {
+							list-style-type: circle;
+							list-style-position: inside;
 
-						// 	& li {
-						// 		line-height: 36px;
-						// 	}
-						// }
+							& li span {
+								margin-left: -10px;
+							}
+						}
+					}
+
+					&.small-font {
+						& .description__text {
+							font-size: 24.6px;
+							line-height: 29px;
+						}
 					}
 
 					&__buttons {
 						display: flex;
 						flex-direction: row;
-						align-items: center;
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-gap: 40px;
 						margin-top: 10px;
+
 						& .btn {
-							font-size: 24px !important;
-							letter-spacing: 2px;
+							height: 100%;
+							padding: 7px 20px;
+
+							&.calc-btn {
+								font-size: 33.71px;
+								line-height: 40.45px;
+							}
+
+							&.order-btn {
+								font-size: 33.68px;
+								line-height: 40.42px;
+							}
 
 							& img {
-								width: 32px;
+								width: 50px;
+								margin: 0 5px;
 							}
 						}
 					}
@@ -63,10 +79,11 @@
 
 .product-example-block-big {
 	font-family: Geometria Light;
+
 	&__content {
 		display: grid;
 		grid-template-columns: 1fr 3fr;
-		grid-gap: 40px;
+		grid-gap: 60px;
 
 		& .content {
 			&__view {
@@ -77,12 +94,14 @@
 				& .view {
 					&__buttons {
 						margin-top: 40px;
-						display: flex;
-						flex-direction: row;
+						display: grid;
+						grid-gap: 40px;
+						grid-template-columns: 1fr 1fr;
 
 						& .btn {
 							padding: 5px 10px;
-							font-size: 18px !important;
+							font-size: 20.26px;
+							line-height: 24.31px;
 						}
 					}
 				}
@@ -95,24 +114,63 @@
 
 				& .info {
 					&__characteristics {
-						// & ul {
-						// 	list-style-type: circle;
-						// 	list-style-position: inside;
-						// 	margin-bottom: 20px;
-	
-						// 	& li {
-						// 		line-height: 36px;
-						// 	}
-						// }	
-					}
-					&__table-block.table-center {
-						& tr td, & tr th {
-							text-align: center;
+						font-size: 23.61px;
+						line-height: 28.33px;
+						color: #1D1C1B;
+
+						ul {
+							list-style-type: circle;
+							list-style-position: inside;
+
+							& li span {
+								margin-left: -10px;
+							}
 						}
 					}
-					&__text-block {
-						margin: 0 !important;
-						line-height: 20px;
+
+
+				}
+
+				& .table-block {
+					& .table {
+						& tr th {
+							padding: 4px 20px;
+							text-align: center;
+							font-size: 25px;
+							line-height: 30px;
+							letter-spacing: 0.72px;
+							width: 100%;
+						}
+
+						& tr td {
+							padding: 9px 20px;
+							text-align: left;
+							font-size: 16.89px;
+							line-height: 20.27px;
+							letter-spacing: 0.49px;
+
+							&:not(:first-child) {
+								text-align: center;
+							}
+						}
+					}
+				}
+
+				& .table-block.table-block_big {
+					& tr th {
+						padding: 7px 10px;
+						text-align: center;
+						font-size: 19px;
+						line-height: 22.8px;
+						letter-spacing: 0.55px;
+					}
+
+					& tr td {
+						padding: 8px 10px;
+						font-size: 16.89px;
+						line-height: 20.27px;
+						letter-spacing: 0.51px;
+						text-align: center;
 					}
 				}
 			}
@@ -127,15 +185,14 @@
 	&__links {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 0 20px;
+		grid-gap: 10px 20px;
 
 		& a {
 			text-align: left;
 			color: #0082FB;
-			font-size: inherit;
-			line-height: 26px;
-			font-size: 18px;
-			font-family: Geometria;
+			line-height: 30px;
+			font-size: 25px;
+			font-family: ArialMT;
 			letter-spacing: 0.72px;
 		}
 	}
@@ -168,8 +225,6 @@
 		display: flex !important;
 		flex-direction: row;
 		align-items: center;
-		letter-spacing: 2px;
-		
 	}
 }
 
@@ -177,10 +232,16 @@
 	font-family: Geometria Light;
 	margin: 30px 0 50px 0;
 
+	&.section-header {
+		font-size: 30.89px;
+		line-height: 37.07px;
+		letter-spacing: 1.2px;
+	}
+
 	&__list {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 30px;
+		grid-gap: 60px;
 		margin: 0 auto;
 
 		& .list {
@@ -191,13 +252,15 @@
 					}
 
 					&__title {
-						margin: 10px 0 5px 0;
-						font-size: 14px;
+						margin: 10px 0 3px 0;
+						font-size: 15.11px;
+						line-height: 18.14px;
 						font-family: Geometria Bold;
 					}
-					&__text {
-						font-size: 14px;
 
+					&__text {
+						font-size: 15.11px;
+						line-height: 18.14px;
 						font-family: Geometria Light;
 					}
 
@@ -208,10 +271,14 @@
 						justify-content: space-between;
 						font-family: Geometria Bold;
 						margin-top: 10px;
+						font-size: 15.11px;
+						line-height: 18.14px;
+
 						& button {
-							font-size: 16px !important;
+							font-size: 14.79px !important;
+							line-height: 17.75px;
 							padding: 5px 10px;
-						font-family: Geometria Light;
+							font-family: Geometria Light;
 
 						}
 					}
@@ -224,11 +291,13 @@
 .product-example-block-small {
 	font-family: Geometria Light;
 	margin: 30px 0;
+
 	&>.details-btn {
 		margin: 20px auto;
 		padding: 10px;
 		background: #ffb700;
 	}
+
 	&>.show-more-btn {
 		display: block;
 		margin: 40px auto 55px auto;
@@ -244,7 +313,6 @@
 				display: flex;
 				flex-direction: column;
 				background: #E0E3E3;
-				padding-bottom: 7px;
 
 				& .element {
 					&__img {
@@ -252,30 +320,37 @@
 					}
 
 					&__title {
-						margin: 10px 10px 5px 10px;
+						margin: 10px 15px 20px 15px;
 						text-align: left;
 						text-transform: uppercase;
-						font-size: 16px;
+						font-size: 19.82px;
+						line-height: 23.79px;
+						letter-spacing: 0.69px;
 						font-family: Geometria Medium;
 					}
 
 					&__text {
-						margin: 0 10px;
+						margin: 0 15px;
 						font-size: 15px;
 						line-height: 18px;
 					}
 
 					&__actions {
-						margin: 10px 10px 0 10px;
+						margin: 10px 15px;
 						display: flex;
 						align-items: center;
 						justify-content: space-around;
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-gap: 30px;
 
 						& .btn {
 							padding: 10px 15px;
 							width: 100%;
-							font-size: 16px;
-							padding: 5px;
+							font-size: 22.28px;
+							line-height: 26.74px;
+							letter-spacing: 0.67px;
+							padding: 10px 5px;
 						}
 					}
 
@@ -297,13 +372,27 @@
 
 					& .element {
 						&__title {
-							font-size: 12px;
+							font-size: 12.27px;
+							line-height: 14.73px;
+							margin: 10px 7px;
 						}
 
-						&__text {
-							font-size: 12px;
-						}
+						&__actions {
+							justify-content: space-around;
+							margin-left: 7px;
+							margin-right: 7px;
 
+							& .btn {
+								font-size: 13.8px;
+								line-height: 16.56px;
+								padding: 5px 7px;
+
+								& img {
+									width: 6.1px;
+									margin-left: 5px;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -312,9 +401,38 @@
 	}
 }
 
-.text-block .section-header {
-	text-align: left;
-	letter-spacing: 1.17px;
+.product-pricing-block {
+	margin-bottom: 40px;
+
+	.table {
+		& tr th {
+			font-size: 30px;
+			line-height: 36px;
+		}
+
+		& tr td {
+			font-size: 26px;
+			line-height: 31.2px;
+			width: 60%;
+
+			&:not(:first-child) {
+				width: auto;
+
+				font-size: 24px;
+				line-height: 28.8px;
+			}
+		}
+	}
+}
+
+.product-text-block {
+	font-size: 28.04px;
+	line-height: 33.65px;
+
+	& .section-header {
+		text-align: left;
+		letter-spacing: 1.17px;
+	}
 }
 
 section .fa-angle-right {
@@ -345,8 +463,100 @@ section .fa-angle-right {
 			}
 		}
 	}
+
+	.popular-orders-block {
+		&__list {
+			grid-gap: 30px;
+		}
+	}
 }
 
+@media screen and (max-width: 1366px) {
+	.product {
+		&__content {
+			grid-template-columns: 2fr 3fr;
+
+			.content {
+				&__img img {
+					width: 100%;
+				}
+
+				&__description {
+					& .description {
+						&__text {
+							font-size: 22px;
+							line-height: 26.6px;
+						}
+
+						&__buttons {
+							grid-template-columns: 1fr;
+							grid-template-rows: 1fr 1fr;
+							grid-gap: 20px;
+
+							& .btn {
+								margin: 0;
+								padding: 5px 10px;
+
+								& img {
+									width: 35px;
+								}
+
+								&.order-btn {
+									font-size: 22px;
+									line-height: 26px;
+								}
+
+								&.calc-btn {
+									font-size: 21px;
+									line-height: 25px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.product-example-block-small {
+		&__list {
+			grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+			grid-gap: 20px;
+
+			& .list {
+				&__element {
+					& .element {
+						&__title {
+							font-size: 17px;
+							line-height: 21px;
+						}
+
+						&__actions {
+							margin: 10px 15px;
+							display: flex;
+							align-items: center;
+							justify-content: space-around;
+							display: grid;
+							grid-template-columns: 1fr 1fr;
+							grid-gap: 10px;
+
+							& .btn {
+								padding: 8px 12px;
+								font-size: 17px;
+								line-height: 21px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.product-text-block {
+		font-size: 22px;
+		line-height: 26.6px;
+	}
+}
 
 @media screen and (max-width: 1200px) {
 	.product-example-block-big {
@@ -386,6 +596,12 @@ section .fa-angle-right {
 				grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
 
 			}
+		}
+	}
+
+	.popular-orders-block {
+		&__list {
+			grid-gap: 20px;
 		}
 	}
 }
@@ -469,10 +685,21 @@ section .fa-angle-right {
 		}
 
 	}
+
+	.also-interesting-block {
+		&__links {
+			& a {
+				line-height: 25px;
+				font-size: 20px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.product {
+		padding-bottom: 30px;
+
 		&__content .content {
 			&__img img {
 				width: 100%;
@@ -480,12 +707,25 @@ section .fa-angle-right {
 
 			&__description {
 				& .description {
+					&__text {
+						font-size: 19px;
+						letter-spacing: 0.55px;
+						line-height: 24.6px;
+					}
+
 					&__buttons {
-						flex-direction: column;
+						grid-template-columns: 1fr;
+						grid-template-rows: 1fr 1fr;
+						grid-gap: 20px;
 
 						& .btn {
-							margin: 10px 0;
-							font-size: 22px!important;
+							margin: 0;
+							padding: 5px 10px;
+							font-size: 22px;
+							line-height: 26px;
+							& img {
+								width: 35px;
+							}
 						}
 					}
 				}
@@ -511,6 +751,9 @@ section .fa-angle-right {
 
 			& a {
 				text-align: left;
+				font-size: 16px;
+				line-height: 20px;
+				letter-spacing: 0.46px;
 			}
 		}
 	}
@@ -518,12 +761,230 @@ section .fa-angle-right {
 	.product-example-block-small {
 		&__list {
 			grid-template-columns: 1fr;
+			grid-gap: 30px;
 
-			
 
 			&.grid-5 {
 				grid-template-columns: 1fr;
 			}
+
+
+			& .list {
+				&__element {
+					display: flex;
+					flex-direction: column;
+					background: #E0E3E3;
+
+					& .element {
+						&__img {
+							width: 100%;
+						}
+
+						&__title {
+							margin: 10px;
+							font-size: 16px;
+							line-height: 19px;
+							letter-spacing: 0.62px;
+							margin: 15px 5px;
+						}
+
+						&__actions {
+							grid-gap: 10px;
+							margin: 0 5px 10px 5px;
+
+							& .btn {
+								padding: 10px 15px;
+								font-size: 18px;
+								line-height: 22px;
+								letter-spacing: 0.54px;
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+
+	.product-example-block-big {
+		&__content {
+			& .content {
+				&__view {
+					& .view {
+						&__buttons {
+							margin-top: 20px;
+							grid-gap: 20px;
+
+							& .btn {
+								padding: 5px 10px;
+								font-size: 18px;
+								line-height: 22px;
+							}
+						}
+
+						&__img {
+							width: 100%;
+						}
+					}
+
+				}
+
+				&__info {
+					& .info {
+						&__characteristics {
+							font-size: 19px;
+							line-height: 24.6px;
+							color: #000;
+							letter-spacing: 0.55px;
+						}
+					}
+
+					& .table-block {
+						& .table {
+							border-spacing: 5px 0;
+
+							& tr th {
+								font-family: Geometria Medium;
+								padding: 17px 10px;
+								font-size: 17px;
+								line-height: 13px;
+								text-transform: uppercase;
+								width: auto;
+
+								&:not(:first-child) {
+									letter-spacing: 0.18px;
+									font-size: 18px;
+								}
+							}
+
+							& tr td {
+								white-space: nowrap;
+								padding: 5px 10px;
+								text-align: left;
+								font-size: 18px;
+								line-height: 20px;
+								letter-spacing: 0;
+
+								&:not(:first-child) {
+									text-align: center;
+									letter-spacing: 0.46px;
+									font-size: 16px;
+									font-family: Geometria;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.product-pricing-block {
+		margin-bottom: 40px;
+
+		.table {
+			& tr th {
+				font-size: 17px;
+				line-height: 13px;
+				text-transform: uppercase;
+				font-family: Geometria Medium;
+				text-align: left;
+
+				&:not(:first-child) {
+					text-align: right;
+					width: auto;
+
+				}
+			}
+
+			& tr td {
+				font-size: 18px;
+				line-height: 20px;
+
+				&:not(:first-child) {
+					font-size: 16px;
+					line-height: 20px;
+					letter-spacing: 0.46px;
+					font-family: Geometria;
+					text-align: right;
+				}
+			}
+		}
+	}
+
+	.popular-orders-block {
+		&__list {
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 30px;
+
+			& .list {
+				&__element {
+					& .element {
+						&__title {
+							margin: 5px 0;
+							font-size: 12px;
+							line-height: 12px;
+						}
+
+						&__text {
+							font-size: 12px;
+							line-height: 12px;
+							font-family: Geometria Light;
+						}
+
+						&__price {
+							font-size: 16px;
+							line-height: 12px;
+
+							& button {
+								font-size: 18px !important;
+								line-height: 22px;
+								padding: 5px 7px !important;
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.product-text-block {
+		font-size: 19px;
+		letter-spacing: 0.55px;
+		line-height: 24.6px;
+
+		& .section-header {
+			text-align: center;
+		}
+	}
+	.table-block.table-block_big {
+		& tr th {
+			padding: 9px 10px!important;
+			text-align: center!important;
+			font-size: 17px!important;
+			line-height: 19px!important;
+			letter-spacing: 0px!important;
+		}
+
+		& tr td {
+			padding: 8px 10px!important;
+			font-size: 18px!important;
+			line-height: 22px!important;
+			letter-spacing: 0.51px!important;
+			text-align: center!important;
+			font-family: Geometria Light!important;
+			&:nth-child(n+2) {
+				font-size: 19px!important;
+				line-height: 23px!important;
+			}
+		}
+
+		& tr:nth-child(2) td:first-child {
+			font-size: 19px;
+			line-height: 22.8px;
+			letter-spacing: 0.55px;
 		}
 	}
 }

@@ -190,3 +190,11 @@
 	font-weight: 100;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'ArialMT';
+	src: url('ARIALMT.ttf');
+	src: local('ArialMT'), local('ArialMT'),
+		url('ARIALMT.ttf') format('truetype');
+	font-style: normal;
+}

@@ -1,8 +1,10 @@
 h1.section-header {
-	margin-bottom: 40px;
+	padding-bottom: 40px;
+	padding-top: 30px;
 }
 
 .customise-product {
+
 	&.width-100 {
 		width: 100%;
 	}
@@ -12,7 +14,7 @@ h1.section-header {
 	}
 
 	.form-container {
-		width: 60%;
+		width: 70%;
 		margin: 0 auto;
 	}
 
@@ -38,6 +40,7 @@ h1.section-header {
 							text-decoration: underline;
 							font-family: Geometria Medium;
 							color: #ECB62B;
+							letter-spacing: 0.67px;
 						}
 					}
 
@@ -54,8 +57,10 @@ h1.section-header {
 
 						&__title {
 							text-transform: uppercase;
-							font-size: 14px;
+							font-size: 19px;
+							line-height: 22.8px;
 							margin-top: 10px;
+							letter-spacing: 0.74px;
 							text-align: center;
 						}
 					}
@@ -71,7 +76,9 @@ h1.section-header {
 						width: 40%;
 						margin: 0 auto;
 						display: block;
-						font-size: 26px;
+						font-size: 45.86px;
+						line-height: 55.04px;
+						letter-spacing: 1.79px;
 					}
 				}
 			}
@@ -79,11 +86,11 @@ h1.section-header {
 			&_big {
 				& .input-block {
 					&__input {
-						font-size: 26px;
+						font-size: 45.86px;
+						line-height: 55.04px;
+						letter-spacing: 1.79px;
 					}
 				}
-
-
 			}
 		}
 
@@ -98,7 +105,9 @@ h1.section-header {
 						display: block;
 						margin: 0 auto;
 						position: relative;
-						font-size: 26px;
+						font-size: 45.86px;
+						line-height: 55.04px;
+						letter-spacing: 1.79px;
 
 						&:after,
 						&:before {
@@ -150,7 +159,6 @@ h1.section-header {
 
 				& .selectors {
 					&_small {
-
 						& .selectors__selector {
 							width: 30%;
 						}
@@ -186,7 +194,8 @@ h1.section-header {
 							box-sizing: border-box;
 							text-transform: uppercase;
 							padding: 15px 5px;
-							font-size: 22px;
+							font-size: 30px;
+							line-height: 36px;
 							font-family: Geometria Light;
 
 							&.small-font {
@@ -284,8 +293,9 @@ h1.section-header {
 
 			& .order-block {
 				&__price {
-					font-size: 26px;
+					font-size: 45.86px;
 					margin-bottom: 20px;
+					line-height: 55.04px;
 
 					& span {
 						font-family: Geometria Medium;
@@ -296,18 +306,20 @@ h1.section-header {
 				&__button {
 					background: #DC2618;
 					color: #fff;
-					font-size: 40px !important;
-					margin: 10px 0;
-					letter-spacing: 2px;
-					padding: 0px 5px 2px 5px;
-
+					font-size: 48.71px;
+					line-height: 58.45px;
+					margin: 15px 0;
+					letter-spacing: 1.46px;
+					padding: 0px 5px 7px 5px;
 				}
 
 				&__description {
 					text-align: center;
 					text-transform: uppercase;
-					font-size: 12px;
-					width: 400px;
+					font-size: 15px;
+					letter-spacing: 0.58px;
+					line-height: 18px;
+					width: 600px;
 					margin-top: 5px;
 				}
 			}
@@ -333,7 +345,18 @@ h1.section-header {
 }
 
 @media screen and (max-width: 768px) {
+	h1.section-header {
+		padding-bottom: 0px;
+		padding-top: 0px;
+	}
+	h2.section-header {
+		
+	}
+	h3.section-header {
+		margin: 35px 0 15px 0;
+	}
 	.customise-product {
+		padding-bottom: 50px;
 		.form-container {
 			width: 100%;
 			margin: 0 auto;
@@ -349,19 +372,24 @@ h1.section-header {
 								text-decoration: none;
 							}
 						}
+						& .selector__title {
+							font-size: 14px;
+							line-height: 17px;
+							letter-spacing: 0.55px;
+						}
 					}
 				}
 	
 			}
 
 			&__input-block {
-
 				&_small,
 				&_big {
 					& .input-block__input {
 						width: 100% !important;
 						font-family: Geometria;
-						font-size: 18px;
+						font-size: 21px;
+						line-height: 31.4px;
 					}
 
 					& .input-block__input-holder {
@@ -372,7 +400,7 @@ h1.section-header {
 							font-size: 25px;
 							font-weight: 400;
 							position: absolute;
-							top: 7px;
+							top: 10px;
 						}
 
 						&:after {
@@ -386,8 +414,6 @@ h1.section-header {
 						}
 					}
 				}
-
-
 			}
 
 			&__inputs_small {
@@ -409,6 +435,7 @@ h1.section-header {
 					& input {
 						font-family: Geometria;
 						font-size: 21px;
+						line-height: 31.4px;
 					}
 				}
 			}
@@ -424,8 +451,8 @@ h1.section-header {
 
 							& label {
 								font-family: Geometria;
-								font-size: 18px;
-
+								font-size: 21px;
+								line-height: 31.4px;
 							}
 						}
 					}
@@ -445,8 +472,8 @@ h1.section-header {
 								& label {
 									padding: 10px !important;
 									font-family: Geometria;
-									font-size: 18px;
-
+									font-size: 21px;
+									line-height: 31.4px;
 								}
 
 							}
@@ -476,6 +503,7 @@ h1.section-header {
 				& .section-header {
 					font-family: Geometria Medium;
 					font-size: 21px;
+					line-height: 31.4px;
 				}
 			}
 
@@ -483,17 +511,16 @@ h1.section-header {
 				& .section-header {
 					font-family: Geometria Medium;
 					font-size: 21px;
+					line-height: 31.4px;
 				}
 
 				.order-block {
-					&__price {
-						font-size: 42px;
-						letter-spacing: 1.79px;
-					}
-
 					&__button {
 						width: 100%;
-						padding-bottom: 4px;
+						font-size: 33px;
+						line-height: 39px;
+						padding: 10px 20px;
+						vertical-align: middle;
 					}
 
 					&__description {

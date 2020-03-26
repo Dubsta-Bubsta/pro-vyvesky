@@ -14,6 +14,14 @@
   z-index: 5;
 }
 
+.header__element.logo.mobile-logo {
+  display: none;
+}
+
+.header__element.logo.desktop-logo {
+  display: block;
+}
+
 .header__element.logo img {
   width: 114.81px;
   height: 129.48px;
@@ -128,7 +136,7 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    padding: 5px 2.5%;
+    padding: 10px 2.5%;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "logo element" "logo burger";
@@ -149,6 +157,12 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .header__element.logo.mobile-logo {
+    display: block;
+  }
+  .header__element.logo.desktop-logo {
+    display: none;
   }
   .header__element.search, .header__element.location {
     display: none;

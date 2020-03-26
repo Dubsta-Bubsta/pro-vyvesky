@@ -15,14 +15,13 @@ table.table tr th {
   min-height: 16px;
   vertical-align: middle;
   text-align: center;
-  padding: 10px 15px;
+  padding: 9.5px 20px;
   font-size: 18px;
 }
 
 table.table tr td:first-child,
 table.table tr th:first-child {
   text-align: left;
-  width: 40%;
 }
 
 table.table tr td p,
@@ -39,46 +38,17 @@ table.table tr th {
   white-space: nowrap;
   text-transform: lowercase;
   letter-spacing: 0.3px;
-  min-height: 20px !important;
-  text-align: center !important;
+  min-height: 20px;
+  text-align: center;
+}
+
+.table-block_big {
+  padding-bottom: 30px;
 }
 
 .table-block_big table tr th, .table-block_big table tr td {
   white-space: nowrap;
   font-size: 16px;
-}
-
-@media screen and (max-width: 768px) {
-  table.table {
-    border-spacing: 5px 0;
-  }
-  table.table tr th {
-    font-size: 15px !important;
-    text-align: left;
-    color: #121515;
-    font-family: Geometria Medium;
-    letter-spacing: 0.18px;
-    text-transform: uppercase;
-  }
-  table.table tr th:first-child {
-    text-align: left !important;
-  }
-  table.table tr td {
-    font-size: 15px !important;
-    color: #121515;
-    font-family: Geometria;
-    letter-spacing: 0.46px;
-  }
-  table.table tr td:first-child {
-    text-align: left !important;
-    font-family: Geometria Light;
-  }
-  table.table tr td:not(:first-child) {
-    padding: 5px !important;
-  }
-  .table-block_big {
-    padding-bottom: 50px !important;
-  }
 }
 
 body {
@@ -108,14 +78,16 @@ h1.section-header-underline {
 }
 
 h2.section-header {
-  font-size: 22px;
+  font-size: 30px;
   letter-spacing: 1.17px;
+  line-height: 36px;
 }
 
 h3.section-header {
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 30px;
   letter-spacing: 0.97px;
-  margin: 35px 0 20px 0;
+  margin: 45px 0 25px 0;
 }
 
 h1.section-header-underline {
@@ -166,7 +138,6 @@ h1.section-header-underline {
           align-items: center;
   padding: 10px 20px;
   text-transform: lowercase;
-  font-size: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Geometria Light;
@@ -185,7 +156,6 @@ h1.section-header-underline {
 .calc-btn {
   color: #fff !important;
   background: #42D1CF;
-  margin-right: 20px;
 }
 
 .calc-btn img {
@@ -255,7 +225,7 @@ button:hover {
 }
 
 .table-block {
-  margin: 30px 0;
+  margin: 20px 0;
   position: relative;
 }
 
@@ -354,7 +324,7 @@ button:hover {
 
 @media screen and (max-width: 1024px) {
   .container {
-    width: 90%;
+    width: 93%;
   }
 }
 
@@ -364,10 +334,12 @@ button:hover {
     font-size: 21px;
     line-height: 31.4px;
     font-family: Geometria Medium;
-    margin: 30px auto 20px auto;
+    margin: 30px auto 25px auto;
+    letter-spacing: .5px;
   }
   h2.section-header {
     font-size: 16px;
+    line-height: 24px;
     letter-spacing: 0;
     margin-bottom: 20px;
   }
