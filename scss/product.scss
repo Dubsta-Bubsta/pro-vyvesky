@@ -1,6 +1,6 @@
 .product {
 	font-family: Geometria Light;
-	margin: 30px 0;
+	margin: 30px auto;
 
 	&__content {
 		display: grid;
@@ -180,7 +180,7 @@
 
 .also-interesting-block {
 	font-family: Geometria Light;
-	margin: 30px 0;
+	margin: 30px auto;
 
 	&__links {
 		display: grid;
@@ -230,7 +230,7 @@
 
 .popular-orders-block {
 	font-family: Geometria Light;
-	margin: 30px 0 50px 0;
+	margin: 30px auto 50px auto;
 
 	&.section-header {
 		font-size: 30.89px;
@@ -290,7 +290,7 @@
 
 .product-example-block-small {
 	font-family: Geometria Light;
-	margin: 30px 0;
+	margin: 30px auto;
 
 	&>.details-btn {
 		margin: 20px auto;

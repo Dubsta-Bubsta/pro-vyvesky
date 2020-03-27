@@ -87,7 +87,7 @@ main .contacts__location .location__info .info__element .element__text {
 }
 
 .delivery-block {
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .delivery-block table.table tr td:first-child,

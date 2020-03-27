@@ -1,6 +1,6 @@
 .product {
   font-family: Geometria Light;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .product__content {
@@ -200,7 +200,7 @@
 
 .also-interesting-block {
   font-family: Geometria Light;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .also-interesting-block__links {
@@ -270,7 +270,7 @@
 
 .popular-orders-block {
   font-family: Geometria Light;
-  margin: 30px 0 50px 0;
+  margin: 30px auto 50px auto;
 }
 
 .popular-orders-block.section-header {
@@ -334,7 +334,7 @@
 
 .product-example-block-small {
   font-family: Geometria Light;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .product-example-block-small > .details-btn {

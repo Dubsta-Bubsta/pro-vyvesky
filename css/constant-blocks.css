@@ -821,11 +821,14 @@ footer .footer__contacts .contacts__element .element__email, footer .footer__con
   .footer__rights {
     display: -ms-grid !important;
     display: grid !important;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
   }
   .footer__rights p {
     width: auto !important;
     text-align: left !important;
-    padding: 5px !important;
+    padding: 5px 10px !important;
     line-height: 12.3px;
     margin-bottom: 0 !important;
   }

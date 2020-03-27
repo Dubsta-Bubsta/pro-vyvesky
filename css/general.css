@@ -114,6 +114,11 @@ h1.section-header-underline {
   margin: 0 auto;
 }
 
+.table-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
 .site-location {
   margin-top: 30px;
   text-transform: uppercase;
@@ -321,6 +326,9 @@ button:hover {
   .container {
     width: 80%;
   }
+  .table-container {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -330,6 +338,9 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .table-container {
+    width: 100%;
+  }
   h1.section-header,
   h1.section-header-underline {
     font-size: 21px;
