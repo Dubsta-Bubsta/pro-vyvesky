@@ -238,6 +238,9 @@
 
 .nav__list .burger {
   margin-right: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .nav__list .burger:hover {
@@ -605,6 +608,8 @@ footer .footer__rights {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 footer .footer__rights .rights__element {

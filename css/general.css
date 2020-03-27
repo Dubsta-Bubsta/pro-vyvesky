@@ -46,7 +46,8 @@ table.table tr th {
   padding-bottom: 30px;
 }
 
-.table-block_big table tr th, .table-block_big table tr td {
+.table-block_big table tr th,
+.table-block_big table tr td {
   white-space: nowrap;
   font-size: 16px;
 }

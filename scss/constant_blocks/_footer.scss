@@ -43,6 +43,7 @@ footer {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			align-self: flex-start;
 			& .rights {
 				&__element {					
 					width: 70%;

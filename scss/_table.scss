@@ -21,13 +21,16 @@ table.table {
 		&:first-child {
 			text-align: left;
 		}
+
 		& p {
 			margin-bottom: 10px;
+
 			&:last-child {
 				margin: 0;
 			}
 		}
 	}
+
 	& tr th {
 		white-space: nowrap;
 		text-transform: lowercase;
@@ -36,12 +39,16 @@ table.table {
 
 		text-align: center;
 	}
-	
+
 }
+
 .table-block_big {
 	padding-bottom: 30px;
+
 	& table {
-		& tr th, & tr td {
+
+		& tr th,
+		& tr td {
 			white-space: nowrap;
 			font-size: 16px;
 		}
