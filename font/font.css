@@ -183,7 +183,7 @@
 }
 
 
-@font-face {
+/* @font-face {
 	font-family: 'MicrosoftYaHeiLight';
 	src: url('Microsoft YaHei.eot');
 	src: local('MicrosoftYaHeiLight'), local('MicrosoftYaHeiLight'),
@@ -193,7 +193,7 @@
 
 	font-weight: 100;
 	font-style: normal;
-}
+} */
 
 
 @font-face {

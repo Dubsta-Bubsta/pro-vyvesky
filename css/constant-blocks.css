@@ -340,7 +340,7 @@
 }
 
 .nav__detailed-block .details__variants-list .variants-list__element {
-  font-family: MicrosoftYaHeiLight;
+  letter-spacing: -0.5px;
   font-size: 18px;
   margin: 10px 5px;
   display: -webkit-box;
