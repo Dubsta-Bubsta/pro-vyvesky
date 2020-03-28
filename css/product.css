@@ -6,23 +6,41 @@
 .product__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  grid-gap: 50px;
+  -ms-grid-columns: minmax(0, 1fr) minmax(0, 2fr);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  grid-gap: 80px;
 }
 
-.product__content .content__img {
+.product__content .content__holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 95%;
+}
+
+.product__content .content__img {
+  position: relative;
+  width: 95%;
   margin: 0 auto;
+}
+
+.product__content .content__img img {
+  margin: 0 5px;
+}
+
+.product__content .content__img .slider-prev {
+  top: 45%;
+}
+
+.product__content .content__img .slider-next {
+  top: 45%;
 }
 
 .product__content .content__description {
@@ -70,7 +88,7 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .product__content .content__description .description__buttons .btn {
@@ -231,7 +249,10 @@
           flex-direction: column;
 }
 
-.works-example-block > div {
+.works-example-block .list-holder {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,16 +263,12 @@
 
 .works-example-block__list {
   margin: 0 auto;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  width: 95%;
 }
 
 .works-example-block__list img {
   width: 100%;
+  margin: 0 5px;
 }
 
 .works-example-block .show-more-btn {
@@ -485,19 +502,6 @@
   letter-spacing: 1.17px;
 }
 
-section .fa-angle-right {
-  font-size: 60px !important;
-  color: #9C9B9B;
-}
-
-section .fa-angle-right:first-child {
-  margin-right: 15px;
-}
-
-section .fa-angle-right:last-child {
-  margin-left: 15px;
-}
-
 @media screen and (max-width: 1600px) {
   .product-example-block-small__list .list__element {
     margin: 0 !important;
@@ -513,8 +517,8 @@ section .fa-angle-right:last-child {
 
 @media screen and (max-width: 1366px) {
   .product__content {
-    -ms-grid-columns: 2fr 3fr;
-        grid-template-columns: 2fr 3fr;
+    -ms-grid-columns: minmax(0, 2fr) minmax(0, 3fr);
+        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   }
   .product__content .content__img img {
     width: 100%;
@@ -608,20 +612,14 @@ section .fa-angle-right:last-child {
 
 @media screen and (max-width: 1024px) {
   .product__content {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1fr);
+    grid-gap: 40px;
   }
   .product__content .content__img img {
     width: 70%;
   }
   .works-example-block .fa-angle-right {
-    display: none;
-  }
-  .works-example-block__list {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  .works-example-block__list img:nth-child(n+4) {
     display: none;
   }
   .popular-orders-block__list {
@@ -669,8 +667,11 @@ section .fa-angle-right:last-child {
   .product {
     padding-bottom: 30px;
   }
+  .product__content .content__img {
+    width: 80%;
+  }
   .product__content .content__img img {
-    width: 100%;
+    width: 80%;
   }
   .product__content .content__description .description__text {
     font-size: 19px;
@@ -693,12 +694,11 @@ section .fa-angle-right:last-child {
   .product__content .content__description .description__buttons .btn img {
     width: 35px;
   }
-  .works-example-block__list {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .works-example-block__list img:nth-child(n+3) {
+  .works-example-block .fa-angle-right {
     display: none;
+  }
+  .works-example-block .list-holder {
+    width: 100%;
   }
   .also-interesting-block__links {
     -ms-grid-columns: 1fr 1fr;

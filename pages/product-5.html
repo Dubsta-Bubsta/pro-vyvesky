@@ -1,502 +1,563 @@
 <!DOCTYPE html>
-<tr lang="ru">
+<html lang="ru">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Document</title>
-		<link rel="stylesheet" href="../css/reset.css">
-		<link rel="stylesheet" href="../css/general.css">
-		<link rel="stylesheet" href="../css/product.css">
-		<link rel="stylesheet" href="../css/constant-blocks.css">
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="../script/script.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
 
-	</head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="../script/slider.js" defer></script>
 
-	<body>
-		<header class="header">
-			<div class="header__element logo desktop-logo">
-				<a href="../index.html"><img src="../img/logo.png"></a>
+
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/general.css">
+	<link rel="stylesheet" href="../css/product.css">
+	<link rel="stylesheet" href="../css/constant-blocks.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__element logo ">
+			<a href="../index.html"><img src="../img/logo.png"></a>
+		</div>
+		
+		<div class="header__element location">
+			<img src="../img/marker.png" alt="">
+			<div>
+				<div class="location__city">Москва</div>
+				<div class="location__time">пн-пт с 10.00 до 19.00</div>
 			</div>
-			<div class="header__element logo mobile-logo">
-				<a href="../index.html"><img src="../img/logo-yellow.png"></a>
+		</div>
+		<div class="header__element contacts">
+			<img src="../img/phone-icon.png" alt="">
+
+			<div>
+				<div class="contacts__phone">8 (495) <span>728-09-56</span></div>
+				<div class="contacts__email">info@provyvesky.ru</div>
 			</div>
-			<div class="header__element location">
-				<img src="../img/marker.png" alt="">
-				<div>
-					<div class="location__city">Москва</div>
-					<div class="location__time">пн-пт с 10.00 до 19.00</div>
-				</div>
+		</div>
+		<div class="header__element search">
+			<div>
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<input class="search__input" />
 			</div>
-			<div class="header__element contacts">
-				<img src="../img/phone-icon.png" alt="">
-	
-				<div>
-					<div class="contacts__phone">8 (495) <span>728-09-56</span></div>
-					<div class="contacts__email">info@provyvesky.ru</div>
-				</div>
-			</div>
-			<div class="header__element search">
-				<div>
-					<i class="fa fa-search" aria-hidden="true"></i>
-					<input class="search__input" />
-				</div>
-			</div>
-			<div class="header__burger js-header-burger">
+		</div>
+		<div class="header__burger js-header-burger">
+			<img src="../img/burger.png" alt="burger">
+		</div>
+	</header>
+
+
+	<nav class="nav">
+		<ul class="nav__list list">
+			<div class="burger js-nav-burger">
 				<img src="../img/burger.png" alt="burger">
 			</div>
-		</header>
-	
-	
-		<nav class="nav">
-			<ul class="nav__list list">
-				<div class="burger js-nav-burger">
-					<img src="../img/burger.png" alt="burger">
+
+			<li class="list__element list__element_active link"><a href='product-1.html'>Наружная<br> реклама
+			</li></a>
+			<li class="list__element link"><a href='product-2.html'>Интерьерная<br> реклама</li></a>
+			<li class="list__element link"><a href='calculator-1.html'>Широкоформатная<br> печать</li></a>
+			<li class="list__element link"><a href='popup.html'>Услуги</li></a>
+			<li class="list__element link"><a href='portfolio.html'>Портфолио</li></a>
+			<li class="list__element link"><a href='contacts.html'>Контакты</li></a>
+		</ul>
+
+		<div class="nav__detailed-block details">
+			<div class="details__headers">
+				<div class="details__header js-nav-header">Наружная реклама<i class="fa fa-angle-right"
+						aria-hidden="true"></i>
 				</div>
-	
-				<li class="list__element list__element_active link"><a href='product-1.html'>Наружная<br> реклама
-				</li></a>
-				<li class="list__element link"><a href='product-2.html'>Интерьерная<br> реклама</li></a>
-				<li class="list__element link"><a href='calculator-1.html'>Широкоформатная<br> печать</li></a>
-				<li class="list__element link"><a href='popup.html'>Услуги</li></a>
-				<li class="list__element link"><a href='portfolio.html'>Портфолио</li></a>
-				<li class="list__element link"><a href='contacts.html'>Контакты</li></a>
-			</ul>
-	
-			<div class="nav__detailed-block details">
-				<div class="details__headers">
-					<div class="details__header js-nav-header">Наружная реклама<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</div>
-					<div class="details__header js-nav-header">Интерьерная реклама<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</div>
-					<div class="details__header js-nav-header">Широкоформатная печать<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</div>
+				<div class="details__header js-nav-header">Интерьерная реклама<i class="fa fa-angle-right"
+						aria-hidden="true"></i>
 				</div>
-				<div class="details__variants-lists lists">
-					<ul class="details__variants-list variants-list js-nav-list">
-						<li class="variants-list__element"><a href="./product-1.html">Вывески</a></li>
-						<li class="variants-list__element"><a href="./product-2.html">Объемные свтовые буквы</a></li>
-						<li class="variants-list__element"><a href="./product-3.html">Рекламные конструкции</a></li>
-						<li class="variants-list__element"><a href="./product-4.html">Крышные установки</a></li>
-						<li class="variants-list__element"><a href="./product-5.html">Оформление стоек</a></li>
-						<li class="variants-list__element"><a href="./product-6.html">Флаги и флагштоки</a></li>
-						<li class="variants-list__element"><a href="./product-1.html">Вывески из композита</a></li>
-						<li class="variants-list__element"><a href="./product-2.html">Панель кронштейн</a></li>
-						<li class="variants-list__element"><a href="./product-3.html">Световая панель</a></li>
-						<li class="variants-list__element"><a href="./product-4.html">Авто-брендирование</a></li>
-						<li class="variants-list__element"><a href="./product-5.html">Световые вывески</a></li>
-						<li class="variants-list__element"><a href="./product-6.html">Несветовые вывески</a></li>
-						<li class="variants-list__element"><a href="./product-1.html">Световые буквы</a></li>
-						<li class="variants-list__element"><a href="./product-2.html">Рекламные пилоны</a></li>
-						<li class="variants-list__element"><a href="./product-3.html">Маркизы</a></li>
-						<li class="variants-list__element"><a href="./product-4.html">Входные группы</a></li>
-						<li class="variants-list__element"><a href="./product-5.html">Световые короба</a></li>
-						<li class="variants-list__element"><a href="./product-6.html">LED-панели</a></li>
-						<li class="variants-list__element"><a href="./product-1.html">CITY-ФОРМАТ</a></li>
-						<li class="variants-list__element"><a href="./product-2.html">Оформление стоек</a></li>
-						<li class="variants-list__element"><a href="./product-3.html">Баннеры</a></li>
-					</ul>
-					
-					<ul class="details__variants-list variants-list js-nav-list">
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>					
-					</ul>				
-					<ul class="details__variants-list variants-list js-nav-list">
-						<li class="variants-list__element"><a href="./calculator-1.html">Широкоформатная печать топеров</a></li>
-						<li class="variants-list__element"><a href="./calculator-1.html">Печать на пленке</a></li>
-						<li class="variants-list__element"><a href="./calculator-1.html">Демонтаж вывески</a></li>
-						<li class="variants-list__element"><a href="./calculator-2.html">Печать наклеек</a></li>
-						<li class="variants-list__element"><a href="./calculator-2.html">Печать на сетке</a></li>
-						<li class="variants-list__element"><a href="./calculator-2.html">Печать штендеров</a></li>
-						<li class="variants-list__element"><a href="./calculator-3.html">Печать роллапов</a></li>
-						<li class="variants-list__element"><a href="./calculator-3.html">Мойка вывески</a></li>
-						<li class="variants-list__element"><a href="./calculator-3.html">Световые вывески</a></li>
-					</ul>
+				<div class="details__header js-nav-header">Широкоформатная печать<i class="fa fa-angle-right"
+						aria-hidden="true"></i>
 				</div>
-	
-				
 			</div>
-	
-			<div class="nav__detailed-block nav__detailed-block_mobile details">
-				<div>
-					<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Наружная реклама
-					</div>
-					<ul class="details__variants-list variants-list js-mobile-nav-list">
-						<li class="variants-list__element"><a href="./product-1.html">Вывески</a></li>
-						<li class="variants-list__element"><a href="./product-2.html">Объемные свтовые буквы</a></li>
-						<li class="variants-list__element"><a href="./product-3.html">Рекламные конструкции</a></li>
-						<li class="variants-list__element"><a href="./product-4.html">Крышные установки</a></li>
-						<li class="variants-list__element"><a href="./product-5.html">Оформление стоек</a></li>
-						<li class="variants-list__element"><a href="./product-6.html">Флаги и флагштоки</a></li>
-						<li class="variants-list__element"><a href="./product-1.html">Вывески из композита</a></li>
-						<li class="variants-list__element"><a href="./product-2.html">Панель кронштейн</a></li>
-						<li class="variants-list__element"><a href="./product-3.html">Световая панель</a></li>
-						<li class="variants-list__element"><a href="./product-4.html">Авто-брендирование</a></li>
-						<li class="variants-list__element"><a href="./product-5.html">Световые вывески</a></li>
-						<li class="variants-list__element"><a href="./product-6.html">Несветовые вывески</a></li>
-						<li class="variants-list__element"><a href="./product-1.html">Световые буквы</a></li>
-						<li class="variants-list__element"><a href="./product-2.html">Рекламные пилоны</a></li>
-						<li class="variants-list__element"><a href="./product-3.html">Маркизы</a></li>
-						<li class="variants-list__element"><a href="./product-4.html">Входные группы</a></li>
-						<li class="variants-list__element"><a href="./product-5.html">Световые короба</a></li>
-						<li class="variants-list__element"><a href="./product-6.html">LED-панели</a></li>
-						<li class="variants-list__element"><a href="./product-1.html">CITY-ФОРМАТ</a></li>
-						<li class="variants-list__element"><a href="./product-2.html">Оформление стоек</a></li>
-						<li class="variants-list__element"><a href="./product-3.html">Баннеры</a></li>
-		
-					</ul>
-				</div>
-				<div>
-					<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Интерьерная реклама
-					</div>
-					<ul class="details__variants-list variants-list js-mobile-nav-list">
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>
-						<li class="variants-list__element"><a href="#">Вывески</a></li>		
-					</ul>
-				</div>
-				<div>
-					<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Широкоформатная печать
-					</div>
-					<ul class="details__variants-list variants-list js-mobile-nav-list">
-						<li class="variants-list__element"><a href="./calculator-1.html">Широкоформатная печать топеров</a></li>
-						<li class="variants-list__element"><a href="./calculator-1.html">Печать на пленке</a></li>
-						<li class="variants-list__element"><a href="./calculator-1.html">Демонтаж вывески</a></li>
-						<li class="variants-list__element"><a href="./calculator-2.html">Печать наклеек</a></li>
-						<li class="variants-list__element"><a href="./calculator-2.html">Печать на сетке</a></li>
-						<li class="variants-list__element"><a href="./calculator-2.html">Печать штендеров</a></li>
-						<li class="variants-list__element"><a href="./calculator-3.html">Печать роллапов</a></li>
-						<li class="variants-list__element"><a href="./calculator-3.html">Мойка вывески</a></li>
-						<li class="variants-list__element"><a href="./calculator-3.html">Световые вывески</a></li>
-					</ul>
-				</div>
-				<div>
-					<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down" aria-hidden="true"></i>Услуги
-					</div>
-					<ul class="details__variants-list variants-list js-mobile-nav-list">					
-					</ul>
-				</div>
-				<div class="details__header details__header__link"><a href="./portfolio.html">Портфолио</a></div>
-				<div class="details__header details__header__link"><a href="./contacts.html">Контакты</a></div>
+			<div class="details__variants-lists lists">
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="./product-1.html">Вывески</a></li>
+					<li class="variants-list__element"><a href="./product-2.html">Вывески из композита</a></li>
+					<li class="variants-list__element"><a href="./product-3.html">Несветовые вывески</a></li>
+					<li class="variants-list__element"><a href="./product-4.html">Световые короба</a></li>
+					<li class="variants-list__element"><a href="./product-5.html">Объемные свтовые буквы</a></li>
+					<li class="variants-list__element"><a href="./product-1.html">Панель кронштейн</a></li>
+					<li class="variants-list__element"><a href="./product-2.html">Световые буквы</a></li>
+					<li class="variants-list__element"><a href="./product-3.html">LED-панели</a></li>
+					<li class="variants-list__element"><a href="./product-4.html">Рекламные конструкции</a></li>
+					<li class="variants-list__element"><a href="./product-5.html">Световая панель</a></li>
+					<li class="variants-list__element"><a href="./product-1.html">Рекламные пилоны</a></li>
+					<li class="variants-list__element"><a href="./product-2.html">CITY-ФОРМАТ</a></li>
+					<li class="variants-list__element"><a href="./product-3.html">Крышные установки</a></li>
+					<li class="variants-list__element"><a href="./product-4.html">Авто-брендирование</a></li>
+					<li class="variants-list__element"><a href="./product-5.html">Маркизы</a></li>
+					<li class="variants-list__element"><a href="./product-1.html">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="./product-2.html">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="./product-3.html">Световые вывески</a></li>
+					<li class="variants-list__element"><a href="./product-4.html">Входные группы</a></li>
+					<li class="variants-list__element"><a href="./product-5.html">Баннеры</a></li>
+					<li class="variants-list__element"><a href="./product-1.html">Флаги и флагштоки</a></li>
+				</ul>
+
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+				</ul>
+				<ul class="details__variants-list variants-list js-nav-list">
+					<li class="variants-list__element"><a href="./calculator-1.html">Широкоформатная печать топеров</a>
+					</li>
+					<li class="variants-list__element"><a href="./calculator-1.html">Печать на пленке</a></li>
+					<li class="variants-list__element"><a href="./calculator-1.html">Демонтаж вывески</a></li>
+					<li class="variants-list__element"><a href="./calculator-2.html">Печать наклеек</a></li>
+					<li class="variants-list__element"><a href="./calculator-2.html">Печать на сетке</a></li>
+					<li class="variants-list__element"><a href="./calculator-2.html">Печать штендеров</a></li>
+					<li class="variants-list__element"><a href="./calculator-3.html">Печать роллапов</a></li>
+					<li class="variants-list__element"><a href="./calculator-3.html">Мойка вывески</a></li>
+					<li class="variants-list__element"><a href="./calculator-3.html">Световые вывески</a></li>
+				</ul>
 			</div>
-			<div class="nav__bg"></div>
-		</nav>
-	
 
-		<main class="">
-			<div class="site-location container">Главная | Наклейки</div>
-			<section class="product-example-block-small container">
-				<h1 class="product-pricing-block-small__header section-header">Наклейки</h1>
-				<div class="product-example-block-small__list list grid-5">
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element">
-						<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
-						<div class="element__title">Акрил + металл</div>
-						<div class="element__actions">
-							<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
-							<button class="btn order-btn">Заказать</button>
-						</div>
+
+		</div>
+
+		<div class="nav__detailed-block nav__detailed-block_mobile details">
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down"
+						aria-hidden="true"></i>Наружная реклама
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="./product-1.html">Вывески</a></li>
+					<li class="variants-list__element"><a href="./product-2.html">Вывески из композита</a></li>
+					<li class="variants-list__element"><a href="./product-3.html">Несветовые вывески</a></li>
+					<li class="variants-list__element"><a href="./product-4.html">Световые короба</a></li>
+					<li class="variants-list__element"><a href="./product-5.html">Объемные свтовые буквы</a></li>
+					<li class="variants-list__element"><a href="./product-1.html">Панель кронштейн</a></li>
+					<li class="variants-list__element"><a href="./product-2.html">Световые буквы</a></li>
+					<li class="variants-list__element"><a href="./product-3.html">LED-панели</a></li>
+					<li class="variants-list__element"><a href="./product-4.html">Рекламные конструкции</a></li>
+					<li class="variants-list__element"><a href="./product-5.html">Световая панель</a></li>
+					<li class="variants-list__element"><a href="./product-1.html">Рекламные пилоны</a></li>
+					<li class="variants-list__element"><a href="./product-2.html">CITY-ФОРМАТ</a></li>
+					<li class="variants-list__element"><a href="./product-3.html">Крышные установки</a></li>
+					<li class="variants-list__element"><a href="./product-4.html">Авто-брендирование</a></li>
+					<li class="variants-list__element"><a href="./product-5.html">Маркизы</a></li>
+					<li class="variants-list__element"><a href="./product-1.html">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="./product-2.html">Оформление стоек</a></li>
+					<li class="variants-list__element"><a href="./product-3.html">Световые вывески</a></li>
+					<li class="variants-list__element"><a href="./product-4.html">Входные группы</a></li>
+					<li class="variants-list__element"><a href="./product-5.html">Баннеры</a></li>
+					<li class="variants-list__element"><a href="./product-1.html">Флаги и флагштоки</a></li>
+
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down"
+						aria-hidden="true"></i>Интерьерная реклама
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+					<li class="variants-list__element"><a href="#">Вывески</a></li>
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down"
+						aria-hidden="true"></i>Широкоформатная печать
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+					<li class="variants-list__element"><a href="./calculator-1.html">Широкоформатная печать топеров</a>
+					</li>
+					<li class="variants-list__element"><a href="./calculator-1.html">Печать на пленке</a></li>
+					<li class="variants-list__element"><a href="./calculator-1.html">Демонтаж вывески</a></li>
+					<li class="variants-list__element"><a href="./calculator-2.html">Печать наклеек</a></li>
+					<li class="variants-list__element"><a href="./calculator-2.html">Печать на сетке</a></li>
+					<li class="variants-list__element"><a href="./calculator-2.html">Печать штендеров</a></li>
+					<li class="variants-list__element"><a href="./calculator-3.html">Печать роллапов</a></li>
+					<li class="variants-list__element"><a href="./calculator-3.html">Мойка вывески</a></li>
+					<li class="variants-list__element"><a href="./calculator-3.html">Световые вывески</a></li>
+				</ul>
+			</div>
+			<div>
+				<div class="details__header js-mobile-nav-header"><i class="fa fa-angle-double-down"
+						aria-hidden="true"></i>Услуги
+				</div>
+				<ul class="details__variants-list variants-list js-mobile-nav-list">
+				</ul>
+			</div>
+			<div class="details__header details__header__link"><a href="./portfolio.html">Портфолио</a></div>
+			<div class="details__header details__header__link"><a href="./contacts.html">Контакты</a></div>
+		</div>
+		<div class="nav__bg"></div>
+	</nav>
+
+
+	<main class="">
+		<div class="site-location container">Главная | Наклейки</div>
+		<section class="product-example-block-small container">
+			<h1 class="product-pricing-block-small__header section-header">Наклейки</h1>
+			<div class="product-example-block-small__list list grid-5">
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
 					</div>
 				</div>
-			</section>
-
-
-
-			<section class="product-pricing-block table-container">
-				<h2 class="product-pricing-block__header section-header">Цена на цифровую печать наклеек</h2>
-
-				
-				<div class="table-block table-block_big">					
-					<table class="table">
-						<tr>
-							<th>Формат</th>
-							<th>Цветность</th>
-							<th>10 шт</th>
-							<th>50 шт</th>
-							<th>100 шт</th>
-							<th>200 шт</th>
-							<th>300 шт</th>
-						</tr>	
-						<tr>
-							<td>А5</td>
-							<td><p>1 + 0</p><p>4 + 0</p></td>
-							<td><p>300 руб</p><p>400 руб</p></td>
-							<td><p>400 руб</p><p>600 руб</p></td>
-							<td><p>700 руб</p><p>800 руб</p></td>
-							<td><p>900 руб</p><p>1000 руб</p></td>
-							<td><p>1200 руб</p><p>1400 руб</p></td>
-						</tr>
-						<tr>
-							<td>А5</td>
-							<td><p>1 + 0</p><p>4 + 0</p></td="Цветность">
-							<td><p>300 руб</p><p>400 руб</p></td>
-							<td><p>700 руб</p><p>850 руб</p></td>
-							<td><p>1300 руб</p><p>1600 руб</p></tdel="100>
-							<td><p>1700 руб</p><p>2000 руб</p></td>
-							<td><p>2200 руб</p><p>2600 руб</p></td>
-						</tr>
-					</table>
-					<div class="table-block__arrows">
-						<button><img src="../img//table-left-arrow.png" alt="left-arrow"></button>
-						<button><img src="../img//table-right-arrow.png" alt="right-arrow"></button>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
 					</div>
 				</div>
-			</section>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element">
+					<img class="element__img" src="../img/work-example_4.png" alt="wokr-example">
+					<div class="element__title">Акрил + металл</div>
+					<div class="element__actions">
+						<button class="btn details-btn">Подробнее <img src="../img/details-btn.png" alt=""></button>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-			<section class="product container">
-				<div class="product__content content">
-					<div class="content__img">
-						<i class="fa fa-angle-right  fa-rotate-180" aria-hidden="true"></i>
+
+
+		<section class="product-pricing-block table-container">
+			<h2 class="product-pricing-block__header section-header">Цена на цифровую печать наклеек</h2>
+
+
+			<div class="table-block table-block_big">
+				<table class="table">
+					<tr>
+						<th>Формат</th>
+						<th>Цветность</th>
+						<th>10 шт</th>
+						<th>50 шт</th>
+						<th>100 шт</th>
+						<th>200 шт</th>
+						<th>300 шт</th>
+					</tr>
+					<tr>
+						<td>А5</td>
+						<td>
+							<p>1 + 0</p>
+							<p>4 + 0</p>
+						</td>
+						<td>
+							<p>300 руб</p>
+							<p>400 руб</p>
+						</td>
+						<td>
+							<p>400 руб</p>
+							<p>600 руб</p>
+						</td>
+						<td>
+							<p>700 руб</p>
+							<p>800 руб</p>
+						</td>
+						<td>
+							<p>900 руб</p>
+							<p>1000 руб</p>
+						</td>
+						<td>
+							<p>1200 руб</p>
+							<p>1400 руб</p>
+						</td>
+					</tr>
+					<tr>
+						<td>А5</td>
+						<td>
+							<p>1 + 0</p>
+							<p>4 + 0</p>
+							</td="Цветность">
+						<td>
+							<p>300 руб</p>
+							<p>400 руб</p>
+						</td>
+						<td>
+							<p>700 руб</p>
+							<p>850 руб</p>
+						</td>
+						<td>
+							<p>1300 руб</p>
+							<p>1600 руб</p>
+							</tdel="100>
+						<td>
+							<p>1700 руб</p>
+							<p>2000 руб</p>
+						</td>
+						<td>
+							<p>2200 руб</p>
+							<p>2600 руб</p>
+						</td>
+					</tr>
+				</table>
+				<div class="table-block__arrows">
+					<button><img src="../img//table-left-arrow.png" alt="left-arrow"></button>
+					<button><img src="../img//table-right-arrow.png" alt="right-arrow"></button>
+				</div>
+			</div>
+		</section>
+
+		<section class="product container">
+			<div class="product__content content">
+				<div class="content__img">
+					<i class="fa fa-angle-right fa-rotate-180 prev-slide-btn" aria-hidden="true"></i>
+					<div class="slider product-slider">
 						<img src="../img/product-img-5.png" alt="content-img">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						<img src="../img/product-img-2.png" alt="content-img">
+						<img src="../img/product-img-3.png" alt="content-img">
 					</div>
-					<div class="content__description description">
-						<div class="description__text">
-							Мы предлагаем своим клиентам широкий спектр услуг по печати. Обращаясь к нам, вы можете быть уверены, что заказ будет выполнен вовремя, а качество вас приятно удивит. Наша компания обладает рядом преимуществ, которые выделяют нас среди конкурентов:
-							<ul>
-								<li><span>большой опыт работы в сфере печати;</span></li>
-								<li><span>самые доступные цены в Москве;</span></li>
-								<li><span>использование современного оборудования и профессиональных материалов;</span></li>
-								<li><span>Мы изготавливаем наклейки для производств и рекламных кампаний, для использования внутри помещений, размещения на городском транспорте и других носителях рекламы.</span></li>
-							</ul>
-						</div>
-						<div class="description__buttons buttons">
-							<button class="btn calc-btn"><img src="../img/calc-icon.png"
-									alt="calc-icon">Калькулятор</button>
-							<button class="btn order-btn">Заказать<img src="../img/telegram-icon-1.png"
-									alt="telegram-icon"></button>
-						</div>
-					</div>
+					<i class="fa fa-angle-right next-slide-btn" aria-hidden="true"></i>
 				</div>
-			</section>
-
-			<section class="also-interesting-block container">
-				<h2 class="section-header">Так же может быть вам интересно</h2>
-				<div class="also-interesting-block__links">
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-					<a href="#">Roll-up light</a>
-				</div>
-			</section>
-
-			<section class="popular-orders-block container">
-				<h2 class="section-header">Популярные заказы</h2>
-				<div class="popular-orders-block__list list">
-					<div class="list__element element">
-						<div class="element__img">
-							<img src="../img/popular-order-1.png" alt="popular-order">
-						</div>
-						<div class="element__title">Объемные буквы </div>
-						<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота букв 20см</div>
-						<div class="element__price">
-							<p>≈ 15.000 руб</p>
-							<button class="btn order-btn">Заказать</button>
-						</div>
+				<div class="content__description description">
+					<div class="description__text">
+						Мы предлагаем своим клиентам широкий спектр услуг по печати. Обращаясь к нам, вы можете быть
+						уверены, что заказ будет выполнен вовремя, а качество вас приятно удивит. Наша компания обладает
+						рядом преимуществ, которые выделяют нас среди конкурентов:
+						<ul>
+							<li><span>большой опыт работы в сфере печати;</span></li>
+							<li><span>самые доступные цены в Москве;</span></li>
+							<li><span>использование современного оборудования и профессиональных материалов;</span></li>
+							<li><span>Мы изготавливаем наклейки для производств и рекламных кампаний, для использования
+									внутри помещений, размещения на городском транспорте и других носителях
+									рекламы.</span></li>
+						</ul>
 					</div>
-					<div class="list__element element">
-						<div class="element__img">
-							<img src="../img/popular-order-2.png" alt="popular-order">
-						</div>
-						<div class="element__title">Объемные буквы </div>
-						<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота букв 20см</div>
-						<div class="element__price">
-							<p>≈ 15.000 руб</p>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element element">
-						<div class="element__img">
-							<img src="../img/popular-order-3.png" alt="popular-order">
-						</div>
-						<div class="element__title">Объемные буквы </div>
-						<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота букв 20см</div>
-						<div class="element__price">
-							<p>≈ 15.000 руб</p>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element element">
-						<div class="element__img">
-							<img src="../img/popular-order-3.png" alt="popular-order">
-						</div>
-						<div class="element__title">Объемные буквы </div>
-						<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота букв 20см</div>
-						<div class="element__price">
-							<p>≈ 15.000 руб</p>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-					<div class="list__element element">
-						<div class="element__img">
-							<img src="../img/popular-order-3.png" alt="popular-order">
-						</div>
-						<div class="element__title">Объемные буквы </div>
-						<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота букв 20см</div>
-						<div class="element__price">
-							<p>≈ 15.000 руб</p>
-							<button class="btn order-btn">Заказать</button>
-						</div>
-					</div>
-	
-				</div>
-	
-			</section>
-		</main>
-
-
-		<footer>
-			<div class="footer container">
-				<div class="footer__answers answers">
-					<h2 class="answers__header">Часто задаваемые вопросы</h2>
-					<div><a href="#" class="answers__link">Как сделать заказ?</a></div>
-					<div><a href="#" class="answers__link">Как к Вам добраться?</a></div>
-					<div><a href="#" class="answers__link">Как оплатить заказ?</a></div>
-					<div><a href="#" class="answers__link">Есть ли у вас доставка?</a></div>
-				</div>
-				<div class="footer__rights rights">
-					<p class="rights__element">Условия и положения</p>
-					<p class="rights__element">Политика конфиденциальности</p>
-				</div>
-				<div class="footer__social social">
-					<div class="social__header">
-						<h1>Подпишись</h1>
-						<p>И будь в курсе новостей!</p>
-					</div>
-					<div class="social__links">
-						<a href=""><img src="../img/social-telegram.png" alt=""></a>
-						<a href=""><img src="../img/social-instagram.png" alt=""></a>
-						<a href=""><img src="../img/social-skype.png" alt=""></a>
-					</div>
-				</div>
-				<div class="footer__copyright">
-					<p>Цены указанные на сайте <span>provyveski</span> носят ориентировочный,<br>информационный характер
-						и не
-						являются публичной офертой.
-						<br>Актуальность ценовой политики необходимо уточнять у менеджеров по тел: 8 (495) 728-09-56</p>
-					<p>© 2020 типография provyveski. Все права защищены, полное и (или) частичное копирование,
-						воспроизведение, использование
-						<br>в любом виде запрещены и преследуются в соответствии с действующим законодательством
-						Российской Федерации.</p>
-				</div>
-				<div class="footer__contacts contacts">
-					<div class="contacts__element element">
-						<div class="element__phone">8 (495) 728-09-56</div>
-						<p class="element__email">zakaz@provyvesky.ru</p>
-						<p class="element__address">г.Москва, ул.Сайкина, д.17</p>
-					</div>
-					<div class="contacts__element element">
-						<div class="element__phone">8 (903) 226-89-46</div>
-						<p class="element__email">zakazdmd@stolitsaprint.ru</p>
-						<p class="element__address">г. Домодедово, ул. Кирова, дом 7, к 1 </p>
+					<div class="description__buttons buttons">
+						<button class="btn calc-btn"><img src="../img/calc-icon.png"
+								alt="calc-icon">Калькулятор</button>
+						<button class="btn order-btn">Заказать<img src="../img/telegram-icon-1.png"
+								alt="telegram-icon"></button>
 					</div>
 				</div>
 			</div>
+		</section>
 
-		</footer>
-	</body>
+		<section class="also-interesting-block container">
+			<h2 class="section-header">Так же может быть вам интересно</h2>
+			<div class="also-interesting-block__links">
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+				<a href="#">Roll-up light</a>
+			</div>
+		</section>
 
-</tr>
+		<section class="popular-orders-block container">
+			<h2 class="section-header">Популярные заказы</h2>
+			<div class="popular-orders-block__list list">
+				<div class="list__element element">
+					<div class="element__img">
+						<img src="../img/popular-order-1.png" alt="popular-order">
+					</div>
+					<div class="element__title">Объемные буквы </div>
+					<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота
+						букв 20см</div>
+					<div class="element__price">
+						<p>≈ 15.000 руб</p>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element element">
+					<div class="element__img">
+						<img src="../img/popular-order-2.png" alt="popular-order">
+					</div>
+					<div class="element__title">Объемные буквы </div>
+					<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота
+						букв 20см</div>
+					<div class="element__price">
+						<p>≈ 15.000 руб</p>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element element">
+					<div class="element__img">
+						<img src="../img/popular-order-3.png" alt="popular-order">
+					</div>
+					<div class="element__title">Объемные буквы </div>
+					<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота
+						букв 20см</div>
+					<div class="element__price">
+						<p>≈ 15.000 руб</p>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element element">
+					<div class="element__img">
+						<img src="../img/popular-order-3.png" alt="popular-order">
+					</div>
+					<div class="element__title">Объемные буквы </div>
+					<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота
+						букв 20см</div>
+					<div class="element__price">
+						<p>≈ 15.000 руб</p>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+				<div class="list__element element">
+					<div class="element__img">
+						<img src="../img/popular-order-3.png" alt="popular-order">
+					</div>
+					<div class="element__title">Объемные буквы </div>
+					<div class="element__text">компании «СТОЛИЧНАЯ ПЕЧАТЬ» из орг. стекла с лицевой подсветкой высота
+						букв 20см</div>
+					<div class="element__price">
+						<p>≈ 15.000 руб</p>
+						<button class="btn order-btn">Заказать</button>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	</main>
+
+
+	<footer>
+		<div class="footer container">
+			<div class="footer__answers answers">
+				<h2 class="answers__header">Часто задаваемые вопросы</h2>
+				<div><a href="#" class="answers__link">Как сделать заказ?</a></div>
+				<div><a href="#" class="answers__link">Как к Вам добраться?</a></div>
+				<div><a href="#" class="answers__link">Как оплатить заказ?</a></div>
+				<div><a href="#" class="answers__link">Есть ли у вас доставка?</a></div>
+			</div>
+			<div class="footer__rights rights">
+				<p class="rights__element">Условия и положения</p>
+				<p class="rights__element">Политика конфиденциальности</p>
+			</div>
+			<div class="footer__social social">
+				<div class="social__header">
+					<h1>Подпишись</h1>
+					<p>И будь в курсе новостей!</p>
+				</div>
+				<div class="social__links">
+					<a href=""><img src="../img/social-telegram.png" alt=""></a>
+					<a href=""><img src="../img/social-instagram.png" alt=""></a>
+					<a href=""><img src="../img/social-skype.png" alt=""></a>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<p>Цены указанные на сайте <span>provyveski</span> носят ориентировочный,<br>информационный характер
+					и не
+					являются публичной офертой.
+					<br>Актуальность ценовой политики необходимо уточнять у менеджеров по тел: 8 (495) 728-09-56</p>
+				<p>© 2020 типография provyveski. Все права защищены, полное и (или) частичное копирование,
+					воспроизведение, использование
+					<br>в любом виде запрещены и преследуются в соответствии с действующим законодательством
+					Российской Федерации.</p>
+			</div>
+			<div class="footer__contacts contacts">
+				<div class="contacts__element element">
+					<div class="element__phone">8 (495) 728-09-56</div>
+					<p class="element__email">zakaz@provyvesky.ru</p>
+					<p class="element__address">г.Москва, ул.Сайкина, д.17</p>
+				</div>
+				<div class="contacts__element element">
+					<div class="element__phone">8 (903) 226-89-46</div>
+					<p class="element__email">zakazdmd@provyvesky.ru</p>
+					<p class="element__address">г. Домодедово, ул. Кирова, дом 7, к 1 </p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+</body>
+
+</html>

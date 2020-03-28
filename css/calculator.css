@@ -105,38 +105,6 @@ h1.section-header {
   letter-spacing: 1.79px;
 }
 
-.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:after, .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:before {
-  font-size: 50px;
-  font-weight: 400;
-  position: absolute;
-  top: 0px;
-}
-
-.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:after {
-  content: ">";
-  right: -12px;
-}
-
-.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder:before {
-  content: "<";
-  left: -12px;
-}
-
-.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder.small-arrows:after, .customise-product__form .form__inputs_small .inputs_small .input-block__input-holder.small-arrows:before {
-  font-size: 25px;
-  font-weight: 400;
-  position: absolute;
-  top: 12px;
-}
-
-.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder.small-arrows:after {
-  right: 7px;
-}
-
-.customise-product__form .form__inputs_small .inputs_small .input-block__input-holder.small-arrows:before {
-  left: 7px;
-}
-
 .customise-product__form .form__type-selectors-block .type-selectors-block__selectors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,20 +329,6 @@ h1.section-header {
   }
   .customise-product__form .form__input-block_small .input-block__input-holder, .customise-product__form .form__input-block_big .input-block__input-holder {
     position: relative;
-  }
-  .customise-product__form .form__input-block_small .input-block__input-holder:after, .customise-product__form .form__input-block_small .input-block__input-holder:before, .customise-product__form .form__input-block_big .input-block__input-holder:after, .customise-product__form .form__input-block_big .input-block__input-holder:before {
-    font-size: 25px;
-    font-weight: 400;
-    position: absolute;
-    top: 10px;
-  }
-  .customise-product__form .form__input-block_small .input-block__input-holder:after, .customise-product__form .form__input-block_big .input-block__input-holder:after {
-    content: ">";
-    right: 10px;
-  }
-  .customise-product__form .form__input-block_small .input-block__input-holder:before, .customise-product__form .form__input-block_big .input-block__input-holder:before {
-    content: "<";
-    left: 10px;
   }
   .customise-product__form .form__inputs_small {
     -webkit-box-orient: vertical;

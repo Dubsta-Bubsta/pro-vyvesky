@@ -21,12 +21,6 @@ $icons-color: #E6AE2A;
 
 	&__element {
 		&.logo {
-			&.mobile-logo {
-				display: none;
-			}
-			&.desktop-logo {
-				display: block;			
-			}
 			& img {
 				width: 114.81px;
 				height: 129.48px;
@@ -172,13 +166,6 @@ $icons-color: #E6AE2A;
 				grid-area: logo;
 				display: flex;
 				justify-content: flex-start;
-
-				&.mobile-logo {
-					display: block;
-				}
-				&.desktop-logo {
-					display: none;			
-				}
 			}		
 		
 

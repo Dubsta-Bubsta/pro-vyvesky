@@ -1,4 +1,5 @@
 @import './table';
+@import './slider';
 
 body {
 	overflow-x: hidden;
@@ -255,6 +256,7 @@ button:hover {
 	font-style: italic;
 }
 
+
 @media screen and (max-width: 1366px) {
 	.container {
 		width: 80%;
@@ -268,7 +270,6 @@ button:hover {
 	.container {
 		width: 93%;
 	}
-	
 }
 
 @media screen and (max-width: 768px) {

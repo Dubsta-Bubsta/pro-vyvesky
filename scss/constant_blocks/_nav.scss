@@ -59,6 +59,8 @@
 			z-index: 5;
 		}
 
+		
+
 		& .details {
 			&__header {
 				grid-column: 1/2;
@@ -248,6 +250,7 @@
 								text-transform: initial;
 								font-size: 17px !important;
 								line-height: 31.4px;
+								text-transform: lowercase;
 								font-family: Geometria Light;
 								margin: 0!important;
 								&::before {

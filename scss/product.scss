@@ -4,16 +4,32 @@
 
 	&__content {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
-		grid-gap: 50px;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+		grid-gap: 80px;
 
 		& .content {
-			&__img {
+			&__holder {
 				display: flex;
-				justify-content: center;
+				flex-direction: row;
 				align-items: center;
-				width: 80%;
+				width: 95%; 
+			}
+
+			&__img {
+				position: relative;
+				width: 95%; 
 				margin: 0 auto;
+
+				& img {
+					margin: 0 5px;
+				}
+				
+				.slider-prev {
+					top: 45%;			
+				}
+				.slider-next {
+					top: 45%;
+				}
 			}
 
 			&__description {
@@ -48,7 +64,7 @@
 						display: grid;
 						grid-template-columns: 1fr 1fr;
 						grid-gap: 40px;
-						margin-top: 10px;
+						margin-top: 20px;
 
 						& .btn {
 							height: 100%;
@@ -75,7 +91,6 @@
 		}
 	}
 }
-
 
 .product-example-block-big {
 	font-family: Geometria Light;
@@ -203,20 +218,22 @@
 	display: flex;
 	flex-direction: column;
 
-	&>div {
+
+	& .list-holder {
+		width: 100%; 
+		margin: 0 auto;
+		position: relative;
 		display: flex;
 		align-items: center;
 	}
 
 	&__list {
 		margin: 0 auto;
-		width: 100%;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 10px;
+		width: 95%;
 
 		& img {
 			width: 100%;
+			margin: 0 5px;
 		}
 	}
 
@@ -435,18 +452,7 @@
 	}
 }
 
-section .fa-angle-right {
-	font-size: 60px !important;
-	color: #9C9B9B;
 
-	&:first-child {
-		margin-right: 15px;
-	}
-
-	&:last-child {
-		margin-left: 15px;
-	}
-}
 
 @media screen and (max-width: 1600px) {
 
@@ -474,7 +480,7 @@ section .fa-angle-right {
 @media screen and (max-width: 1366px) {
 	.product {
 		&__content {
-			grid-template-columns: 2fr 3fr;
+			grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
 
 			.content {
 				&__img img {
@@ -609,8 +615,8 @@ section .fa-angle-right {
 @media screen and (max-width: 1024px) {
 	.product {
 		&__content {
-			grid-template-columns: 1fr;
-
+			grid-template-columns: minmax(0, 1fr);
+			grid-gap: 40px;
 			& .content {
 				&__img img {
 					width: 70%;
@@ -625,11 +631,9 @@ section .fa-angle-right {
 		}
 
 		&__list {
-			grid-template-columns: 1fr 1fr 1fr;
-
 			& img {
 				&:nth-child(n+4) {
-					display: none;
+					// display: none;
 
 				}
 			}
@@ -701,8 +705,11 @@ section .fa-angle-right {
 		padding-bottom: 30px;
 
 		&__content .content {
-			&__img img {
-				width: 100%;
+			&__img {
+				width: 80%; 
+				img {
+					width: 80%;
+				}
 			}
 
 			&__description {
@@ -734,14 +741,16 @@ section .fa-angle-right {
 	}
 
 	.works-example-block {
+		& .fa-angle-right {
+			display: none;
+		}
 		&__list {
-			grid-template-columns: 1fr 1fr;
-
 			& img {
-				&:nth-child(n+3) {
-					display: none;
-				}
+				
 			}
+		}
+		& .list-holder {
+			width: 100%;
 		}
 	}
 

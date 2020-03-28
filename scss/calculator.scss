@@ -108,43 +108,6 @@ h1.section-header {
 						font-size: 45.86px;
 						line-height: 55.04px;
 						letter-spacing: 1.79px;
-
-						&:after,
-						&:before {
-							font-size: 50px;
-							font-weight: 400;
-							position: absolute;
-							top: 0px;
-						}
-
-						&:after {
-							content: ">";
-							right: -12px;
-						}
-
-						&:before {
-							content: "<";
-							left: -12px;
-						}
-
-						&.small-arrows {
-
-							&:after,
-							&:before {
-								font-size: 25px;
-								font-weight: 400;
-								position: absolute;
-								top: 12px;
-							}
-
-							&:after {
-								right: 7px;
-							}
-
-							&:before {
-								left: 7px;
-							}
-						}
 					}
 				}
 			}
@@ -394,24 +357,6 @@ h1.section-header {
 
 					& .input-block__input-holder {
 						position: relative;
-
-						&:after,
-						&:before {
-							font-size: 25px;
-							font-weight: 400;
-							position: absolute;
-							top: 10px;
-						}
-
-						&:after {
-							content: ">";
-							right: 10px;
-						}
-
-						&:before {
-							content: "<";
-							left: 10px;
-						}
 					}
 				}
 			}

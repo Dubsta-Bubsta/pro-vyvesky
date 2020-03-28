@@ -52,6 +52,64 @@ table.table tr th {
   font-size: 16px;
 }
 
+section .fa-angle-right {
+  font-size: 60px !important;
+  color: #9C9B9B;
+}
+
+section .fa-angle-right.slider-prev {
+  margin-right: 15px;
+}
+
+section .fa-angle-right.slider-next {
+  margin-left: 15px;
+}
+
+.custom-dots {
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.custom-dots li {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.custom-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 9px;
+  height: 9px;
+  padding: 4px;
+  cursor: pointer;
+  font-family: 'slick';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border: 3px solid #99979C;
+  background: #99979C;
+  border-radius: 100%;
+}
+
+.custom-dots li button:hover, .custom-dots li button:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.custom-dots li.slick-active button {
+  background: #fff !important;
+}
+
 body {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
