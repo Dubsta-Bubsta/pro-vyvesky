@@ -182,14 +182,19 @@
 	font-style: normal;
 }
 
+
 @font-face {
 	font-family: 'MicrosoftYaHeiLight';
-	src: url('chinese.msyh.ttf');
+	src: url('Microsoft YaHei.eot');
 	src: local('MicrosoftYaHeiLight'), local('MicrosoftYaHeiLight'),
-		url('chinese.msyh.ttf') format('truetype');
+		url('Geometria-Thin.eot?#iefix') format('embedded-opentype'),
+		url('Microsoft YaHei.woff') format('woff'),
+		url('Microsoft YaHei.ttf') format('truetype');
+
 	font-weight: 100;
 	font-style: normal;
 }
+
 
 @font-face {
 	font-family: 'ArialMT';

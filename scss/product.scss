@@ -61,19 +61,16 @@
 					&__buttons {
 						display: flex;
 						flex-direction: row;
-						display: grid;
-						grid-template-columns: 1fr 1fr;
-						grid-template-rows: 67px;
-						grid-gap: 40px;
 						margin-top: 20px;
 
 						& .btn {
 							height: 100%;
 							padding: 7px 20px;
-
+							height: 67px;
 							&.calc-btn {
 								font-size: 33.71px;
 								line-height: 40.45px;
+								margin-right: 40px;
 							}
 
 							&.order-btn {
@@ -496,13 +493,12 @@
 						}
 
 						&__buttons {
-							grid-template-columns: 1fr;
-							grid-template-rows: 1fr 1fr;
-							grid-gap: 20px;
+							flex-direction: column;
 
 							& .btn {
 								margin: 0;
 								padding: 5px 10px;
+								height: 47px;
 
 								& img {
 									width: 35px;
@@ -514,6 +510,7 @@
 								}
 
 								&.calc-btn {
+									margin: 0 0 20px 0;
 									font-size: 21px;
 									line-height: 25px;
 								}
@@ -713,9 +710,6 @@
 					}
 
 					&__buttons {
-						grid-template-columns: 1fr;
-						grid-template-rows:  47px 47px;
-						grid-gap: 20px;
 
 						& .btn {
 							margin: 0;
