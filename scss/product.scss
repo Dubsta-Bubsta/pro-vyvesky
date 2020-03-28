@@ -63,6 +63,7 @@
 						flex-direction: row;
 						display: grid;
 						grid-template-columns: 1fr 1fr;
+						grid-template-rows: 67px;
 						grid-gap: 40px;
 						margin-top: 20px;
 
@@ -629,15 +630,6 @@
 		& .fa-angle-right {
 			display: none;
 		}
-
-		&__list {
-			& img {
-				&:nth-child(n+4) {
-					// display: none;
-
-				}
-			}
-		}
 	}
 
 	.popular-orders-block {
@@ -722,7 +714,7 @@
 
 					&__buttons {
 						grid-template-columns: 1fr;
-						grid-template-rows: 1fr 1fr;
+						grid-template-rows:  47px 47px;
 						grid-gap: 20px;
 
 						& .btn {
@@ -744,11 +736,7 @@
 		& .fa-angle-right {
 			display: none;
 		}
-		&__list {
-			& img {
-				
-			}
-		}
+		
 		& .list-holder {
 			width: 100%;
 		}

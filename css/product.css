@@ -87,6 +87,8 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 67px;
+      grid-template-rows: 67px;
   grid-gap: 40px;
   margin-top: 20px;
 }
@@ -681,8 +683,8 @@
   .product__content .content__description .description__buttons {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 47px 47px;
+        grid-template-rows: 47px 47px;
     grid-gap: 20px;
   }
   .product__content .content__description .description__buttons .btn {
