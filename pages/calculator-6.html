@@ -7,7 +7,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/general.css">
-	<link rel="stylesheet" href="../css/contacts.css">
+	<link rel="stylesheet" href="../css/calculator.css">
 	<link rel="stylesheet" href="../css/constant-blocks.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="../script/script.js"></script>
@@ -16,9 +16,10 @@
 
 <body>
 	<header class="header">
-		<div class="header__element logo">
+		<div class="header__element logo ">
 			<a href="../index.html"><img src="../img/logo.png"></a>
 		</div>
+		
 		<div class="header__element location">
 			<img src="../img/marker.png" alt="">
 			<div>
@@ -203,127 +204,141 @@
 	</nav>
 
 
-	<main class="">
-		<div class="site-location container">Главная | Контакты</div>
-		<h1 class="section-header container">Контакты</h1>
+	<main class="container">
+		<div class="site-location">Главная | Таблички | Калькулятор табличек</div>
+		<h1 class="contacts__header section-header">Калькулятор табличек</h1>
 
-		<section class="contacts container">
-			<div class="contacts__location location">
-				<div class="location__map">
-					<img src="../img/location-map.png" alt="location-map">
-				</div>
-				<div class="location__info info">
-					<div class="info__element element">
-						<img class="marker-icon" src="../img/marker.png" alt="">
-						<div class="element__text">
-							<p>115193, Москва, ул. Сайкина 17, МЦК/метро «Автозаводская»</p>
+	
+		<div class="customise-product width-100">
+			<form class="customise-product__form form" action="#">
+				<!-- У каждого чекбокса должен быть id и label-->
+				<div class="form__type-selectors-block type-selectors-block">
+					<h2 class="section-header">Материал</h2>
+					<div class="type-selectors-block__selectors selectors_big selectors ">
+						<div class="selectors__selector">
+							<input type="radio" id="type1_1" name="type-selector">
+							<label for="type1_1">Металл</label>
 						</div>
-					</div>
-					<div class="info__element">
-						<img src="../img/house.png" alt="">
-						<div class="element__text">
-							<p>Время работы:</p>
-							<p>Пн-Пт с 10:00 - 19:00</p>
+						<div class="selectors__selector">
+							<input type="radio" id="type1_2" name="type-selector">
+							<label for="type1_2">Пластик</label>
 						</div>
-					</div>
-					<div class="info__element">
-						<img src="../img/letter.png" alt="">
-						<div class="element__text">
-							<p>info@provyvesky.ru</p>
+						<div class="selectors__selector">
+							<input type="radio" id="type1_3" name="type-selector">
+							<label for="type1_3">Орг.стекло</label>
 						</div>
-					</div>
-					<div class="info__element">
-						<img src="../img/phone.png" alt="">
-						<div class="element__text">
-							<p>8 (495) 728-09-56</p>
+						<div class="selectors__selector">
+							<input type="radio" id="type1_4" name="type-selector">
+							<label for="type1_4">Дерево</label>
 						</div>
-					</div>
-					<hr>
-					<div class="info__element">
-						<img class="marker-icon" src="../img/marker.png" alt="">
-
-						<div class="element__text">
-							<p>г. Домодедово, ул. Кирова, дом 7, к1</p>
-						</div>
-					</div>
-					<div class="info__element">
-						<img src="../img/phone.png" alt="">
-
-						<div class="element__text">
-							<p>8 (903) 226-89-46</p>
+						<div class="selectors__selector">
+							<input type="radio" id="type1_5" name="type-selector">
+							<label for="type1_5">Дибонд</label>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="contacts-text-block container">
-			<ul>
-				<li><span>Проход от метро «Автозаводская»:</span></li>
-				<p>1 вагон из центра, 1 выход из метро, из стеклянных дверей направо и сразу первый поворот направо,
-					далее
-					прямо проходите 2 дома до МЦК переходите закрытый мост на другую сторону и продолжаете движение по
-					улице
-					5-я Кожуховская прямо два дома, слева от Вас будет «Московский индустриальный банк», поворачиваете
-					напрво и,
-					через подземный переход, переходите на другую сторону, выходите направо. Мы находимся в жилом
-					угловом
-					доме между магазином «Сплав» и Аптекой.</p>
-				<li><span>От МЦК «Автозаводская»:</span></li>
-				<p>Из МЦК выход в стеклянные двери, налево спускаетесь по лестнице на улицу и продолжаете движение
-					прямо,
-					проходите 2 дома, далее идете по подземному переходу на другую сторону, выход направо. Проходите по
-					пешеходному переходу прямо, до первой двери между магазином «Сплав» и Аптекой.</p>
-				<li><span>От метро «Кожуховская»:</span></li>
-				<p>Идти максимум 10 мин. Из метро выход в сторону первого вагона из центра,
-					из стеклянных дверей направо далее прямо по 5-й Кожуховской улице до перекрестка, на
-					перекрестке с левой стороны наше здание.</p>
-			</ul>
-		</section>
+				<div class="form__type-selectors-block type-selectors-block form-container">
+					<h3 class="section-header">Изображение</h3>
+					<div class="type-selectors-block__selectors selectors selectors_big">
+						<div class="selectors__selector">
+							<input type="radio" id="type2_1" name="type-selector-1">
+							<label for="type2_1">Печать</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type2_2" name="type-selector-1">
+							<label for="type2_2">Пленка</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type2_3" name="type-selector-1">
+							<label for="type2_3">Гравировка</label>
+						</div>						
+					</div>
+				</div>
+				<div class="form__type-selectors-block type-selectors-block">
+					<h2 class="section-header">Крепление</h2>
+					<div class="type-selectors-block__selectors selectors_big selectors ">
+						<div class="selectors__selector">
+							<input type="radio" id="type3_1" name="type-selector-2">
+							<label class="small-font" for="type3_1">Самоклейка</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type3_2" name="type-selector-2">
+							<label class="small-font" for="type3_2">Саморезы</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type3_3" name="type-selector-2">
+							<label class="small-font" for="type3_3">Кронштейн</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type3_4" name="type-selector-2">
+							<label class="small-font" for="type3_4">Дистанционно</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type3_5" name="type-selector-2">
+							<label class="small-font" for="type3_5">Настольная</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type3_5" name="type-selector-2">
+							<label class="small-font" for="type3_6">Ручная</label>
+						</div>
+					</div>
+				</div>
+				<div class="form__type-selectors-block type-selectors-block">
+					<h2 class="section-header">Толщина (мм)</h2>
+					<div class="type-selectors-block__selectors selectors_small selectors ">
+						<div class="selectors__selector">
+							<input type="radio" id="type4_1" name="type-selector-3">
+							<label for="type4_1">2</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type4_2" name="type-selector-3">
+							<label for="type4_2">3</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type4_3" name="type-selector-3">
+							<label for="type4_3">4</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type4_4" name="type-selector-3">
+							<label for="type4_4">5</label>
+						</div>
+						<div class="selectors__selector">
+							<input type="radio" id="type4_5" name="type-selector-3">
+							<label for="type4_5">Другое</label>
+						</div>
+						
+					</div>
+				</div>
+				<div class="form__inputs_small inputs_small form-container">
+					<div class="inputs_small input-block">
+						<h2 class="section-header">Укажите высоту (мм)</h2>
+						<div class="input-block__input-holder small-arrows">
+							<input class="input">
+						</div>
+					</div>
+					<div class="inputs_small input-block">
+						<h2 class="section-header">Укажите ширину (мм)</h2>
+						<div class="input-block__input-holder small-arrows">
+							<input class="input">
+						</div>
+					</div>
+				</div>
+				<div class="form__input-block_small input-block form-container">
+					<h3 class="section-header">Тираж</h3>
+					<input class="input-block__input input">
+				</div>
+				<div class="form__order-block order-block form-container">
+					<h3 class="section-header">Ориентировочная цена</h3>
+					<div class="order-block__price"><span>0</span> руб</div>
+					<button class="order-block__button btn">Заказать</button>
+					<p class="order-block__description">Стоимость монтажных работ рассчитывется по индивидуальному
+						проекту</p>
+				</div>
+				
+				
+			</form>
 
-		<section class="delivery-block table-container">
-			<h1 class="delivery-block__header section-header">Доставка</h1>
-			<table class="delivery-block__table table-block table">
-				<tr>
-					<th>Тип</th>
-					<th>Цена</th>
-				</tr>
-				<tr>
-					<td>доставка курьером в пределах МКАД</td>
-					<td>380 руб</td>
-				</tr>
-				<tr>
-					<td>доставка легковым автомобилем в пределах МКАД</td>
-					<td><span>1 425 руб</span></td>
-				</tr>
-				<tr>
-					<td>доставка грузовым автомобилем в пределах МКАД</td>
-					<td><span>2 090 руб</span></td>
-				</tr>
-				<tr>
-					<td>за МКАД и в соседние области</td>
-					<td><span>оплата</span> <span>по км</span></td>
-				</tr>
-			</table>
-		</section>
-		<section class="contacts-text-block container">
-			<p>По России заказанной товар может быть доставлен клиенту в любой регион: </p>
-			<ul>
-				<li><span>Транспортно-экспедиционными компанниями</span></li>
-				<li><span>Службами доставки грузов</span> </li>
-				<li><span>Организациями экспресс-доставки</span></li>
-			</ul>
-			<p>При этом услуга по доставке заказа оплачивается при получении груза по тарифу транспортной компании.
-				Рассчитать ориентировочную тоимость и
-				сроки доставки можно на сайтах транспортных компаний, которые работают с Вашим регионом. Малогабаритные
-				заказы могут быть отправлены:</p>
-			<ul>
-				<li><span>Почтой России</span> </li>
-				<li><span>EMS Почта России</span></li>
-			</ul>
-			<p>Если у Вас возникли затруднения с выбором
-				способа доставки, то наши менеджеры помогут подобрать оптимальный вариант и сами оформят доставку Вашего
-				заказа до терминала транспортной компании.</p>
-		</section>
+		</div>
 	</main>
 
 

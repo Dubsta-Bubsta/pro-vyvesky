@@ -4,11 +4,6 @@ h1.section-header {
 }
 
 .customise-product {
-
-	&.width-100 {
-		width: 100%;
-	}
-
 	h2.section-header {
 		margin: 35px 0 15px 0;
 	}
@@ -28,7 +23,6 @@ h1.section-header {
 				& .selectors__selector {
 					width: 15%;
 					margin: 10px;
-					margin-bottom: 10px;
 					display: flex;
 					flex-direction: column;
 					align-items: center;
@@ -45,6 +39,9 @@ h1.section-header {
 					}
 
 					& label {
+						display: flex;
+   						flex-direction: column;
+    					align-items: center;
 						&:hover {
 							cursor: pointer;
 						}
@@ -52,7 +49,7 @@ h1.section-header {
 
 					& .selector {
 						&__img {
-							width: 100%;
+							// width: 100%;
 						}
 
 						&__title {
@@ -62,6 +59,12 @@ h1.section-header {
 							margin-top: 10px;
 							letter-spacing: 0.74px;
 							text-align: center;
+							& span {
+								font-size: 17px;
+								line-height: 22.8px;
+								letter-spacing: 0.6px;
+								text-transform: lowercase;
+							}
 						}
 					}
 				}
@@ -119,8 +122,16 @@ h1.section-header {
 				flex-direction: row;
 				box-sizing: border-box;
 				justify-content: space-between;
-
+				&.small-font {
+					& .selectors__selector {
+						& label {
+							font-size: 24.5px;
+							line-height: 29.4px;
+						}
+					}
+				}
 				& .selectors {
+					
 					&_small {
 						& .selectors__selector {
 							width: 30%;
@@ -290,6 +301,30 @@ h1.section-header {
 	}
 }
 
+@media screen and (max-width: 1600px) {
+	.customise-product {		
+		.form__img-selectors-block .img-selectors-block {
+			&__selectors {
+				& .selectors__selector {
+					width: 18%;					
+				}
+			}
+
+		}
+	}
+}
+@media screen and (max-width: 1300px) {
+	.customise-product {		
+		.form__img-selectors-block .img-selectors-block {
+			&__selectors {
+				& .selectors__selector {
+					width: 23%;					
+				}
+			}
+
+		}
+	}
+}
 @media screen and (max-width: 1024px) {
 	.customise-product {
 		.form-container {
@@ -300,6 +335,10 @@ h1.section-header {
 			&__selectors {
 				& .selectors__selector {
 					width: 26%;
+					& img {
+						width: 163px!important;
+						height: 149px;
+					}
 				}
 			}
 
@@ -329,7 +368,7 @@ h1.section-header {
 			&__img-selectors-block .img-selectors-block {
 				&__selectors {
 					& .selectors__selector {
-						width: 40%;
+						width: 44%;
 						& input[type=radio] {
 							&:checked~label .selector__title {
 								text-decoration: none;
@@ -339,6 +378,12 @@ h1.section-header {
 							font-size: 14px;
 							line-height: 17px;
 							letter-spacing: 0.55px;
+
+							& span {
+								font-size: 12px;
+								line-height: 16px;
+								letter-spacing: 0.47px;								
+							}
 						}
 					}
 				}

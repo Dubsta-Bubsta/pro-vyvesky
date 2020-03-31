@@ -3,10 +3,6 @@ h1.section-header {
   padding-top: 30px;
 }
 
-.customise-product.width-100 {
-  width: 100%;
-}
-
 .customise-product h2.section-header {
   margin: 35px 0 15px 0;
 }
@@ -30,7 +26,6 @@ h1.section-header {
 .customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
   width: 15%;
   margin: 10px;
-  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,12 +49,21 @@ h1.section-header {
   letter-spacing: 0.67px;
 }
 
-.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector label:hover {
-  cursor: pointer;
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector .selector__img {
-  width: 100%;
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector label:hover {
+  cursor: pointer;
 }
 
 .customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector .selector__title {
@@ -69,6 +73,13 @@ h1.section-header {
   margin-top: 10px;
   letter-spacing: 0.74px;
   text-align: center;
+}
+
+.customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector .selector__title span {
+  font-size: 17px;
+  line-height: 22.8px;
+  letter-spacing: 0.6px;
+  text-transform: lowercase;
 }
 
 .customise-product__form .form__input-block_small .input-block__input {
@@ -118,6 +129,11 @@ h1.section-header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.customise-product__form .form__type-selectors-block .type-selectors-block__selectors.small-font .selectors__selector label {
+  font-size: 24.5px;
+  line-height: 29.4px;
 }
 
 .customise-product__form .form__type-selectors-block .type-selectors-block__selectors .selectors_small .selectors__selector {
@@ -285,6 +301,18 @@ h1.section-header {
   margin-top: 5px;
 }
 
+@media screen and (max-width: 1600px) {
+  .customise-product .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .customise-product .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
+    width: 23%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .customise-product .form-container {
     width: 80%;
@@ -292,6 +320,10 @@ h1.section-header {
   }
   .customise-product .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
     width: 26%;
+  }
+  .customise-product .form__img-selectors-block .img-selectors-block__selectors .selectors__selector img {
+    width: 163px !important;
+    height: 149px;
   }
 }
 
@@ -311,7 +343,7 @@ h1.section-header {
     margin: 0 auto;
   }
   .customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
-    width: 40%;
+    width: 44%;
   }
   .customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector input[type=radio]:checked ~ label .selector__title {
     text-decoration: none;
@@ -320,6 +352,11 @@ h1.section-header {
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.55px;
+  }
+  .customise-product__form .form__img-selectors-block .img-selectors-block__selectors .selectors__selector .selector__title span {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.47px;
   }
   .customise-product__form .form__input-block_small .input-block__input, .customise-product__form .form__input-block_big .input-block__input {
     width: 100% !important;

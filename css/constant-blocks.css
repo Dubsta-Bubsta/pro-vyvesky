@@ -329,9 +329,6 @@
   -ms-flex-line-pack: start;
       align-content: flex-start;
   visibility: hidden;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .nav__detailed-block .details__variants-list.variants-list_active {
@@ -349,7 +346,7 @@
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  width: 20%;
+  width: 24%;
   text-transform: lowercase;
 }
 
