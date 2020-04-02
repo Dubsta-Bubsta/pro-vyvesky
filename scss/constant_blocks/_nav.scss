@@ -4,11 +4,10 @@
 		padding: 15px 5%;
 		display: flex;
 		background: #000;
-		
+
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;
-
 		& .burger {
 			margin-right: 10px;
 			align-self: center;
@@ -25,8 +24,10 @@
 
 		& .list {
 			&__element {
+				height: 100%;
 				margin: 0 1.5%;
 				text-align: center;
+				position: relative;
 
 				& a {
 					color: #fff;
@@ -34,11 +35,37 @@
 					word-wrap: break-word;
 					font-size: 26px;
 					line-height: 30px;
+					height: 100%;					
 				}
 
-				&_active a, &:hover {
-					font-family: Geometria Light;
+				&:before,
+				&:after {
+					content: '';
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-color: transparent;
+					position: absolute;
+					left: 50%;
+					top: 120%;
+					z-index: 6;
+					margin-left: -20px;
+					transition: all 0.2s ease;
+					border-width: 0px 20px 0 20px;
 				}
+
+				&:before {
+					border-top-color: #000;
+				}
+
+				&_active {
+					&:before,
+					&:after {
+						border-width: 15px 20px 0 20px;
+					}
+					a {font-family: Geometria Light;}
+				}
+
 			}
 		}
 	}
@@ -59,7 +86,21 @@
 			z-index: 5;
 		}
 
-		
+		&_hover-active {
+			display: grid;
+			grid-template-columns: 4fr;
+			z-index: 5;
+
+			& .details__headers {
+				display: none;
+			}
+
+			& .details__variants-lists {
+				margin: 0 auto;
+				width: 90%;
+			}
+		}
+
 
 		& .details {
 			&__header {
@@ -134,8 +175,10 @@
 				}
 			}
 		}
-		
-		&_mobile { left: 100%; }
+
+		&_mobile {
+			left: 100%;
+		}
 	}
 
 	&__bg {
@@ -158,6 +201,7 @@
 			& .list {
 				&__element {
 					margin: 0 5px;
+
 					& a {
 						font-size: 21px;
 						line-height: 22px;
@@ -166,6 +210,15 @@
 				}
 			}
 		}
+
+		&__detailed-block {
+			&_hover-active {
+				& .details__variants-lists {
+					width: 100%;
+				}
+			}
+		}
+	
 	}
 }
 
@@ -252,7 +305,8 @@
 								line-height: 31.4px;
 								text-transform: lowercase;
 								font-family: Geometria Light;
-								margin: 0!important;
+								margin: 0 !important;
+
 								&::before {
 									content: "" !important;
 								}
@@ -293,6 +347,7 @@
 						&_active {
 							font-family: Geometria Medium;
 							line-height: 22.4px;
+
 							.fa {
 								transform: rotate(180deg);
 							}
