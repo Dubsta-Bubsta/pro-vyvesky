@@ -245,13 +245,17 @@
   position: relative;
 }
 
-.nav__list .list__element a {
+.nav__list .list__element p, .nav__list .list__element a {
   color: #fff;
   text-transform: uppercase;
   word-wrap: break-word;
   font-size: 26px;
   line-height: 30px;
   height: 100%;
+}
+
+.nav__list .list__element p:hover, .nav__list .list__element a:hover {
+  cursor: pointer;
 }
 
 .nav__list .list__element:before, .nav__list .list__element:after {
@@ -278,7 +282,7 @@
   border-width: 15px 20px 0 20px;
 }
 
-.nav__list .list__element_active a {
+.nav__list .list__element_active p, .nav__list .list__element_active a {
   font-family: Geometria Light;
 }
 
@@ -391,7 +395,6 @@
       -ms-flex-pack: left;
           justify-content: left;
   width: 24%;
-  text-transform: lowercase;
 }
 
 .nav__detailed-block .details__variants-list .variants-list__element::before {
@@ -431,7 +434,7 @@
   .nav__list .list__element {
     margin: 0 5px;
   }
-  .nav__list .list__element a {
+  .nav__list .list__element a, .nav__list .list__element p {
     font-size: 21px;
     line-height: 22px;
   }
@@ -444,14 +447,14 @@
   .nav__list .list__element {
     margin: 0 5px;
   }
-  .nav__list .list__element a {
+  .nav__list .list__element a, .nav__list .list__element p {
     font-size: 17px;
     line-height: 21px;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .nav__list .list__element a {
+  .nav__list .list__element a, .nav__list .list__element p {
     font-size: 15px;
     line-height: 19px;
   }
@@ -463,6 +466,9 @@
   }
   .nav__detailed-block {
     padding: 10px 0;
+  }
+  .nav__detailed-block_hover-active {
+    display: none;
   }
   .nav__detailed-block_active {
     -ms-grid-columns: 1fr;

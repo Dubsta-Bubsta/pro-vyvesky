@@ -7,10 +7,10 @@ window.onload = function () {
 
 	document.querySelector('.js-nav-burger').addEventListener('click', function () {
 		// Removing active class on hovered dropdown
-		document.querySelector('.nav__detailed-block_desktop').classList.remove('nav__detailed-block_hover-active')		
+		document.querySelector('.nav__detailed-block_desktop').classList.remove('nav__detailed-block_hover-active')
 		document.querySelectorAll('.js-nav-main-link').forEach((item) => { item.classList.remove('list__element_active') })
 		document.querySelectorAll('.js-nav-list').forEach((item) => { item.classList.remove('variants-list_active') })
-		
+
 
 		document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')
 	});
@@ -63,25 +63,35 @@ window.onload = function () {
 		let mainLinks = document.querySelectorAll('.js-nav-main-link'); 	// visible links in nav
 		let hoveredLists = document.querySelectorAll('.js-nav-list')	// lists in dropdown
 		mainLinks.forEach((item, index) => {
-			item.addEventListener('mouseover', () => {
-				document.querySelector('.nav__detailed-block_desktop').classList.add('nav__detailed-block_hover-active')
-				// Reset active for all elements
-				hoveredLists.forEach((item) => { item.classList.remove('variants-list_active') })
-				mainLinks.forEach((item) => { item.classList.remove('list__element_active') })
+			item.addEventListener('click', (e) => {
 				document.querySelector('.nav__detailed-block_desktop').classList.remove('nav__detailed-block_active')
+				document.querySelector('.nav__detailed-block_desktop').classList.add('nav__detailed-block_hover-active')
 
-				if (!hoveredLists[index].className.includes('variants-list_active')) {
-					hoveredLists[index].classList.add('variants-list_active')
-					mainLinks[index].classList.add('list__element_active')
-				}
-			})
-			document.querySelector('nav').addEventListener('mouseleave', () => {
-				// If not burger dropdown
-				if (!document.querySelector('nav__detailed-block_active')) {
-					mainLinks.forEach((item) => { item.classList.remove('list__element_active') })
-					hoveredLists.forEach((item) => { item.classList.remove('variants-list_active') })
+				// Reset active for all elements
+				hoveredLists.forEach((item, counter) => {
+					if (counter === index)
+						item.classList.toggle('variants-list_active')
+					else
+						item.classList.remove('variants-list_active')
+
+				})
+				let includesActiveList = false;
+				mainLinks.forEach((item, counter) => {
+					if (counter === index) 
+						item.classList.toggle('list__element_active')					
+					else
+						item.classList.remove('list__element_active')
+					
+					if (item.className.includes('list__element_active')) {
+						includesActiveList = true
+					}
+				})
+
+				if (includesActiveList) {
+					document.querySelector('.nav__detailed-block_desktop').classList.add('nav__detailed-block_hover-active')
+				} else
 					document.querySelector('.nav__detailed-block_desktop').classList.remove('nav__detailed-block_hover-active')
-				}
+
 
 			})
 		})

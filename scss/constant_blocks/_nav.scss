@@ -29,13 +29,16 @@
 				text-align: center;
 				position: relative;
 
-				& a {
+				& p, & a {
 					color: #fff;
 					text-transform: uppercase;
 					word-wrap: break-word;
 					font-size: 26px;
 					line-height: 30px;
-					height: 100%;					
+					height: 100%;			
+					&:hover {
+						cursor: pointer;
+					}		
 				}
 
 				&:before,
@@ -63,7 +66,7 @@
 					&:after {
 						border-width: 15px 20px 0 20px;
 					}
-					a {font-family: Geometria Light;}
+					& p, & a {font-family: Geometria Light;}
 				}
 
 			}
@@ -155,7 +158,6 @@
 						display: flex;
 						justify-content: left;
 						width: 24%;
-						text-transform: lowercase;
 
 						&::before {
 							content: "\25CF";
@@ -202,7 +204,7 @@
 				&__element {
 					margin: 0 5px;
 
-					& a {
+					& a, & p {
 						font-size: 21px;
 						line-height: 22px;
 
@@ -229,7 +231,7 @@
 				&__element {
 					margin: 0 5px;
 
-					a {
+					& a, & p {
 						font-size: 17px;
 						line-height: 21px;
 					}
@@ -243,7 +245,7 @@
 	.nav {
 		&__list {
 			& .list {
-				&__element a {
+				&__element a, &__element p {
 					font-size: 15px;
 					line-height: 19px;
 				}
@@ -261,6 +263,9 @@
 		&__detailed-block {
 			padding: 10px 0;
 
+			&_hover-active {
+				display: none;
+			}
 			&_active {
 				grid-template-columns: 1fr;
 				display: none;
