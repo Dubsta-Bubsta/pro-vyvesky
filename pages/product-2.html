@@ -13,11 +13,12 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="../script/slider.js" defer></script>
-	<script src="../script/script.js"></script>
+	<script src="../script/script.js" defer></script>
 
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/general.css">
 	<link rel="stylesheet" href="../css/product.css">
+	<link rel="stylesheet" href="../css/popup.css">
 	<link rel="stylesheet" href="../css/constant-blocks.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -27,7 +28,7 @@
 
 <body>
 	<header class="header">
-		<div class="header__element logo ">
+		<div class="header__element logo">
 			<a href="../index.html"><img src="../img/logo.png"></a>
 		</div>
 		
@@ -279,7 +280,7 @@
 					<div class="description__buttons buttons">
 						<button class="btn calc-btn"><img src="../img/calc-icon.png"
 								alt="telegram-icon">Калькулятор</button>
-						<button class="btn order-btn">Заказать<img src="../img/telegram-icon-1.png"
+						<button class="btn order-btn" onclick=showPopup()>Заказать<img src="../img/telegram-icon-1.png"
 								alt="telegram-icon"></button>
 					</div>
 				</div>
@@ -498,6 +499,44 @@
 		</div>
 
 	</footer>
+
+
+	<div class="popup-block">
+		<div class="popup">
+			<h1 class="popup__header section-header ">Оставить заявку</h1>
+			<form action="#" class="popup__form form">
+				<div class="form__inputs inputs">
+					<input type="text" placeholder="Ваше имя">
+					<input type="text" placeholder="Телефон">
+					<input type="text" placeholder="E-mail">
+				</div>
+				<textarea class="form__textarea" placeholder="ИНФОРМАЦИЯ О ЗАКАЗЕ"></textarea>
+				<div class="form__buttons buttons">
+	
+					<div class="buttons__attach-wrapper btn">
+						<input name="file" type="file" id="attach-btn" multiple>
+						<label for="attach-btn" class="btn buttons__attach-btn">
+							Прикрепить файл
+						</label>
+					 </div>
+	
+					<div class="buttons__file-checkbox">
+						<input type="checkbox" id="ch1" class="checkbox">
+						<label for="ch1" class="chbx"></label>
+						<label for="ch1">Согласен на обработку персональных данных</label>					
+					</div>
+					<button class="btn order-btn">Заказать<img src="../img/telegram-icon-1.png"
+							alt="telegram-icon"></button>
+				</div>
+			</form>
+			<div class="popup__close js-close-popup">
+				<button><img src="../img/close-popup.png" alt=""></button>
+			</div>
+		</div>
+		<div class="popup-bg"></div>
+	</div>
+
+
 </body>
 
 </html>

@@ -15,7 +15,16 @@ window.onload = function () {
 		document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')
 	});
 
-
+	(function () {
+		document.querySelector('.js-close-popup').addEventListener('click', () => {
+			document.querySelector('.popup-block').classList.remove('popup-block_active')
+		})
+		document.querySelector('body').addEventListener('click', (e) => {
+			if (e.target === document.querySelector('.popup-bg')) {
+				document.querySelector('.popup-block').classList.remove('popup-block_active')
+			}
+		})
+	})();
 
 	// Desktop nav list
 	(function () {
@@ -98,3 +107,6 @@ window.onload = function () {
 	})()
 };
 
+function showPopup() {
+	document.querySelector('.popup-block').classList.add('popup-block_active')
+}

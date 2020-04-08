@@ -13,38 +13,40 @@
 </head>
 
 <body>
-	<div class="popup">
-		<h1 class="popup__header section-header ">Оставить заявку</h1>
-		<form action="#" class="popup__form form">
-			<div class="form__inputs inputs">
-				<input type="text" placeholder="Ваше имя">
-				<input type="text" placeholder="Телефон">
-				<input type="text" placeholder="E-mail">
-			</div>
-			<textarea class="form__textarea" placeholder="ИНФОРМАЦИЯ О ЗАКАЗЕ"></textarea>
-			<div class="form__buttons buttons">
-
-				<div class="buttons__attach-wrapper btn">
-					<input name="file" type="file" id="attach-btn" multiple>
-					<label for="attach-btn" class="btn buttons__attach-btn">
-						Прикрепить файл
-					</label>
-				 </div>
-
-				<div class="buttons__file-checkbox">
-					<input type="checkbox" id="ch1" class="checkbox">
-					<label for="ch1" class="chbx"></label>
-					<label for="ch1">Согласен на обработку персональных данных</label>					
+	<div class="popup-block">
+		<div class="popup">
+			<h1 class="popup__header section-header ">Оставить заявку</h1>
+			<form action="#" class="popup__form form">
+				<div class="form__inputs inputs">
+					<input type="text" placeholder="Ваше имя">
+					<input type="text" placeholder="Телефон">
+					<input type="text" placeholder="E-mail">
 				</div>
-				<button class="btn order-btn">Заказать<img src="../img/telegram-icon-1.png"
-						alt="telegram-icon"></button>
+				<textarea class="form__textarea" placeholder="ИНФОРМАЦИЯ О ЗАКАЗЕ"></textarea>
+				<div class="form__buttons buttons">
+	
+					<div class="buttons__attach-wrapper btn">
+						<input name="file" type="file" id="attach-btn" multiple>
+						<label for="attach-btn" class="btn buttons__attach-btn">
+							Прикрепить файл
+						</label>
+					 </div>
+	
+					<div class="buttons__file-checkbox">
+						<input type="checkbox" id="ch1" class="checkbox">
+						<label for="ch1" class="chbx"></label>
+						<label for="ch1">Согласен на обработку персональных данных</label>					
+					</div>
+					<button class="btn order-btn">Заказать<img src="../img/telegram-icon-1.png"
+							alt="telegram-icon"></button>
+				</div>
+			</form>
+			<div class="popup__close">
+				<button onclick=closePopup><img src="../img/close-popup.png" alt=""></button>
 			</div>
-		</form>
-		<div class="popup__close">
-			<button><img src="../img/close-popup.png" alt=""></button>
 		</div>
+		<div class="popup-bg"></div>
 	</div>
-	<div class="popup-bg"></div>
 
 </body>
 
