@@ -16,42 +16,47 @@ window.onload = function () {
 	});
 
 	// Colors
-	(function () {		
-		getValueFromColorSelector('color');
-		getValueFromColorSelector('stroke');
-		getValueFromColorSelector('shadow');
-		function getValueFromColorSelector(selectorType) {
-			let textColorSelectorBlock = document.querySelector(`.js-text-${selectorType}-selectors`);
-			let textColorSelectors = [...textColorSelectorBlock.children];
-			let textExample = document.querySelector('.js-editable-text');
-
-			textColorSelectors.map((selector) => {
-				selector.querySelector('.color-selector div').addEventListener('click', (e) => {
-					let color = e.target.dataset.color;
-					if (selectorType === 'color') {
-						textExample.style['-webkit-text-fill-color'] = color
-					} else if (selectorType === 'stroke') {
-						textExample.style['-webkit-text-stroke'] = '3px ' + color
-					} else if (selectorType === 'shadow') {
-						textExample.style.textShadow = '0 0 20px ' + color
-					}
+	(function () {	
+		if (document.querySelector(`.js-text-color-selectors`)) {
+			getValueFromColorSelector('color');
+			getValueFromColorSelector('stroke');
+			getValueFromColorSelector('shadow');
+			function getValueFromColorSelector(selectorType) {
+				let textColorSelectorBlock = document.querySelector(`.js-text-${selectorType}-selectors`);
+				let textColorSelectors = [...textColorSelectorBlock.children];
+				let textExample = document.querySelector('.js-editable-text');
+	
+				textColorSelectors.map((selector) => {
+					selector.querySelector('.color-selector div').addEventListener('click', (e) => {
+						let color = e.target.dataset.color;
+						if (selectorType === 'color') {
+							textExample.style['-webkit-text-fill-color'] = color
+						} else if (selectorType === 'stroke') {
+							textExample.style['-webkit-text-stroke'] = '3px ' + color
+						} else if (selectorType === 'shadow') {
+							textExample.style.textShadow = '0 0 20px ' + color
+						}
+					})
 				})
-			})
+			}
 		}
+		
 
 
 	})();
 
 	// popup
 	(function () {
-		document.querySelector('.js-close-popup').addEventListener('click', () => {
-			document.querySelector('.popup-block').classList.remove('popup-block_active')
-		})
-		document.querySelector('body').addEventListener('click', (e) => {
-			if (e.target === document.querySelector('.popup-bg')) {
+		if (document.querySelector('.popup-block')) {
+			document.querySelector('.js-close-popup').addEventListener('click', () => {
 				document.querySelector('.popup-block').classList.remove('popup-block_active')
-			}
-		})
+			})
+			document.querySelector('body').addEventListener('click', (e) => {
+				if (e.target === document.querySelector('.popup-bg')) {
+					document.querySelector('.popup-block').classList.remove('popup-block_active')
+				}
+			})
+		}
 	})();
 
 	// Desktop nav list
@@ -61,6 +66,7 @@ window.onload = function () {
 		let listIndex = 0;
 		navHeadersList.forEach(function (item, index) {
 			item.addEventListener('click', (e) => {
+				debugger
 				listIndex = index;
 				navListsList.forEach((element, index) => {
 					if (listIndex === index)
