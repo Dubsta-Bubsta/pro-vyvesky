@@ -15,6 +15,34 @@ window.onload = function () {
 		document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')
 	});
 
+	// Colors
+	(function () {		
+		getValueFromColorSelector('color');
+		getValueFromColorSelector('stroke');
+		getValueFromColorSelector('shadow');
+		function getValueFromColorSelector(selectorType) {
+			let textColorSelectorBlock = document.querySelector(`.js-text-${selectorType}-selectors`);
+			let textColorSelectors = [...textColorSelectorBlock.children];
+			let textExample = document.querySelector('.js-editable-text');
+
+			textColorSelectors.map((selector) => {
+				selector.querySelector('.color-selector div').addEventListener('click', (e) => {
+					let color = e.target.dataset.color;
+					if (selectorType === 'color') {
+						textExample.style['-webkit-text-fill-color'] = color
+					} else if (selectorType === 'stroke') {
+						textExample.style['-webkit-text-stroke'] = '3px ' + color
+					} else if (selectorType === 'shadow') {
+						textExample.style.textShadow = '0 0 20px ' + color
+					}
+				})
+			})
+		}
+
+
+	})();
+
+	// popup
 	(function () {
 		document.querySelector('.js-close-popup').addEventListener('click', () => {
 			document.querySelector('.popup-block').classList.remove('popup-block_active')
@@ -86,11 +114,11 @@ window.onload = function () {
 				})
 				let includesActiveList = false;
 				mainLinks.forEach((item, counter) => {
-					if (counter === index) 
-						item.classList.toggle('list__element_active')					
+					if (counter === index)
+						item.classList.toggle('list__element_active')
 					else
 						item.classList.remove('list__element_active')
-					
+
 					if (item.className.includes('list__element_active')) {
 						includesActiveList = true
 					}

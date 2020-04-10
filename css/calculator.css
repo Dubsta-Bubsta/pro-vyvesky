@@ -316,7 +316,7 @@ h1.section-header {
 @media screen and (max-width: 1024px) {
   .customise-product .form-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .customise-product .form__img-selectors-block .img-selectors-block__selectors .selectors__selector {
     width: 26%;
