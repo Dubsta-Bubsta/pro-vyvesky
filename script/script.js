@@ -15,8 +15,38 @@ window.onload = function () {
 		document.querySelector('.nav__detailed-block').classList.toggle('nav__detailed-block_active')
 	});
 
+	// Font selector 
+	(function () {
+		if (document.querySelector(`.js-font-selectors`)) {
+			let fontSelectorBlock = document.querySelector(`.js-font-selectors`);
+			let fontSelectors = [...fontSelectorBlock.children];
+			let textExample = document.querySelector('.js-editable-text');
+
+			fontSelectors.map((selector) => {
+				selector.querySelector('input').addEventListener('click', (e) => {
+					if (e.target.checked) {
+						let label = e.target.nextElementSibling;
+
+						if (label.dataset.font === 'Default'){
+							textExample.style.fontFamily = 'Geometria Light';
+							textExample.style.fontStyle = 'normal';
+
+						} else if (label.dataset.font === 'TimesNewRoman') {
+							textExample.style.fontFamily = 'Times New Roman';
+							textExample.style.fontStyle = 'normal';
+
+						} else if (label.dataset.font === 'Italic') {
+							textExample.style.fontFamily = 'Geometria Light';
+							textExample.style.fontStyle = 'italic';
+						}
+					}
+				})
+			})
+		}
+	})();
+
 	// Colors
-	(function () {	
+	(function () {
 		if (document.querySelector(`.js-text-color-selectors`)) {
 			getValueFromColorSelector('color');
 			getValueFromColorSelector('stroke');
@@ -25,7 +55,7 @@ window.onload = function () {
 				let textColorSelectorBlock = document.querySelector(`.js-text-${selectorType}-selectors`);
 				let textColorSelectors = [...textColorSelectorBlock.children];
 				let textExample = document.querySelector('.js-editable-text');
-	
+
 				textColorSelectors.map((selector) => {
 					selector.querySelector('.color-selector div').addEventListener('click', (e) => {
 						let color = e.target.dataset.color;
@@ -40,7 +70,7 @@ window.onload = function () {
 				})
 			}
 		}
-		
+
 
 
 	})();
